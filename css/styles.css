@@ -1,0 +1,233 @@
+/* styles.css for Antonio Lee Personal Website */
+
+/* Headroom.js 
+
+.headroom {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: all .3s ease-in-out;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+} 
+
+*/
+
+
+/* navbar */
+
+#nav-container{
+	width:100%;
+}
+
+.navbar-default {
+	min-height: 0;
+	height: 35px;
+	border-radius: 0px;	
+	border:0px;
+	background-color: #ffffff ;
+}
+
+.navbar-nav>li, .navbar-nav {
+float: left !important;
+}
+
+.navbar-right {
+float: right!important;
+}
+
+/* Header Icon (linkedin, twitter, github) */
+
+.header-icon {
+	width: 28px;
+	height: 28px;
+}
+
+
+.icon-highlight1:hover{
+	background-color: #FF4500;
+}
+
+.icon-highlight2:hover{
+	background-color: #FFDD00;
+}
+
+.icon-highlight3:hover{
+	background-color: #00D700;
+}
+
+/* Section 1 */
+
+#section1-container {
+	margin-top: 50px;
+}
+
+#section1 {
+	background-color: #FFA81C;
+	width: 100%;
+	height: 900px;
+}
+
+/* section 2 */
+
+#section2-container {
+	margin-top: 75px;
+}
+
+#section2 {
+	background-color: #1699AB;
+	width: 100%;
+	height: 1400px;
+}
+
+.section2-image:hover{
+	opacity:.8;
+}
+
+.section2-image-size{
+	width:400px;
+	height: 300px;
+}
+
+.cubico{
+	width:300px;
+	height:300px;
+}
+
+/* section 3 */
+
+#section3-container {
+	margin-top: 75px;
+}
+
+#section3 {
+	background-color: #696155;
+	width: 100%;
+	height: 900px;
+}
+
+/* Section Header */
+
+.section-header {
+	font-size: 54px;
+	text-align: center;
+}
+
+.section-info {
+	font-size: 18px;
+	text-align: center;
+}
+
+/* Font Families */
+
+.droid-sans { font-family: 'Droid Sans', sans-serif; }
+.droid-serif { font-family: 'Droid Serif', serif; }
+.roboto-100 { font-family: 'Roboto', sans-serif; font-weight: 100; }
+.roboto-300 { font-family: 'Roboto', sans-serif; font-weight: 300; }
+.roboto-400 { font-family: 'Roboto', sans-serif; font-weight: 400; }
+
+
+/* font color classes */
+
+.white {
+	color: #EED6D6;
+}
+
+.black{
+	color: black;
+}
+
+
+
+ @media screen and (max-width: 1000px) {
+	#section1 {
+		height: 965px;
+	}
+
+	.section2-image-size{
+		width:320px;
+		height: 200px;
+	}
+
+	.cubico {
+		width:200px;
+		height:200px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.section-header {
+		font-size: 42px;
+		text-align: center;
+	}
+
+	.section-info {
+		font-size: 14px;
+		text-align: center;
+	}
+
+	#section1 {
+		height: 1340px;
+	}
+
+	#section2{
+		height:2150px;
+	}
+ }
+
+ @media screen and (max-width: 660px) {
+	#section1 {
+		height: 1440px;
+	}
+}
+
+ @media screen and (max-width: 580px) {
+	#section2{
+		height:2200px;
+	}
+}
+
+ @media screen and (max-width: 540px) {
+	#section1 {
+		height: 1540px;
+	}
+
+	#section2{
+		height:2400px;
+	}
+}
+
+ @media screen and (max-width: 450px) {
+	#section1 {
+		height: 1680px;
+	}
+
+	#section2{
+		height:2600px;
+	}
+}
+
+ @media screen and (max-width: 420px) {
+	#section1 {
+		height: 1740px;
+	}
+}
+
+ @media screen and (max-width: 370px) {
+	#section1 {
+		height: 1820px;
+	}
+}
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
