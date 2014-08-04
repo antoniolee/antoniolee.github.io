@@ -18,8 +18,8 @@
 
   <link href="css/styles.css" rel="stylesheet">
   <link href="css/animate.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,900' rel='stylesheet' type='text/css'>
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -58,7 +58,7 @@
       <!-- TEXT INSIDE TOP DIV -->
       <div class="container">
         <div id="section1-container">
-          <div class="text-center">
+          <div id="selfie" class="text-center">
             <img class="img-circle" src="images/selfie.jpg" alt="selfie" style="width: 160px; height: 160px;">
 
             <h1 class="roboto-300 section-header"> Antonio Lee </h1>
@@ -201,16 +201,11 @@
   <script>
   $( document ).ready(function() {
 
-    var flag = 0;
 
     $("#nav-logo").click(function(){
-      flag++;
       $('#nav-logo').addClass('animated bounce');
     });
 
-    if(flag == 1){
-      $('#nav-logo').removeProp('animated bounce');
-    }
 
   });
   </script>
