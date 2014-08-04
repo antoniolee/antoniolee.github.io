@@ -18,6 +18,20 @@
 
 */
 
+/*B&W*/
+.bw {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.bw:hover {
+  -webkit-filter: grayscale(100%);
+}
+
+
 
 /* navbar */
 
@@ -73,6 +87,10 @@ float: right!important;
 	height: 900px;
 }
 
+#skill-icon1:hover{ opacity:.85; }
+#skill-icon2:hover{ opacity:.85; }
+#skill-icon3:hover{ opacity:.85; }
+
 /* section 2 */
 
 #section2-container {
@@ -83,10 +101,6 @@ float: right!important;
 	background-color: #1699AB;
 	width: 100%;
 	height: 1400px;
-}
-
-.section2-image:hover{
-	opacity:.8;
 }
 
 .section2-image-size{
