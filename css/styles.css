@@ -1,6 +1,6 @@
 /* styles.css for Antonio Lee Personal Website */
 
-/* Headroom.js 
+/* Headroom.js  */
 
 .headroom {
 	position: fixed;
@@ -16,7 +16,7 @@
     transform: translateY(-100%);
 } 
 
-*/
+
 
 /*B&W*/
 .bw {
@@ -39,20 +39,25 @@
 	width:100%;
 }
 
+#nav-logo{
+	margin-top: 5px;
+}
+
 .navbar-default {
 	min-height: 0;
-	height: 35px;
+	height: 57px;
 	border-radius: 0px;	
 	border:0px;
 	background-color: #ffffff ;
 }
 
 .navbar-nav>li, .navbar-nav {
-float: left !important;
+	float: left !important;
 }
 
 .navbar-right {
-float: right!important;
+	float: right!important;
+	padding-right: 10px;
 }
 
 /* Header Icon (linkedin, twitter, github) */
@@ -78,7 +83,7 @@ float: right!important;
 /* Section 1 */
 
 #section1-container {
-	margin-top: 50px;
+	margin-top: 150px;
 }
 
 #section1 {
@@ -100,7 +105,7 @@ float: right!important;
 #section2 {
 	background-color: #1699AB;
 	width: 100%;
-	height: 1400px;
+	height: 1300px;
 }
 
 .section2-image-size{
@@ -122,7 +127,7 @@ float: right!important;
 #section3 {
 	background-color: #696155;
 	width: 100%;
-	height: 900px;
+	height: 400px;
 }
 
 /* Section Header */
@@ -158,19 +163,23 @@ float: right!important;
 
 
  @media screen and (max-width: 1200px) {
+ 	#section1{
+		height: 1065px;
+ 	}
+
  	#section2{
- 		height:1500px;
+ 		height:1400px;
  	}
  }
 
 
  @media screen and (max-width: 1000px) {
 	#section1 {
-		height: 965px;
+		height: 1065px;
 	}
 
 	.section2-image-size{
-		width:320px;
+		width: 320px;
 		height: 200px;
 	}
 
@@ -192,29 +201,39 @@ float: right!important;
 	}
 
 	#section1 {
-		height: 1340px;
+		height: 1440px;
 	}
 
 	#section2{
-		height:2250px;
+		height:2150px;
 	}
  }
 
  @media screen and (max-width: 660px) {
 	#section1 {
-		height: 1440px;
+		height: 1540px;
 	}
 }
 
  @media screen and (max-width: 580px) {
 	#section2{
-		height:2300px;
+		height:2200px;
 	}
 }
 
  @media screen and (max-width: 540px) {
 	#section1 {
-		height: 1540px;
+		height: 1640px;
+	}
+
+	#section2{
+		height:2300px;
+	}
+}
+
+ @media screen and (max-width: 450px) {
+	#section1 {
+		height: 1780px;
 	}
 
 	#section2{
@@ -222,28 +241,42 @@ float: right!important;
 	}
 }
 
- @media screen and (max-width: 450px) {
-	#section1 {
-		height: 1680px;
-	}
-
-	#section2{
-		height:2800px;
-	}
-}
-
  @media screen and (max-width: 420px) {
 	#section1 {
-		height: 1740px;
+		height: 1840px;
+	}
+	#section2{
+		height:2450px;
 	}
 }
 
  @media screen and (max-width: 370px) {
 	#section1 {
-		height: 1820px;
+		height: 1920px;
+	}
+
+	#section2{
+		height: 2500px;
+	}
+	#section3{
+		height: 500px;
 	}
 }
 
+ @media screen and (max-width: 320px) {
+	#section1 {
+		height: 2000px;
+	}
+
+	#section2{
+		height: 2700px;
+	}
+
+	#section3{
+		height: 550px;
+	}
+
+}
 
 
 /* Medium devices (desktops, 992px and up) */
