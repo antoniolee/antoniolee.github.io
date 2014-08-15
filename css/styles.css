@@ -17,6 +17,14 @@
 } 
 
 
+.ease {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
 
 /*B&W*/
 .bw {
@@ -31,6 +39,7 @@
   -webkit-filter: grayscale(100%);
 }
 
+.opacity:hover{ opacity:.3; }
 
 
 /* navbar */
@@ -39,22 +48,21 @@
 	min-width: 300px;
 }
 
-#nav-icon-div{
-
-}
-
-
 #nav-container{
 	width:100%;
 }
 
 #nav-logo{
-	margin-top: 5px;
+	height: 50px;
+}
+
+#nav-logo:hover{
+	background-color: #00d9ff;
 }
 
 .navbar-default {
 	min-height: 0;
-	height: 57px;
+	height: 50px;
 	border-radius: 0px;	
 	border:0px;
 	background-color: #ffffff ;
@@ -72,21 +80,25 @@
 /* Header Icon (linkedin, twitter, github) */
 
 .header-icon {
-	width: 27px;
-	height: 27px;
+	margin-top: -5px;
+	width: 32px;
+	height: 32px;
 }
 
 
 .icon-highlight1:hover{
 	background-color: #FF4500;
+	height:50px;
 }
 
 .icon-highlight2:hover{
 	background-color: #FFDD00;
+	height:50px;
 }
 
 .icon-highlight3:hover{
 	background-color: #00D700;
+	height:50px;
 }
 
 /* Section 1 */
@@ -101,9 +113,6 @@
 	height: 900px;
 }
 
-#skill-icon1:hover{ opacity:.85; }
-#skill-icon2:hover{ opacity:.85; }
-#skill-icon3:hover{ opacity:.85; }
 
 /* section 2 */
 
@@ -112,7 +121,7 @@
 }
 
 #section2 {
-	background-color: #1699AB;
+	background-color: #0088ad;
 	width: 100%;
 	height: 1300px;
 }
@@ -168,6 +177,10 @@
 
 .black{
 	color: black;
+}
+
+.gray{
+	color: #d1d1d1;
 }
 
 
