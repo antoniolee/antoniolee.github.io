@@ -35,6 +35,15 @@
 
 /* navbar */
 
+#my-navbar{
+	min-width: 300px;
+}
+
+#nav-icon-div{
+
+}
+
+
 #nav-container{
 	width:100%;
 }
@@ -63,8 +72,8 @@
 /* Header Icon (linkedin, twitter, github) */
 
 .header-icon {
-	width: 28px;
-	height: 28px;
+	width: 27px;
+	height: 27px;
 }
 
 
