@@ -87,7 +87,7 @@
           <div id="section2-container" class="container gray">
 
             <div id="viewCheck1" class="hidden">
-              <h1 class="roboto-300 section-header "> Works </h1>
+              <h1 class="roboto-300 section-header"> Works </h1>
               <p class="droid-sans section-info "> Websites • Web Applications • Video Games • Digital Art & Interactive Media </p>
               <br><br>
             </div>
@@ -217,13 +217,6 @@
       $('#section1-p').addClass('animated fadeInDown');
     }, 500);
 
-    // All headers on click will bounce
-    $("h1").click(function(){
-      $('h1').addClass('animated bounce');
-      setInterval(function(){
-        $('h1').removeClass('animated bounce');
-      }, 1000);
-    });
 
     // Function to check whether element is within viewport
     $.fn.isOnScreen = function(){
