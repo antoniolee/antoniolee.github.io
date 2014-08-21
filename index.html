@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="True">
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="images/favicon.ico">
@@ -31,22 +32,28 @@
 
   <body>
 
+    <div class="row">
+
+      <div id="section-cover" class="col-lg-12">
+        <div id="section-cover-container" class="container">
+          <div id="section-cover-header" class="hidden">
+          <h1 class="roboto-300 section-header white"> Antonio Lee </h1>
+          <p id="section-header-info" class="droid-sans section-info hidden white"> Front-End Development • User Interaction & User Experience • Digital Art & Interactive Media </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
     <!-- Section 1  Section 1 Section 1 Section 1 Section 1 Section 1 Section 1 Section 1-->
     <div class="row">
       <div id="section1" class="col-lg-12">
 
         <!-- TEXT INSIDE TOP DIV -->
-        <div class="container ease animated fadeInDown">
-          <div id="section1-container">
-            <div class="text-center">
-              <img class="img-circle bw" src="images/selfie.jpg" alt="selfie" style="width: 160px; height: 160px;">
-
-              <h1 id="section1-header" class="roboto-300 section-header hidden"> Antonio Lee </h1>
-
-            </div>
-
-            <p id="section1-p" class="droid-sans section-info hidden"> Front-End Development • User Interaction & User Experience • Digital Art & Interactive Media </p>
-            <br><br>
+        <div id="section1-container" class="container ease hidden">
+          <div id="section-1-info">
 
             <div class="col-sm-4 text-center">
               <img class="opacity bw" src="images/html-icon.png" style="width: 200px; height: 140px;">
@@ -96,7 +103,7 @@
               <div class="col-sm-8">
                 <a href="http://nwcgame.com"><img class="img-responsive center-block bw" src="images/nwc.png"/></a>
                 <h2 class="roboto-400 text-center"> Now We're Cooking!</h2>
-                <p class="droid-sans"> Now We're Cooking is a mobile game for Android and iOS devices. The story takes place in a reality cooking TV show in which the host has turned all the food evil. You now must utilize there chef powers to combine food by swiping different ingredients together, before it's too late. Created using Corona SDK and Lua. Roles: Lead Producer, Programmer, Artist, Musician. </p>
+                <p class="droid-sans"> Now We're Cooking is a mobile game for Android and iOS devices. The story takes place in a reality cooking TV show in which the host has turned all the food evil. You now must utilize their chef powers to combine food by swiping different ingredients together, before it's too late. Created using Corona SDK and Lua. Roles: Lead Producer, Programmer, Artist, Musician. </p>
 
                 <br>
               </div>
@@ -208,14 +215,14 @@
 
     // Section 1 Intro ; Header and Paragraph effect added with delay
     setInterval(function(){
-      $('#section1-header').removeClass('hidden');
-      $('#section1-header').addClass('animated fadeInDown');
+      $('#section-cover-header').removeClass('hidden');
+      $('#section-cover-header').addClass('animated fadeInDown');
     }, 300);
 
     setInterval(function(){
-      $('#section1-p').removeClass('hidden');
-      $('#section1-p').addClass('animated fadeInDown');
-    }, 500);
+      $('#section-header-info').removeClass('hidden');
+      $('#section-header-info').addClass('animated fadeInDown');
+    }, 300);
 
 
     // Function to check whether element is within viewport
@@ -237,6 +244,13 @@
 
     // Use Function to check whether elements are within viewport
     $(window).scroll(function() {
+      if ($('#section1-container').isOnScreen() == true) {
+        setInterval(function(){
+          $('#section1-container').removeClass('hidden');
+          $('#section1-container').addClass('animated fadeInDown'); 
+        },50);      
+       }
+
        if ($('#viewCheck1').isOnScreen() == true) {
         setInterval(function(){
           $('#viewCheck1').removeClass('hidden');
