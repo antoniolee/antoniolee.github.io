@@ -297,6 +297,10 @@
 }
 
  @media screen and (max-width: 540px) {
+ 	 #section1{
+ 		height:480px;
+ 	}
+
 	#section2{
 		height:2300px;
 	}
@@ -322,6 +326,16 @@
 		height: 500px;
 	}
 }
+
+ @media only screen and (min-width: 321px) {
+ 	#section-cover{
+ 		height:400px;
+ 	}
+ 	#section-cover-header{
+ 		margin-top:125px;
+ 	}
+ }
+
 
  @media screen and (max-width: 320px) {
  	#section-cover{
