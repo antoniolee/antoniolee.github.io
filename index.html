@@ -251,26 +251,28 @@
     $(window).scroll(function() {
       if ($('#section1-container').isOnScreen() == true) {
         setInterval(function(){
+          $('#section1-header').removeClass('hidden');
+          $('#section1-header').addClass('animated fadeInDown'); 
+        },250)
+
+        setInterval(function(){
           $('#section1-container').removeClass('hidden');
           $('#section1-container').addClass('animated fadeInDown'); 
         },50);      
        }
 
-       if ($('#viewCheck1').isOnScreen() == true) {
+       if ($('#section2-container').isOnScreen() == true) {
+        console.log("section2 on screeen");
         setInterval(function(){
           $('#viewCheck1').removeClass('hidden');
           $('#viewCheck1').addClass('animated fadeInDown'); 
         },50);      
-       }
 
-       if ($('#viewCheck2').isOnScreen() == true) {
          setInterval(function(){
           $('#viewCheck2').removeClass('hidden');
           $('#viewCheck2').addClass('animated fadeInDown'); 
         },250);        
-       }
 
-       if ($('#viewCheck3').isOnScreen() == true) {
          setInterval(function(){
           $('#viewCheck3').removeClass('hidden');
           $('#viewCheck3').addClass('animated fadeInDown'); 
