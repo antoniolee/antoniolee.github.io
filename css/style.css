@@ -135,7 +135,7 @@
 }
 
 
-.section{ height: 550px; }
+.section{ height: 500px; }
 
 #section1{ background-color: #9EDBF9; color:#414042;}
 
@@ -175,7 +175,7 @@
 
 @media (max-width: 768px) {
 	.section{
-		height: 850px;
+		height: 750px;
 	}
 
 	.section-img{
