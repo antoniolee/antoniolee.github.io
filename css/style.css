@@ -191,7 +191,7 @@
 
 	#home-cover-info{
 		padding-top: 25vh;
-		width: 200px;
+		width: 225px;
 	}
 
 	#home-cover-info h1 { 
@@ -211,7 +211,9 @@
 }
 
 @media (max-width: 520px){
-
+	#home-cover-info{
+		padding-top: 100px;
+	}
 }
 
 /* About Page ============================================================== */
