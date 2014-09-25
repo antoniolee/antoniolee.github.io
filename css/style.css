@@ -212,8 +212,8 @@
 /* About Page ============================================================== */
 
 #section-about{
-	padding: 100px;
-	padding-bottom: 0px;
+	background:#9CD399
+
 }
 
 #section-about h1 {
@@ -225,7 +225,7 @@
 }
 
 #img-about{
-	padding-top: 42vmin;
+	padding-top: 60vmin;
 }
 
 @media (max-width: 768px) {
