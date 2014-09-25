@@ -1,0 +1,62 @@
+<svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="300px" height="300px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+
+<defs>
+	<style type="text/css">
+		.st0{fill:#414042;stroke:#58595B;stroke-width:4;stroke-miterlimit:10;}
+		.st1{fill:none;stroke:#58595B;stroke-width:4;stroke-miterlimit:10;}
+		.st2{fill:none;stroke:#414042;stroke-width:10;stroke-miterlimit:10;}
+		.window{fill:#FFFFFF;stroke:#414042;stroke-width:10;stroke-miterlimit:10;transition: .4s;}
+		.circle{fill:#FFFFFF;stroke:#414042;stroke-width:10;stroke-miterlimit:10;transition: .4s;}
+		.st4{fill:#414042;}
+
+		#icon:hover .circle{
+			fill:#B7A2EA;
+			stroke:#5928D1;
+			transition: .4s;
+		}
+
+		#icon:hover .window{
+			fill:#DAD8D8;
+			stroke:#483E3E;
+			transition: .4s;
+		}
+
+		#icon.clicktrigger .circle{
+			fill: #85D2F9 !important;
+			stroke: #4B8CAD;
+			transition: .4s;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		var clickAnim = document.querySelector('#icon');
+		
+		clickAnim.addEventListener('click', function (){
+			this.classList.toggle('clicktrigger');
+		})
+	</script>
+
+</defs>
+<circle class="circle" cx="151" cy="150" r="135"/>
+<rect x="83.5" y="68.438" class="window" width="135" height="151.875"/>
+<line class="window" x1="83.5" y1="98.75" x2="218.5" y2="98.75"/>
+<g>
+	<g>
+		<path class="st4" d="M101.313,85.989c3.224,0,3.224-5,0-5S98.088,85.989,101.313,85.989L101.313,85.989z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st4" d="M111.729,85.989c3.224,0,3.224-5,0-5S108.505,85.989,111.729,85.989L111.729,85.989z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st4" d="M121.677,85.885c3.224,0,3.224-5,0-5S118.453,85.885,121.677,85.885L121.677,85.885z"/>
+	</g>
+</g>
+<line class="st0" x1="121.293" y1="150.896" x2="148.307" y2="150.896"/>
+<polyline class="st1" points="100.043,145.183 119.508,129.116 100.043,116.338 "/>
+</svg>

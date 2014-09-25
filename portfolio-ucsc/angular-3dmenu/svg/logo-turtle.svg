@@ -1,0 +1,29 @@
+
+<svg version="1.1" id="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="300px" viewBox="0 0 500 300" style="enable-background:new 0 0 500 300;" xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#FBD992;stroke:#231F20;stroke-width:17;stroke-miterlimit:10;}
+	.st1{fill:#39B54A;stroke:#231F20;stroke-width:7;stroke-miterlimit:10;}
+	.st2{fill:#231F20;}
+	.st3{font-size:78.453;}
+	.st4{font-family:'SourceSansPro-Regular';}
+	.st5{fill:none;stroke:#231F20;stroke-width:5;stroke-miterlimit:10;}
+	.st6{fill:#FFFFFF;stroke:#231F20;stroke-width:10;stroke-miterlimit:10;}
+	.st7{fill:#39B54A;stroke:#231F20;stroke-width:10;stroke-miterlimit:10;}
+	.st8{fill:#9EDBF9;stroke:#231F20;stroke-width:17;stroke-miterlimit:10;}
+]]>
+</style>
+<polygon class="st8" points="17.295,271.406 327.913,271.406 171.83,37.281 17.295,269.082 "/>
+<path class="st0" d="M482.295,268.771L327.913,29.693H177.176c-0.758,1.507-1.593,2.986-2.496,4.414l153.233,237.299h154.382
+	V268.771z"/>
+<text transform="matrix(0.7419 1.1254 -0.8349 0.5504 252.1328 93.0625)" class="st2 st3">LEE</text>
+<polygon class="st7" points="129.585,221.92 219.551,221.92 219.551,172.06 197.33,142.794 152.89,142.794 129.585,167.725 "/>
+<polygon class="st7" points="54.795,221.92 129.585,221.92 129.585,167.725 113.635,132.702 "/>
+<line class="st5" x1="152.045" y1="182.357" x2="166.871" y2="182.357"/>
+<line class="st5" x1="194.97" y1="182.357" x2="209.795" y2="182.357"/>
+<rect x="121.259" y="224.63" class="st1" width="22.417" height="17.934"/>
+<rect x="95.984" y="224.63" class="st1" width="19.856" height="17.934"/>
+<line class="st6" x1="129.585" y1="191.028" x2="92.19" y2="173.144"/>
+<line class="st6" x1="92.19" y1="218.668" x2="102.22" y2="177.941"/>
+</svg>
