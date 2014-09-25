@@ -1,0 +1,60 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px"
+	 height="300px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" id="icon">
+
+<defs>
+	<style type="text/css">
+		
+	    .lines{fill:#FFFFFF;stroke:#414042;stroke-width:10;stroke-miterlimit:10; transition: .4s;}
+		.circle{transition: .4s;}
+
+		#details { display: block; }
+
+		@media screen and (max-width: 150px){
+			#details {
+				display:none;
+			}
+		}
+
+		#details .lines {
+			stroke-width: 5px;
+		}
+
+		#icon:hover .lines {
+			fill: #A81D1D;
+			stroke: white;
+			transition: .4s;
+		}
+
+		#icon.clicktrigger .lines {
+			stroke: #A81D1D;
+			transition: .4s;
+			fill: white !important;
+		}
+	</style>
+
+	<script type="text/javascript">
+		var clickAnim = document.querySelector('#icon');
+		
+		clickAnim.addEventListener('click', function (){
+			this.classList.toggle('clicktrigger');
+		})
+	</script>
+</defs>
+
+<g id="icon-circle">
+	<circle class="lines" cx="150" cy="150" r="135.5"/>
+</g>
+<g id="shape">
+	<path class="lines" d="M206.458,98.561c0,3.464-2.809,6.273-6.272,6.273H99.815c-3.465,0-6.274-2.809-6.274-6.273V73.468
+		c0-3.465,2.809-6.273,6.274-6.273h100.37c3.464,0,6.272,2.808,6.272,6.273V98.561z"/>
+	<path class="lines" d="M206.458,158.782c0,3.466-2.809,6.273-6.272,6.273H99.815c-3.464,0-6.274-2.808-6.274-6.273v-25.093
+		c0-3.464,2.81-6.273,6.274-6.273h100.37c3.464,0,6.272,2.809,6.272,6.273V158.782z"/>
+	<path class="lines" d="M206.458,222.77c0,3.464-2.809,6.272-6.272,6.272H99.814c-3.463,0-6.273-2.809-6.273-6.272v-25.094
+		c0-3.465,2.81-6.273,6.273-6.273h100.371c3.464,0,6.272,2.809,6.272,6.273V222.77z"/>
+</g>
+<g id="details">
+	<line class="lines" x1="121.144" y1="86.014" x2="188.895" y2="86.014"/>
+	<line class="lines" x1="121.144" y1="146.236" x2="188.895" y2="146.236"/>
+	<line class="lines" x1="121.144" y1="210.223" x2="188.895" y2="210.223"/>
+</g>
+</svg>

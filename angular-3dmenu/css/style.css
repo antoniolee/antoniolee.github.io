@@ -1,0 +1,294 @@
+/* BASE STYLES
+============================================================================= */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+.center{
+	display:block;
+	margin: auto;
+	text-align: center;
+}
+
+.no-underline{
+	text-decoration: none !important;
+}
+
+.row{
+	margin:0px;
+}
+
+.highlight{ transition: .4s;}
+
+.highlight:hover {
+	transition: .4s;
+	background-color: #9EDBF9;
+	position: relative;
+  	box-shadow: 
+    1px 1px #D5F1FF,
+    2px 2px #D5F1FF,
+    3px 3px #D5F1FF;
+}
+
+
+/* PAGES
+============================================================================= */
+
+.page-home 		{ cursor: default;}
+.page-about 	{ background:#C1C2C7; height: 100vh; cursor: default;}
+.page-contact 	{ background:#ffa6bb; color:#9e0000; height: 100vh; cursor: default;}
+.page-svg 		{ cursor: default; }
+.page-works 	{ background:#C1C2C7; height: 100vh; cursor: default;}
+
+/* Menu Button (Transition 3D Effect) */
+
+#showMenu{
+	text-decoration: none;
+}
+
+/* Loading Page ================================================================ */
+
+#loading {
+	width: 100%;
+	height: 100%;
+}
+
+#loading-container{
+	position: absolute;
+	top: 45%;
+	left: 46%;
+}
+
+#loading-svg {
+	width: 20%;
+	height: 20%;
+}
+
+/* Home Page ================================================================ */
+
+#home-cover{
+	background-color: #FFBB75 ; 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	height: 100vh;
+}
+
+#home-cover-info{
+	width: 30vw;
+	margin: auto;
+	padding-top: 25vh;
+	text-align: center;
+	color: #414042;
+}
+
+
+#home-cover-info a {
+	text-decoration: none;
+	font-size: 2.0vw;
+	color: #414042;
+	display: inline-block;
+	padding: 10px;
+	margin: 10px;
+}
+
+#home-cover-info h1 { 
+	margin: 0; 
+	padding-bottom: 25px;
+	font-size: 3.2vw;
+}
+
+@media (max-height: 600px) {
+	#home-cover{
+		height: 600px;
+	}
+}
+
+
+.section{ height: 550px; }
+
+#section1{ background-color: #9EDBF9;}
+
+#section2{	background-color: #D5F1FF;}
+
+#section3 {
+	background-color: #4B8CAD;
+}
+
+#section4 {
+	background-color: #08C;
+}
+
+.section-img{	padding-top: 100px; padding-left:; }
+
+.section-content{	text-align: left;	padding-top: 150px; padding-right: 10%;}
+
+
+@media (max-width: 1200px) {
+	.section-content{
+		padding-right: 25px;
+	}
+}
+
+@media (max-width: 768px) {
+	.section{
+		height: 850px;
+	}
+
+	.section-img{
+		padding-top: 100px; 
+	}
+
+	.section-content{
+		text-align: left;
+		padding-top: 50px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	#home-cover-info{
+		padding-top: 30vh;
+	}
+
+	#home-cover-info h1 { 
+		font-size: 4.8vw;
+	}
+
+	#home-cover-info a { 
+		font-size: 3.2vw;
+	}
+}
+
+@media (max-width: 400px){
+	.svg-cover {
+		width:225px;
+		height:225px;
+	}
+}
+
+/* About Page ============================================================== */
+
+#section-about{
+	padding: 100px;
+}
+
+#section-about h1 {
+	font-size: 72px;
+}
+
+#section-about p {
+
+}
+
+/* contact Page ============================================================== */
+
+#section-contact{
+	padding: 100px;
+}
+
+#section-contact h1 {
+	font-size: 72px;
+}
+
+#section-contact p {
+	
+}
+
+/* Svg Page and SVG's ================================================================ */
+
+#svg-turtle{
+	color:white;
+	width: 75%;
+	height: 75%;
+}
+
+.svg-logo{
+	width: 100%;
+	height: 100%;
+
+}
+
+.svg-icon {
+	width: 75%;
+	height: 75%;
+	padding: 50px;
+}
+
+.svg-header {
+	padding: 25px;
+}
+
+.svg-header h1{
+	font-size: 72px;
+	margin-bottom: 0px;
+}
+
+@media (max-width:768px){
+	.svg-header h1{
+		font-size: 42px;
+	}
+}
+
+/* Metro Style ================================================================ */
+.metro {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  background: #4B8CAD;
+
+  /* Font styles */
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.metro:hover { background: #9EDBF9; text-decoration: none !important;}
+
+.metro.three-d {
+  position: relative;
+  box-shadow: 
+    1px 1px #D5F1FF,
+    2px 2px #D5F1FF,
+    3px 3px #D5F1FF;
+  transition: all 0.1s ease-in;
+}
+
+.metro.three-d:active { 
+  box-shadow: none;
+  top: 3px;
+  left: 3px;
+}
+
+/* ANIMATIONS
+============================================================================= */
+
+.page.ng-leave 	{ z-index:9999; }
+.page.ng-enter 	{ z-index:8888; }
+
+/* page specific animations ------------------------ */
+
+/* home -------------------------- */
+.page.ng-leave         {
+    -webkit-transform-origin: 0% 0%;
+	-webkit-animation: fadeOut .25s both ease-in;
+	-moz-transform-origin: 0% 0%;
+	-moz-animation: fadeOut .25s both ease-in;
+	transform-origin: 0% 0%;
+	animation: fadeOut .25s both ease-in;
+}
+.page.ng-enter 		{  
+    -webkit-animation:fadeIn .5s both ease-in;
+	-moz-animation:fadeIn .5s both ease-in;
+	animation:fadeIn .5s both ease-in;    
+}
+

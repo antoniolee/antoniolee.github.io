@@ -1,0 +1,80 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html class="no-js" ng-app="antonioApp">
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/sass.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<!--<base href="/angular-animated/index.html"> -->
+
+</head>
+
+<!-- apply our angular app -->
+<body>
+	<div id="perspective" class="perspective effect-laydown">
+	    <div id="VIEW" class="container-fluid">
+
+	    	<!-- Loading Screen -->
+	    	<div id="loading">
+				<div id="loading-container" class="">
+					<object>
+						<embed id="loading-svg" src="svg/Loading.svg">
+					</object>
+				</div>
+			</div>
+
+			<!-- wrapper needed for scroll -->
+	        <div class="wrapper">
+	        	<a id="showMenu" class="pull-right metro three-d hidden">
+	        		<span class="glyphicon glyphicon-home"></span>&nbsp Menu
+	        	</a>
+
+	        	<!-- inject our views using ng-view -->
+				<!-- each angular controller applies a different class here -->
+				<div class="page {{ pageClass }}" ng-view></div>
+
+	            <!-- ... -->
+	        </div><!-- wrapper -->
+	    </div><!-- /container -->
+	    <nav class="outer-nav top horizontal">
+			<a href="#" class="icon-home" onClick="document.getElementById('VIEW').click();">Home</a>
+		    <a href="#contact" class="icon-news" onClick="document.getElementById('VIEW').click();">Contact</a>
+		    <a href="#about" class="icon-image" onClick="document.getElementById('VIEW').click();">About</a>
+		    <a href="#svg" class="icon-image" onClick="document.getElementById('VIEW').click();">SVG</a>
+	    </nav>
+	</div><!-- /perspective -->
+
+	<!-- JS -->
+	<!-- load angular, ngRoute, ngAnimate -->
+	<script src="js/modernizr.custom.25376.js"></script>
+	<script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script -->
+	<script src="js/app.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/menu.js"></script>	
+	<script>
+
+		$(document).ready(function(){
+			function hideAnimation(){
+				$('#loading').hide();
+				$('#loading-svg').addClass('animated fadeOutDown');
+				$('#showMenu').removeClass('hidden');
+			};
+			hideAnimation();
+		});
+
+		
+	</script>
+
+</body>
+</html>
