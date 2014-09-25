@@ -12,6 +12,10 @@
 		.st5{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
 		.st6{fill:#414042;}
 
+		#icon:hover {
+			cursor: pointer;
+		}
+
 
 		#icon:hover .st2{
 			fill:#90B3CB;

@@ -249,6 +249,7 @@
 	padding-top: 50px;
 	background-color: #D5F1FF;
 	color:#414042;
+	cursor: default;
 }
 
 #section-work h1 {
@@ -261,6 +262,10 @@
 
 /* Svg Page and SVG's ================================================================ */
 
+#section-svg{
+	cursor: default;
+}
+
 #svg-turtle{
 	color:white;
 	width: 100%;
@@ -270,7 +275,6 @@
 .svg-logo{
 	width: 100%;
 	height: 100%;
-
 }
 
 #svg-contact {
@@ -312,7 +316,7 @@
   text-decoration: none;
 }
 
-.metro:hover { background: #9EDBF9; text-decoration: none !important;}
+.metro:hover { background: #9EDBF9; text-decoration: none !important; cursor: pointer;}
 
 .metro.three-d {
   position: relative;

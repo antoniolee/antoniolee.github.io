@@ -19,6 +19,10 @@
 			transition: .4s;
 		}
 
+		#icon:hover {
+			cursor: pointer;
+		}
+
 		#icon.clicktrigger .circle{
 			fill: #64CC54 !important;
 			stroke: #1E5216;

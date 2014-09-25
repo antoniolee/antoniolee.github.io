@@ -19,6 +19,10 @@
 			stroke-width: 5px;
 		}
 
+		#icon:hover {
+			cursor: pointer;
+		}
+
 		#icon:hover .lines {
 			fill: #A81D1D;
 			stroke: white;
