@@ -116,7 +116,7 @@
 
 #home-cover-info a {
 	text-decoration: none;
-	font-size: 2.0vw;
+	font-size: 28px;
 	color: #414042;
 	display: inline-block;
 	padding: 10px;
@@ -125,7 +125,7 @@
 
 #home-cover-info h1 { 
 	margin: 0; 
-	font-size: 3.2vw;
+	font-size: 42px;
 }
 
 @media (max-height: 600px) {
@@ -135,7 +135,7 @@
 }
 
 
-.section{ height: 550px; }
+.section{ height: 500px; }
 
 #section1{ background-color: #9EDBF9; color:#414042;}
 
@@ -175,7 +175,7 @@
 
 @media (max-width: 768px) {
 	.section{
-		height: 850px;
+		height: 750px;
 	}
 
 	.section-img{
@@ -191,14 +191,15 @@
 
 	#home-cover-info{
 		padding-top: 25vh;
+		width: 225px;
 	}
 
 	#home-cover-info h1 { 
-		font-size: 4.8vw;
+		font-size: 32px;
 	}
 
 	#home-cover-info a { 
-		font-size: 3.2vw;
+		font-size: 24px;
 	}
 }
 
@@ -209,11 +210,17 @@
 	}
 }
 
+@media (max-width: 520px){
+	#home-cover-info{
+		padding-top: 100px;
+	}
+}
+
 /* About Page ============================================================== */
 
 #section-about{
-	padding: 100px;
-	padding-bottom: 0px;
+	background:#9CD399
+
 }
 
 #section-about h1 {
@@ -225,7 +232,7 @@
 }
 
 #img-about{
-	padding-top: 42vmin;
+	padding-top: 60vmin;
 }
 
 @media (max-width: 768px) {
@@ -242,6 +249,7 @@
 	padding-top: 50px;
 	background-color: #D5F1FF;
 	color:#414042;
+	cursor: default;
 }
 
 #section-work h1 {
@@ -254,6 +262,10 @@
 
 /* Svg Page and SVG's ================================================================ */
 
+#section-svg{
+	cursor: default;
+}
+
 #svg-turtle{
 	color:white;
 	width: 100%;
@@ -263,7 +275,6 @@
 .svg-logo{
 	width: 100%;
 	height: 100%;
-
 }
 
 #svg-contact {
@@ -305,7 +316,7 @@
   text-decoration: none;
 }
 
-.metro:hover { background: #9EDBF9; text-decoration: none !important;}
+.metro:hover { background: #9EDBF9; text-decoration: none !important; cursor: pointer;}
 
 .metro.three-d {
   position: relative;

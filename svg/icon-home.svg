@@ -5,6 +5,10 @@
 
 		.lines{fill:#FFFFFF;stroke:#414042;stroke-width:10;stroke-miterlimit:10; transition: .4s;}
 
+		#icon:hover {
+			cursor: pointer;
+		}
+
 		#icon:hover .lines {
 			fill: #335672;;
 			stroke: white;

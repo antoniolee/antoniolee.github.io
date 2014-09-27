@@ -10,6 +10,10 @@
 		.circle{fill:#FFFFFF;stroke:#414042;stroke-width:10;stroke-miterlimit:10;transition: .4s;}
 		.st4{fill:#414042;}
 
+		#icon:hover {
+			cursor: pointer;
+		}
+
 		#icon:hover .circle{
 			fill:#B7A2EA;
 			stroke:#5928D1;

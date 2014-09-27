@@ -7,6 +7,10 @@
 		.circle{fill:#FFFFFF;stroke:#414042;stroke-width:10;stroke-miterlimit:10; transition: .4s;}
 		.body{fill:#7A8487;stroke:#414042;stroke-width:10;stroke-miterlimit:10;}
 
+		#icon:hover {
+			cursor: pointer;
+		}
+
 		#icon:hover .circle{
 			fill:#6CB7F1;
 			stroke:#335672;
