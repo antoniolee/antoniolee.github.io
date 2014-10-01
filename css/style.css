@@ -134,6 +134,12 @@
 	}
 }
 
+@media (max-width: 600px) {
+	#home-cover{
+		height: 600px;
+	}
+}
+
 
 .section{ height: 500px; }
 
@@ -210,7 +216,7 @@
 	}
 }
 
-@media (max-width: 520px){
+@media (max-width: 600px){
 	#home-cover-info{
 		padding-top: 100px;
 	}
@@ -218,9 +224,20 @@
 
 /* About Page ============================================================== */
 
+#svg-turtle{
+	width: 100%;
+	height: 100%;
+}
+
+#aboutme-div{
+	width: 600px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 25px;
+}
+
 #section-about{
 	background:#9CD399
-
 }
 
 #section-about h1 {
@@ -228,18 +245,30 @@
 }
 
 #section-about p {
-	min-width: 300px;
+	
 }
 
 #img-about{
 	padding-top: 60vmin;
+	padding-right: 100px;
 }
 
 @media (max-width: 768px) {
-	#img-about{
+	#aboutme-div{
+		width: 90%;
+		padding-left: 50px;
+		padding-right: 50px;
 		padding-top: 50px;
-		max-width: 150px;
-		max-height: 150px;
+	}
+
+
+	#section-about h1 {
+		font-size: 32px;
+	}
+
+	#img-about{
+		padding-top: 25px;
+		width: 250px;
 	}
 }
 
@@ -266,15 +295,16 @@
 	cursor: default;
 }
 
-#svg-turtle{
-	color:white;
+.svg-logo{
 	width: 100%;
 	height: 100%;
 }
 
-.svg-logo{
-	width: 100%;
-	height: 100%;
+@media (max-width: 320px) {
+	.svg-logo{
+		width: 200px;
+		height: 100px;
+	}
 }
 
 #svg-contact {
