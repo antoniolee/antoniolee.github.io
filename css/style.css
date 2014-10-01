@@ -232,7 +232,6 @@
 #aboutme-div{
 	width: 600px;
 	padding-left: 100px;
-	padding-right: 100px;
 	padding-top: 25px;
 }
 
@@ -254,13 +253,13 @@
 }
 
 @media (max-width: 768px) {
+
 	#aboutme-div{
 		width: 90%;
-		padding-left: 50px;
-		padding-right: 50px;
+		padding-left: 25px;
+		padding-right: 0px;
 		padding-top: 50px;
 	}
-
 
 	#section-about h1 {
 		font-size: 32px;
@@ -268,7 +267,8 @@
 
 	#img-about{
 		padding-top: 25px;
-		width: 250px;
+		padding-right: 25px;
+		width: 150px;
 	}
 }
 
