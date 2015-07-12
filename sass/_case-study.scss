@@ -1,0 +1,164 @@
+// Case Study Container
+.study-container {
+    padding: 0;
+
+    .row {
+        margin: 0;
+    }
+}
+
+
+.study-row {
+    text-align: center;
+}
+
+.study-tile {
+    display: inline-block;
+}
+
+.study-image-wrapper {
+    max-height: 1000px;
+    max-width: 1000px;
+}
+
+.study-image {
+    width: 400px;
+    height: 400px;
+}
+
+
+// Home Page Content
+.study-content {   
+
+    @extend .dict-content;
+    position: relative;
+    text-align: left;
+
+// Header Settings
+    h1 {
+        font-size: 4.5em;
+        color: $white;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+// Paragraph Settings
+    p {
+        font-family: 'Palanquin', sans-serif;
+        font-size: 1.66rem;
+        font-weight: 200;
+    }
+
+// pronounication spell out
+    p.pronounce {
+        color: $nwc-yellow;
+    }
+
+// the descriptor (verb, noun, adj.)
+    p.verb {
+        color: $nwc-yellow;
+        font-style: italic;
+    }
+
+// description settings
+    .description {
+        color:$white;
+    }
+
+// paragraph description
+    p.description {
+        position: relative;
+        width: 100%;
+    }
+
+// the number description
+    span.description {
+        float: left;
+    }
+
+
+// Skills, Tools, etc.
+    .skills-header {
+        margin-top:25px;
+        color: $white;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
+
+    .skills{
+        overflow: auto;
+        padding-top: 10px;
+
+        p {
+          float: left;
+          border-style: solid;
+          border-radius: 25px;
+          padding: 5px;
+          margin-right: 5px;
+          font-size: 12px;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 300;
+          color: $white;
+        }
+
+    }
+
+    .border { 
+        border-width: 2px;
+        min-width: 50px;
+    }
+
+    .green {
+        @extend .border;
+        border-color: $green;
+    }
+
+    .blue {
+        @extend .border;
+        border-color: $blue;
+    }
+
+    .orange {
+        @extend .border;
+        border-color: $orange;
+    }
+}
+
+
+
+// NWC Container 
+.nwc-container {
+    @extend .study-container;
+    background-color: $dark-pink;
+
+    .row {
+        margin: 0;
+    }
+}
+
+// NWC Container 
+.nwc-content {
+    @extend .study-content;
+}
+
+
+
+
+// Media Queries
+
+@media (max-width: 768px) {
+
+    .study-content {
+
+    // Header Settings
+        h1 {
+            font-size: 2.75em;
+        }
+
+    // Paragraph Settings 
+        p {
+            font-size: 1.5rem;
+        }    
+    }
+}
+

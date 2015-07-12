@@ -22,22 +22,29 @@ antonioApp.config(function($routeProvider /*$locationProvider*/) {
             controller: 'aboutController'
     	})
 
-    	// contact page
-    	.when('/contact', {
-    		templateUrl: 'views/contact.html',
-            controller: 'contactController'
+    	// Works page
+    	.when('/works', {
+    		templateUrl: 'views/works.html',
+            controller: 'worksController'
     	})
 
-        .when('/svg', {
-            templateUrl: 'views/svg.html',
-            controller: 'svgController'
+        // Blog
+        .when('/blog', {
+            templateUrl: 'views/blog.html',
+            controller: 'blogController'
         })
 
-        .when('/works', {
-            templateUrl: 'views/works.html',
-            controller: 'svgController'
-        });
+        // Contact
+        .when('/contact', {
+            templateUrl: 'views/contact.html',
+            controller: 'contactController'
+        })
 
+        // case-study-template
+        .when('/nwc', {
+            templateUrl: 'views/nwc.html',
+            controller: 'nwcController'
+        });
 
    // $locationProvider.html5Mode(true);        
 });
@@ -54,17 +61,24 @@ antonioApp.controller('aboutController', function($scope) {
     $scope.pageClass = 'page-about';
 });
 
+// works page controller
+antonioApp.controller('worksController', function($scope) {
+    $scope.pageClass = 'page-works';
+});
+
+// blog page controller
+antonioApp.controller('blogController', function($scope) {
+    $scope.pageClass = 'page-blog';
+});
+
 // contact page controller
 antonioApp.controller('contactController', function($scope) {
     $scope.pageClass = 'page-contact';
 });
 
-// svg page controller
-antonioApp.controller('svgController', function($scope) {
-    $scope.pageClass = 'page-svg';
+
+// nwc page controller
+antonioApp.controller('nwcController', function($scope) {
+    $scope.pageClass = 'page-nwc';
 });
 
-// works page controller
-antonioApp.controller('svgController', function($scope) {
-    $scope.pageClass = 'works-svg';
-});

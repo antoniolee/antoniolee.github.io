@@ -1,0 +1,123 @@
+// Works Page Container
+.works-container {
+    position: relative;
+    width: 100vw;
+    background-color: $dark-gray;
+}
+
+
+// Works Header
+.works-header {
+
+    text-align: center;
+
+    p {
+        font-family: 'Palanquin', sans-serif;
+        font-weight: 100;
+        color: $white;
+    }
+
+    p.header {
+        font-size: 2.25rem;
+    }
+
+    p.pronounce {
+        position: relative;
+        top: -5px;
+        font-size: 1.45rem;
+        color: $light-gray;
+    }
+}
+
+// Works Row 
+.works-row {
+  text-align: center;
+  padding: 0;
+}
+
+.tile {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  transition: .5s ease;
+
+    @include hover-focus-active {
+      background-color: $blue;
+      transform: scale(1.03);
+      transition: .5s ease;
+    }
+  
+  p {
+    font-family: 'Rozha One', serif;
+    position: absolute;
+    font-size: 18px;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s ease;
+  }
+
+  img {
+    opacity: 1;
+    transition: .5s ease;
+  }
+}
+
+.tile {
+  @include hover-focus-active {
+    p {
+      opacity: 1;
+    }
+   img {
+      opacity: 0;
+    }
+  }
+}
+
+
+
+// Media Queries // Media Queries // Media Queries // Media Queries 
+// Media Queries // Media Queries // Media Queries // Media Queries
+
+@media (max-width: 960px) {
+
+    .tile {
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .tile {
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,166 @@
+// Home Page Container
+
+$padding: 20px;
+
+// Dictionary Theme
+
+.dict-container {
+    min-height: 100vh;
+    position: relative;
+    background-color: $dark-gray;   
+}
+
+// Home Page Content
+.dict-content {
+    padding: 0 35px;
+    min-width: 300px;
+    max-width: 660px;
+ // overflow: auto; /* Recommended in case content is larger than the container */
+    margin: auto; /* Center the item vertically & horizontally */
+
+// Header Settings
+    h1 {
+        font-size: 4.5em;
+        color: $white;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+// Paragraph Settings
+    p {
+        font-family: 'Palanquin', sans-serif;
+        font-size: 1.66rem;
+        font-weight: 200;
+    }
+
+// pronounication spell out
+    p.pronounce {
+        color: $light-gray;
+    }
+
+// the descriptor (verb, noun, adj.)
+    p.verb {
+        color: $light-gray;
+        font-style: italic;
+    }
+
+// description settings
+    .description {
+        color:$white;
+    }
+
+// paragraph description
+    p.description {
+        position: relative;
+        width: 100%;
+    }
+
+// the number description
+    span.description {
+        float: left;
+        position: absolute;
+        left: 10px;
+    }
+
+// Skills, Tools, etc.
+    .skills-header {
+        margin-top:25px;
+        color: $light-gray;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
+
+    .skills{
+        padding-top: 10px;
+        overflow: auto;
+
+        p {
+          float: left;
+          border-style: solid;
+          border-radius: 25px;
+          padding: 5px;
+          margin-right: 5px;
+          font-size: 12px;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 300;
+          color: $light-gray;
+        }
+
+    }
+
+    .border { 
+        border-width: 2px;
+        min-width: 50px;
+    }
+
+    .green {
+        @extend .border;
+        border-color: $green;
+    }
+
+    .blue {
+        @extend .border;
+        border-color: $blue;
+    }
+
+    .orange {
+        @extend .border;
+        border-color: $orange;
+    }
+
+    .pink {
+        @extend .border;
+        border-color: $dark-pink;
+    }
+
+    .yellow {
+        @extend .border;
+        border-color: $nwc-yellow;
+    }
+
+}
+
+
+// Home Container 
+
+.home-container {
+    @extend .dict-container;
+}
+
+.home-content {
+    @extend .dict-content;
+    margin: auto;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+// Media Queries
+@media (max-width: 500px) {
+    .home-container {
+
+    }
+}
+
+@media only screen and (max-height: 500px), screen and (max-width: 768px) {
+    // Home Page Content
+    .dict-content {
+        margin: auto;
+        position: relative;
+        top: 0; 
+        left: 0;
+        transform: translate(0%,0%);    
+
+    // Header Settings
+        h1 {
+            font-size: 2.75em;
+        }
+
+    // Paragraph Settings 
+        p {
+            font-size: 1.5rem;
+        }    
+    }
+}
+

@@ -1,0 +1,133 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+
+/* SHOW ALL ELEMENTS HIGHLIGHTED IN RED  
+* {
+   border: 1px solid red !important;
+}
+*/
+
+// Colors
+$dark-gray: #1A1A1A;
+$light-gray: #B1B1B1;
+$white: #E6E6E6;
+$green: #92FF6E;
+$blue: #32CFE0;
+$orange: #DD9833;
+$dark-pink: #C66F61;
+$nwc-yellow: #F7E4B6;
+
+//Fonts
+$nav-font-size: 1.75rem;
+
+@mixin hover-focus-active() {
+  &:hover,
+  &:focus,
+  &:active { @content }
+}
+
+
+// @import "compass/reset";
+@import "page-transitions";
+@import "home";
+@import "works";
+@import "case-study";
+@import "blog";
+@import "menu-icon";
+
+//Page Links
+/* unvisited link */
+a,a:link,a:visited
+{
+ color:$white;
+}
+
+// Page Settings
+.page {
+	position:absolute;
+}
+
+// Page Specific Settings
+.page-home { background-color: #E7E7E7; width: 100vw}
+.page-contact { background-color: #66DF4C; }
+.page-about { background-color: #506AC0; }
+.page-nwc { background-color: #C66F61 }
+
+// Default Nav Bar
+.nav {
+    width: 100vw;
+    padding: 25px 25px 0px;
+    
+    ul > li {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        display: inline;
+        font-size: $nav-font-size;
+        margin-left: 3rem;
+        color: $white;
+    }
+}
+
+.nav-list {
+  float:right;
+}
+
+.mobile-nav-btn {
+  visibility: hidden;
+  width: 40px;
+  height: 40px;
+  background-color: $orange;
+}
+
+.mobile-nav {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  $nav-font-size: 1rem;
+
+  .nav {
+    padding: 1rem 1rem 0;
+  }
+
+  .desktop-nav {
+    visibility: hidden;
+  }
+  
+  .mobile-nav-btn {
+    visibility: visible;
+  }
+
+  .mobile-nav {
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 50vh;
+    background-color: $green;
+  }
+
+  .nav-list {
+    float: none;
+    padding-right: 40px;
+    text-align: center;
+  }
+
+  .nav {
+    width: 100vw;
+    padding: 25px 25px 0px;
+    
+    ul > li {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        display: inline;
+        font-size: 1.4rem;
+        margin: 1.5rem;
+        color: $white;
+    }
+  }
+
+}
+
+

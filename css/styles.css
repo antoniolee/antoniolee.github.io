@@ -1,0 +1,625 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+
+/* SHOW ALL ELEMENTS HIGHLIGHTED IN RED  
+* {
+   border: 1px solid red !important;
+}
+*/
+/* Page Transition Effects */
+/* line 3, ../sass/_page-transitions.scss */
+.page.ng-leave {
+  z-index: 9999;
+  -webkit-animation: fadeOut .25s both ease-in;
+  -moz-animation: fadeOut .25s both ease-in;
+  animation: fadeOut .25s both ease-in;
+}
+
+/* line 10, ../sass/_page-transitions.scss */
+.page.ng-enter {
+  z-index: 8888;
+}
+
+/* Page specific animations ------------------------
+
+.page-home.ng-leave        {  
+    -webkit-animation:fadeOut .5s both ease-in;
+    -moz-animation:fadeOut .5s both ease-in;
+    animation:fadeOut .5s both ease-in;    
+}
+
+.page-home.ng-enter        {  
+    -webkit-animation:fadeIn .5s both ease-in;
+    -moz-animation:fadeIn .5s both ease-in;
+    animation:fadeIn .5s both ease-in;   
+}
+
+.page-works.ng-leave        {
+    -webkit-animation:slideOutRight 0.5s both ease-in;
+    -moz-animation:slideOutRight 0.5s both ease-in;
+    animation:slideOutRight 0.5s both ease-in;   
+}
+.page-works.ng-enter        {  
+    -webkit-animation:slideInRight 0.5s both ease-in;
+    -moz-animation:slideInRight 0.5s both ease-in;
+    animation:slideInRight 0.5s both ease-in;    
+}
+
+.page-contact.ng-leave        {
+    -webkit-animation:slideOutRight 0.5s both ease-in;
+    -moz-animation:slideOutRight 0.5s both ease-in;
+    animation:slideOutRight 0.5s both ease-in;   
+}
+.page-contact.ng-enter        {  
+    -webkit-animation:slideInRight 0.5s both ease-in;
+    -moz-animation:slideInRight 0.5s both ease-in;
+    animation:slideInRight 0.5s both ease-in;    
+}
+
+.page-blog.ng-leave        {  
+    -webkit-animation:fadeOut .5s both ease-in;
+    -moz-animation:fadeOut .5s both ease-in;
+    animation:fadeOut .5s both ease-in;    
+}
+
+.page-blog.ng-enter        {  
+    -webkit-animation:fadeIn .5s both ease-in;
+    -moz-animation:fadeIn .5s both ease-in;
+    animation:fadeIn .5s both ease-in;   
+}
+
+*/
+/* line 64, ../sass/_page-transitions.scss */
+.page-nwc.ng-leave {
+  -webkit-animation: bounceOut .5s both ease-in;
+  -moz-animation: bounceOut .5s both ease-in;
+  animation: bounceOut .5s both ease-in;
+}
+
+/* line 7, ../sass/_home.scss */
+.dict-container, .home-container, .blog-container {
+  min-height: 100vh;
+  position: relative;
+  background-color: #1A1A1A;
+}
+
+/* line 14, ../sass/_home.scss */
+.dict-content, .home-content, .study-content, .nwc-content, .blog-content {
+  padding: 0 35px;
+  min-width: 300px;
+  max-width: 660px;
+  margin: auto;
+  /* Center the item vertically & horizontally */
+}
+/* line 22, ../sass/_home.scss */
+.dict-content h1, .home-content h1, .study-content h1, .nwc-content h1, .blog-content h1 {
+  font-size: 4.5em;
+  color: #E6E6E6;
+  font-family: 'Istok Web', sans-serif;
+}
+/* line 29, ../sass/_home.scss */
+.dict-content p, .home-content p, .study-content p, .nwc-content p, .blog-content p {
+  font-family: 'Palanquin', sans-serif;
+  font-size: 1.66rem;
+  font-weight: 200;
+}
+/* line 36, ../sass/_home.scss */
+.dict-content p.pronounce, .home-content p.pronounce, .study-content p.pronounce, .nwc-content p.pronounce, .blog-content p.pronounce {
+  color: #B1B1B1;
+}
+/* line 41, ../sass/_home.scss */
+.dict-content p.verb, .home-content p.verb, .study-content p.verb, .nwc-content p.verb, .blog-content p.verb {
+  color: #B1B1B1;
+  font-style: italic;
+}
+/* line 47, ../sass/_home.scss */
+.dict-content .description, .home-content .description, .study-content .description, .nwc-content .description, .blog-content .description {
+  color: #E6E6E6;
+}
+/* line 52, ../sass/_home.scss */
+.dict-content p.description, .home-content p.description, .study-content p.description, .nwc-content p.description, .blog-content p.description {
+  position: relative;
+  width: 100%;
+}
+/* line 58, ../sass/_home.scss */
+.dict-content span.description, .home-content span.description, .study-content span.description, .nwc-content span.description, .blog-content span.description {
+  float: left;
+  position: absolute;
+  left: 10px;
+}
+/* line 65, ../sass/_home.scss */
+.dict-content .skills-header, .home-content .skills-header, .study-content .skills-header, .nwc-content .skills-header, .blog-content .skills-header {
+  margin-top: 25px;
+  color: #B1B1B1;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+/* line 73, ../sass/_home.scss */
+.dict-content .skills, .home-content .skills, .study-content .skills, .nwc-content .skills, .blog-content .skills {
+  padding-top: 10px;
+  overflow: auto;
+}
+/* line 77, ../sass/_home.scss */
+.dict-content .skills p, .home-content .skills p, .study-content .skills p, .nwc-content .skills p, .blog-content .skills p {
+  float: left;
+  border-style: solid;
+  border-radius: 25px;
+  padding: 5px;
+  margin-right: 5px;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #B1B1B1;
+}
+/* line 91, ../sass/_home.scss */
+.dict-content .border, .home-content .border, .study-content .border, .nwc-content .border, .blog-content .border, .dict-content .green, .home-content .dict-content .green, .dict-content .home-content .green, .study-content .dict-content .green, .dict-content .study-content .green, .nwc-content .dict-content .green, .dict-content .nwc-content .green, .blog-content .dict-content .green, .dict-content .blog-content .green, .dict-content .home-content .green, .home-content .dict-content .green, .home-content .green, .study-content .home-content .green, .home-content .study-content .green, .nwc-content .home-content .green, .home-content .nwc-content .green, .blog-content .home-content .green, .home-content .blog-content .green, .dict-content .study-content .green, .study-content .dict-content .green, .home-content .study-content .green, .study-content .home-content .green, .study-content .green, .nwc-content .study-content .green, .study-content .nwc-content .green, .blog-content .study-content .green, .study-content .blog-content .green, .dict-content .nwc-content .green, .nwc-content .dict-content .green, .home-content .nwc-content .green, .nwc-content .home-content .green, .study-content .nwc-content .green, .nwc-content .study-content .green, .nwc-content .green, .blog-content .nwc-content .green, .nwc-content .blog-content .green, .dict-content .blog-content .green, .blog-content .dict-content .green, .home-content .blog-content .green, .blog-content .home-content .green, .study-content .blog-content .green, .blog-content .study-content .green, .nwc-content .blog-content .green, .blog-content .nwc-content .green, .blog-content .green, .dict-content .blue, .home-content .dict-content .blue, .dict-content .home-content .blue, .study-content .dict-content .blue, .dict-content .study-content .blue, .nwc-content .dict-content .blue, .dict-content .nwc-content .blue, .blog-content .dict-content .blue, .dict-content .blog-content .blue, .dict-content .home-content .blue, .home-content .dict-content .blue, .home-content .blue, .study-content .home-content .blue, .home-content .study-content .blue, .nwc-content .home-content .blue, .home-content .nwc-content .blue, .blog-content .home-content .blue, .home-content .blog-content .blue, .dict-content .study-content .blue, .study-content .dict-content .blue, .home-content .study-content .blue, .study-content .home-content .blue, .study-content .blue, .nwc-content .study-content .blue, .study-content .nwc-content .blue, .blog-content .study-content .blue, .study-content .blog-content .blue, .dict-content .nwc-content .blue, .nwc-content .dict-content .blue, .home-content .nwc-content .blue, .nwc-content .home-content .blue, .study-content .nwc-content .blue, .nwc-content .study-content .blue, .nwc-content .blue, .blog-content .nwc-content .blue, .nwc-content .blog-content .blue, .dict-content .blog-content .blue, .blog-content .dict-content .blue, .home-content .blog-content .blue, .blog-content .home-content .blue, .study-content .blog-content .blue, .blog-content .study-content .blue, .nwc-content .blog-content .blue, .blog-content .nwc-content .blue, .blog-content .blue, .dict-content .orange, .home-content .dict-content .orange, .dict-content .home-content .orange, .study-content .dict-content .orange, .dict-content .study-content .orange, .nwc-content .dict-content .orange, .dict-content .nwc-content .orange, .blog-content .dict-content .orange, .dict-content .blog-content .orange, .dict-content .home-content .orange, .home-content .dict-content .orange, .home-content .orange, .study-content .home-content .orange, .home-content .study-content .orange, .nwc-content .home-content .orange, .home-content .nwc-content .orange, .blog-content .home-content .orange, .home-content .blog-content .orange, .dict-content .study-content .orange, .study-content .dict-content .orange, .home-content .study-content .orange, .study-content .home-content .orange, .study-content .orange, .nwc-content .study-content .orange, .study-content .nwc-content .orange, .blog-content .study-content .orange, .study-content .blog-content .orange, .dict-content .nwc-content .orange, .nwc-content .dict-content .orange, .home-content .nwc-content .orange, .nwc-content .home-content .orange, .study-content .nwc-content .orange, .nwc-content .study-content .orange, .nwc-content .orange, .blog-content .nwc-content .orange, .nwc-content .blog-content .orange, .dict-content .blog-content .orange, .blog-content .dict-content .orange, .home-content .blog-content .orange, .blog-content .home-content .orange, .study-content .blog-content .orange, .blog-content .study-content .orange, .nwc-content .blog-content .orange, .blog-content .nwc-content .orange, .blog-content .orange, .dict-content .pink, .home-content .dict-content .pink, .dict-content .home-content .pink, .study-content .dict-content .pink, .dict-content .study-content .pink, .nwc-content .dict-content .pink, .dict-content .nwc-content .pink, .blog-content .dict-content .pink, .dict-content .blog-content .pink, .dict-content .home-content .pink, .home-content .dict-content .pink, .home-content .pink, .study-content .home-content .pink, .home-content .study-content .pink, .nwc-content .home-content .pink, .home-content .nwc-content .pink, .blog-content .home-content .pink, .home-content .blog-content .pink, .dict-content .study-content .pink, .study-content .dict-content .pink, .home-content .study-content .pink, .study-content .home-content .pink, .study-content .pink, .nwc-content .study-content .pink, .study-content .nwc-content .pink, .blog-content .study-content .pink, .study-content .blog-content .pink, .dict-content .nwc-content .pink, .nwc-content .dict-content .pink, .home-content .nwc-content .pink, .nwc-content .home-content .pink, .study-content .nwc-content .pink, .nwc-content .study-content .pink, .nwc-content .pink, .blog-content .nwc-content .pink, .nwc-content .blog-content .pink, .dict-content .blog-content .pink, .blog-content .dict-content .pink, .home-content .blog-content .pink, .blog-content .home-content .pink, .study-content .blog-content .pink, .blog-content .study-content .pink, .nwc-content .blog-content .pink, .blog-content .nwc-content .pink, .blog-content .pink, .dict-content .yellow, .home-content .dict-content .yellow, .dict-content .home-content .yellow, .study-content .dict-content .yellow, .dict-content .study-content .yellow, .nwc-content .dict-content .yellow, .dict-content .nwc-content .yellow, .blog-content .dict-content .yellow, .dict-content .blog-content .yellow, .dict-content .home-content .yellow, .home-content .dict-content .yellow, .home-content .yellow, .study-content .home-content .yellow, .home-content .study-content .yellow, .nwc-content .home-content .yellow, .home-content .nwc-content .yellow, .blog-content .home-content .yellow, .home-content .blog-content .yellow, .dict-content .study-content .yellow, .study-content .dict-content .yellow, .home-content .study-content .yellow, .study-content .home-content .yellow, .study-content .yellow, .nwc-content .study-content .yellow, .study-content .nwc-content .yellow, .blog-content .study-content .yellow, .study-content .blog-content .yellow, .dict-content .nwc-content .yellow, .nwc-content .dict-content .yellow, .home-content .nwc-content .yellow, .nwc-content .home-content .yellow, .study-content .nwc-content .yellow, .nwc-content .study-content .yellow, .nwc-content .yellow, .blog-content .nwc-content .yellow, .nwc-content .blog-content .yellow, .dict-content .blog-content .yellow, .blog-content .dict-content .yellow, .home-content .blog-content .yellow, .blog-content .home-content .yellow, .study-content .blog-content .yellow, .blog-content .study-content .yellow, .nwc-content .blog-content .yellow, .blog-content .nwc-content .yellow, .blog-content .yellow {
+  border-width: 2px;
+  min-width: 50px;
+}
+/* line 96, ../sass/_home.scss */
+.dict-content .green, .home-content .green, .study-content .green, .nwc-content .green, .blog-content .green {
+  border-color: #92FF6E;
+}
+/* line 101, ../sass/_home.scss */
+.dict-content .blue, .home-content .blue, .study-content .blue, .nwc-content .blue, .blog-content .blue {
+  border-color: #32CFE0;
+}
+/* line 106, ../sass/_home.scss */
+.dict-content .orange, .home-content .orange, .study-content .orange, .nwc-content .orange, .blog-content .orange {
+  border-color: #DD9833;
+}
+/* line 111, ../sass/_home.scss */
+.dict-content .pink, .home-content .pink, .study-content .pink, .nwc-content .pink, .blog-content .pink {
+  border-color: #C66F61;
+}
+/* line 116, ../sass/_home.scss */
+.dict-content .yellow, .home-content .yellow, .study-content .yellow, .nwc-content .yellow, .blog-content .yellow {
+  border-color: #F7E4B6;
+}
+
+/* line 130, ../sass/_home.scss */
+.home-content {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-height: 500px), screen and (max-width: 768px) {
+  /* line 148, ../sass/_home.scss */
+  .dict-content, .home-content, .study-content, .nwc-content, .blog-content {
+    margin: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+  }
+  /* line 156, ../sass/_home.scss */
+  .dict-content h1, .home-content h1, .study-content h1, .nwc-content h1, .blog-content h1 {
+    font-size: 2.75em;
+  }
+  /* line 161, ../sass/_home.scss */
+  .dict-content p, .home-content p, .study-content p, .nwc-content p, .blog-content p {
+    font-size: 1.5rem;
+  }
+}
+/* line 2, ../sass/_works.scss */
+.works-container {
+  position: relative;
+  width: 100vw;
+  background-color: #1A1A1A;
+}
+
+/* line 10, ../sass/_works.scss */
+.works-header {
+  text-align: center;
+}
+/* line 14, ../sass/_works.scss */
+.works-header p {
+  font-family: 'Palanquin', sans-serif;
+  font-weight: 100;
+  color: #E6E6E6;
+}
+/* line 20, ../sass/_works.scss */
+.works-header p.header {
+  font-size: 2.25rem;
+}
+/* line 24, ../sass/_works.scss */
+.works-header p.pronounce {
+  position: relative;
+  top: -5px;
+  font-size: 1.45rem;
+  color: #B1B1B1;
+}
+
+/* line 33, ../sass/_works.scss */
+.works-row {
+  text-align: center;
+  padding: 0;
+}
+
+/* line 38, ../sass/_works.scss */
+.tile {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  transition: .5s ease;
+}
+/* line 26, ../sass/styles.scss */
+.tile:hover, .tile:focus, .tile:active {
+  background-color: #32CFE0;
+  transform: scale(1.03);
+  transition: .5s ease;
+}
+/* line 51, ../sass/_works.scss */
+.tile p {
+  font-family: 'Rozha One', serif;
+  position: absolute;
+  font-size: 18px;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .5s ease;
+}
+/* line 64, ../sass/_works.scss */
+.tile img {
+  opacity: 1;
+  transition: .5s ease;
+}
+
+/* line 72, ../sass/_works.scss */
+.tile:hover p, .tile:focus p, .tile:active p {
+  opacity: 1;
+}
+/* line 75, ../sass/_works.scss */
+.tile:hover img, .tile:focus img, .tile:active img {
+  opacity: 0;
+}
+
+@media (max-width: 960px) {
+  /* line 88, ../sass/_works.scss */
+  .tile {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 97, ../sass/_works.scss */
+  .tile {
+    width: 250px;
+    height: 250px;
+  }
+}
+/* line 2, ../sass/_case-study.scss */
+.study-container, .nwc-container {
+  padding: 0;
+}
+/* line 5, ../sass/_case-study.scss */
+.study-container .row, .nwc-container .row {
+  margin: 0;
+}
+
+/* line 11, ../sass/_case-study.scss */
+.study-row {
+  text-align: center;
+}
+
+/* line 15, ../sass/_case-study.scss */
+.study-tile {
+  display: inline-block;
+}
+
+/* line 19, ../sass/_case-study.scss */
+.study-image-wrapper {
+  max-height: 1000px;
+  max-width: 1000px;
+}
+
+/* line 24, ../sass/_case-study.scss */
+.study-image {
+  width: 400px;
+  height: 400px;
+}
+
+/* line 31, ../sass/_case-study.scss */
+.study-content, .nwc-content {
+  position: relative;
+  text-align: left;
+}
+/* line 38, ../sass/_case-study.scss */
+.study-content h1, .nwc-content h1 {
+  font-size: 4.5em;
+  color: #E6E6E6;
+  font-family: 'Istok Web', sans-serif;
+}
+/* line 45, ../sass/_case-study.scss */
+.study-content p, .nwc-content p {
+  font-family: 'Palanquin', sans-serif;
+  font-size: 1.66rem;
+  font-weight: 200;
+}
+/* line 52, ../sass/_case-study.scss */
+.study-content p.pronounce, .nwc-content p.pronounce {
+  color: #F7E4B6;
+}
+/* line 57, ../sass/_case-study.scss */
+.study-content p.verb, .nwc-content p.verb {
+  color: #F7E4B6;
+  font-style: italic;
+}
+/* line 63, ../sass/_case-study.scss */
+.study-content .description, .nwc-content .description {
+  color: #E6E6E6;
+}
+/* line 68, ../sass/_case-study.scss */
+.study-content p.description, .nwc-content p.description {
+  position: relative;
+  width: 100%;
+}
+/* line 74, ../sass/_case-study.scss */
+.study-content span.description, .nwc-content span.description {
+  float: left;
+}
+/* line 80, ../sass/_case-study.scss */
+.study-content .skills-header, .nwc-content .skills-header {
+  margin-top: 25px;
+  color: #E6E6E6;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+/* line 88, ../sass/_case-study.scss */
+.study-content .skills, .nwc-content .skills {
+  overflow: auto;
+  padding-top: 10px;
+}
+/* line 92, ../sass/_case-study.scss */
+.study-content .skills p, .nwc-content .skills p {
+  float: left;
+  border-style: solid;
+  border-radius: 25px;
+  padding: 5px;
+  margin-right: 5px;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #E6E6E6;
+}
+/* line 106, ../sass/_case-study.scss */
+.study-content .border, .nwc-content .border, .study-content .green, .nwc-content .green, .study-content .blue, .nwc-content .blue, .study-content .orange, .nwc-content .orange, .study-content .pink, .nwc-content .pink, .study-content .yellow, .nwc-content .yellow {
+  border-width: 2px;
+  min-width: 50px;
+}
+/* line 111, ../sass/_case-study.scss */
+.study-content .green, .nwc-content .green {
+  border-color: #92FF6E;
+}
+/* line 116, ../sass/_case-study.scss */
+.study-content .blue, .nwc-content .blue {
+  border-color: #32CFE0;
+}
+/* line 121, ../sass/_case-study.scss */
+.study-content .orange, .nwc-content .orange {
+  border-color: #DD9833;
+}
+
+/* line 130, ../sass/_case-study.scss */
+.nwc-container {
+  background-color: #C66F61;
+}
+/* line 134, ../sass/_case-study.scss */
+.nwc-container .row {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  /* line 154, ../sass/_case-study.scss */
+  .study-content h1, .nwc-content h1 {
+    font-size: 2.75em;
+  }
+  /* line 159, ../sass/_case-study.scss */
+  .study-content p, .nwc-content p {
+    font-size: 1.5rem;
+  }
+}
+/* line 7, ../sass/_blog.scss */
+.blog-content {
+  margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(0%, 0%);
+}
+
+@media only screen and (max-height: 500px), screen and (max-width: 768px) {
+  /* line 22, ../sass/_blog.scss */
+  .blog-content h1 {
+    font-size: 2.75em;
+  }
+  /* line 27, ../sass/_blog.scss */
+  .blog-content p {
+    font-size: 1.5rem;
+  }
+}
+/* line 1, ../sass/_menu-icon.scss */
+.site-menu-icon {
+  /* right:0 */
+  /* border: 1px solid black; */
+}
+
+/* line 6, ../sass/_menu-icon.scss */
+.site-menu-icon .menu-toggle-bar {
+  background: #fff;
+  height: 4px;
+  left: 0;
+  margin-top: -2px;
+  position: absolute;
+  width: 20px;
+  -webkit-transition-property: -webkit-transform, margin-top, visibility;
+  transition-property: transform, margin-top, visibility;
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+  -webkit-transition-delay: 0, 400ms, 400ms;
+  transition-delay: 0, 400ms, 400ms;
+}
+
+/* line 28, ../sass/_menu-icon.scss */
+.site-menu-icon .menu-toggle-top {
+  margin-top: -11px;
+}
+
+/* line 31, ../sass/_menu-icon.scss */
+.site-menu-icon .menu-toggle-bottom {
+  margin-top: 7px;
+}
+
+/* line 34, ../sass/_menu-icon.scss */
+.site-menu-icon.toggle-close .menu-toggle-bar {
+  margin-top: -2px;
+  -webkit-transition-property: margin-top, -webkit-transform;
+  transition-property: margin-top, transform;
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+  -webkit-transition-delay: 0, 400ms;
+  transition-delay: 0, 400ms;
+}
+
+/* line 47, ../sass/_menu-icon.scss */
+.site-menu-icon.toggle-close .menu-toggle-middle {
+  visibility: hidden;
+}
+
+/* line 50, ../sass/_menu-icon.scss */
+.site-menu-icon.toggle-close .menu-toggle-top {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 55, ../sass/_menu-icon.scss */
+.site-menu-icon.toggle-close .menu-toggle-bottom {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* unvisited link */
+/* line 42, ../sass/styles.scss */
+a, a:link, a:visited {
+  color: #E6E6E6;
+}
+
+/* line 48, ../sass/styles.scss */
+.page {
+  position: absolute;
+}
+
+/* line 53, ../sass/styles.scss */
+.page-home {
+  background-color: #E7E7E7;
+  width: 100vw;
+}
+
+/* line 54, ../sass/styles.scss */
+.page-contact {
+  background-color: #66DF4C;
+}
+
+/* line 55, ../sass/styles.scss */
+.page-about {
+  background-color: #506AC0;
+}
+
+/* line 56, ../sass/styles.scss */
+.page-nwc {
+  background-color: #C66F61;
+}
+
+/* line 59, ../sass/styles.scss */
+.nav {
+  width: 100vw;
+  padding: 25px 25px 0px;
+}
+/* line 63, ../sass/styles.scss */
+.nav ul > li {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  display: inline;
+  font-size: 1.75rem;
+  margin-left: 3rem;
+  color: #E6E6E6;
+}
+
+/* line 73, ../sass/styles.scss */
+.nav-list {
+  float: right;
+}
+
+/* line 77, ../sass/styles.scss */
+.mobile-nav-btn {
+  visibility: hidden;
+  width: 40px;
+  height: 40px;
+  background-color: #DD9833;
+}
+
+/* line 84, ../sass/styles.scss */
+.mobile-nav {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 91, ../sass/styles.scss */
+  .nav {
+    padding: 1rem 1rem 0;
+  }
+
+  /* line 95, ../sass/styles.scss */
+  .desktop-nav {
+    visibility: hidden;
+  }
+
+  /* line 99, ../sass/styles.scss */
+  .mobile-nav-btn {
+    visibility: visible;
+  }
+
+  /* line 103, ../sass/styles.scss */
+  .mobile-nav {
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 50vh;
+    background-color: #92FF6E;
+  }
+
+  /* line 111, ../sass/styles.scss */
+  .nav-list {
+    float: none;
+    padding-right: 40px;
+    text-align: center;
+  }
+
+  /* line 117, ../sass/styles.scss */
+  .nav {
+    width: 100vw;
+    padding: 25px 25px 0px;
+  }
+  /* line 121, ../sass/styles.scss */
+  .nav ul > li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    display: inline;
+    font-size: 1.4rem;
+    margin: 1.5rem;
+    color: #E6E6E6;
+  }
+}

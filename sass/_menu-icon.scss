@@ -1,0 +1,59 @@
+.site-menu-icon {
+
+        /* right:0 */
+    /* border: 1px solid black; */
+}
+.site-menu-icon .menu-toggle-bar {
+    background:#fff;
+    height:4px;
+    left:0;
+    margin-top:-2px;
+    position:absolute;
+    width:20px;
+    -webkit-transition-property:-webkit-transform,
+    margin-top,
+    visibility;
+    transition-property:transform,
+    margin-top,
+    visibility;
+    -webkit-transition-duration:400ms;
+    transition-duration:400ms;
+    -webkit-transition-delay:0,
+    400ms,
+    400ms;
+    transition-delay:0,
+    400ms,
+    400ms
+}
+.site-menu-icon .menu-toggle-top {
+    margin-top:-11px
+}
+.site-menu-icon .menu-toggle-bottom {
+    margin-top:7px
+}
+.site-menu-icon.toggle-close .menu-toggle-bar {
+    margin-top:-2px;
+    -webkit-transition-property:margin-top,
+    -webkit-transform;
+    transition-property:margin-top,
+    transform;
+    -webkit-transition-duration:400ms;
+    transition-duration:400ms;
+    -webkit-transition-delay:0,
+    400ms;
+    transition-delay:0,
+    400ms
+}
+.site-menu-icon.toggle-close .menu-toggle-middle {
+    visibility:hidden
+}
+.site-menu-icon.toggle-close .menu-toggle-top {
+    -ms-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg)
+}
+.site-menu-icon.toggle-close .menu-toggle-bottom {
+    -ms-transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    transform:rotate(-45deg)
+}

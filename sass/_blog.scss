@@ -1,0 +1,31 @@
+// Blog container
+.blog-container {
+    @extend .dict-container;
+
+}
+
+.blog-content {
+    @extend .dict-content;
+    margin: auto;
+    position: relative;
+    top: 0; 
+    left: 0;
+    transform: translate(0%,0%);    
+}
+
+
+@media only screen and (max-height: 500px), screen and (max-width: 768px) {
+    // Home Page Content
+    .blog-content {
+
+    // Header Settings
+        h1 {
+            font-size: 2.75em;
+        }
+
+    // Paragraph Settings 
+        p {
+            font-size: 1.5rem;
+        }    
+    }
+}
