@@ -39,16 +39,17 @@
   display: inline-block;
   width: 400px;
   height: 400px;
-  margin: 20px;
+  margin: 35px;
   transition: .5s ease;
 
+/*
     @include hover-focus-active {
       background-color: $blue;
       transform: scale(1.03);
       transition: .5s ease;
     }
-  
-  p {
+
+   p {
     font-family: 'Rozha One', serif;
     position: absolute;
     font-size: 18px;
@@ -57,8 +58,18 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
+    opacity: 1;
     transition: .5s ease;
+  }
+
+    */
+  
+  p {
+    font-family: 'Rozha One', serif;
+    font-size: 18px;
+    opacity: 1;
+    transition: .5s ease;
+    color: $white;
   }
 
   img {
@@ -67,6 +78,7 @@
   }
 }
 
+/*
 .tile {
   @include hover-focus-active {
     p {
@@ -77,7 +89,11 @@
     }
   }
 }
+*/
 
+.tile-caption {
+
+}
 
 
 // Media Queries // Media Queries // Media Queries // Media Queries 

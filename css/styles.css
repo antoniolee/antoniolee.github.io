@@ -247,52 +247,65 @@
   display: inline-block;
   width: 400px;
   height: 400px;
-  margin: 20px;
+  margin: 35px;
   transition: .5s ease;
+  /*
+      @include hover-focus-active {
+        background-color: $blue;
+        transform: scale(1.03);
+        transition: .5s ease;
+      }
+  
+     p {
+      font-family: 'Rozha One', serif;
+      position: absolute;
+      font-size: 18px;
+      margin: 0;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      transition: .5s ease;
+    }
+  
+      */
 }
-/* line 26, ../sass/styles.scss */
-.tile:hover, .tile:focus, .tile:active {
-  background-color: #32CFE0;
-  transform: scale(1.03);
-  transition: .5s ease;
-}
-/* line 51, ../sass/_works.scss */
+/* line 67, ../sass/_works.scss */
 .tile p {
   font-family: 'Rozha One', serif;
-  position: absolute;
   font-size: 18px;
-  margin: 0;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
+  opacity: 1;
   transition: .5s ease;
+  color: #E6E6E6;
 }
-/* line 64, ../sass/_works.scss */
+/* line 75, ../sass/_works.scss */
 .tile img {
   opacity: 1;
   transition: .5s ease;
 }
 
-/* line 72, ../sass/_works.scss */
-.tile:hover p, .tile:focus p, .tile:active p {
-  opacity: 1;
+/*
+.tile {
+  @include hover-focus-active {
+    p {
+      opacity: 1;
+    }
+   img {
+      opacity: 0;
+    }
+  }
 }
-/* line 75, ../sass/_works.scss */
-.tile:hover img, .tile:focus img, .tile:active img {
-  opacity: 0;
-}
-
+*/
 @media (max-width: 960px) {
-  /* line 88, ../sass/_works.scss */
+  /* line 104, ../sass/_works.scss */
   .tile {
     width: 300px;
     height: 300px;
   }
 }
 @media (max-width: 768px) {
-  /* line 97, ../sass/_works.scss */
+  /* line 113, ../sass/_works.scss */
   .tile {
     width: 250px;
     height: 250px;
@@ -517,38 +530,43 @@ a, a:link, a:visited {
   color: #E6E6E6;
 }
 
-/* line 48, ../sass/styles.scss */
+/* line 47, ../sass/styles.scss */
+a:hover {
+  color: #32CFE0;
+}
+
+/* line 52, ../sass/styles.scss */
 .page {
   position: absolute;
 }
 
-/* line 53, ../sass/styles.scss */
+/* line 57, ../sass/styles.scss */
 .page-home {
   background-color: #E7E7E7;
   width: 100vw;
 }
 
-/* line 54, ../sass/styles.scss */
+/* line 58, ../sass/styles.scss */
 .page-contact {
   background-color: #66DF4C;
 }
 
-/* line 55, ../sass/styles.scss */
+/* line 59, ../sass/styles.scss */
 .page-about {
   background-color: #506AC0;
 }
 
-/* line 56, ../sass/styles.scss */
+/* line 60, ../sass/styles.scss */
 .page-nwc {
   background-color: #C66F61;
 }
 
-/* line 59, ../sass/styles.scss */
+/* line 63, ../sass/styles.scss */
 .nav {
   width: 100vw;
   padding: 25px 25px 0px;
 }
-/* line 63, ../sass/styles.scss */
+/* line 67, ../sass/styles.scss */
 .nav ul > li {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -558,12 +576,12 @@ a, a:link, a:visited {
   color: #E6E6E6;
 }
 
-/* line 73, ../sass/styles.scss */
+/* line 77, ../sass/styles.scss */
 .nav-list {
   float: right;
 }
 
-/* line 77, ../sass/styles.scss */
+/* line 81, ../sass/styles.scss */
 .mobile-nav-btn {
   visibility: hidden;
   width: 40px;
@@ -571,28 +589,28 @@ a, a:link, a:visited {
   background-color: #DD9833;
 }
 
-/* line 84, ../sass/styles.scss */
+/* line 88, ../sass/styles.scss */
 .mobile-nav {
   visibility: hidden;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 91, ../sass/styles.scss */
+  /* line 95, ../sass/styles.scss */
   .nav {
     padding: 1rem 1rem 0;
   }
 
-  /* line 95, ../sass/styles.scss */
+  /* line 99, ../sass/styles.scss */
   .desktop-nav {
     visibility: hidden;
   }
 
-  /* line 99, ../sass/styles.scss */
+  /* line 103, ../sass/styles.scss */
   .mobile-nav-btn {
     visibility: visible;
   }
 
-  /* line 103, ../sass/styles.scss */
+  /* line 107, ../sass/styles.scss */
   .mobile-nav {
     position: absolute;
     z-index: 10;
@@ -601,19 +619,19 @@ a, a:link, a:visited {
     background-color: #92FF6E;
   }
 
-  /* line 111, ../sass/styles.scss */
+  /* line 115, ../sass/styles.scss */
   .nav-list {
     float: none;
     padding-right: 40px;
     text-align: center;
   }
 
-  /* line 117, ../sass/styles.scss */
+  /* line 121, ../sass/styles.scss */
   .nav {
     width: 100vw;
     padding: 25px 25px 0px;
   }
-  /* line 121, ../sass/styles.scss */
+  /* line 125, ../sass/styles.scss */
   .nav ul > li {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
