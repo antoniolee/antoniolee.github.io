@@ -297,6 +297,11 @@
   }
 }
 */
+/* line 94, ../sass/_works.scss */
+.works-footer {
+  height: 125px;
+}
+
 @media (max-width: 960px) {
   /* line 104, ../sass/_works.scss */
   .tile {
