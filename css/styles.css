@@ -8,6 +8,31 @@
    border: 1px solid red !important;
 }
 */
+/* line 22, ../sass/styles.scss */
+.green {
+  color: #92FF6E;
+}
+
+/* line 23, ../sass/styles.scss */
+.blue {
+  color: #32CFE0;
+}
+
+/* line 24, ../sass/styles.scss */
+.orange {
+  color: #DD9833;
+}
+
+/* line 25, ../sass/styles.scss */
+.yellow {
+  color: #F7E4B6;
+}
+
+/* line 26, ../sass/styles.scss */
+.gray {
+  color: #B1B1B1;
+}
+
 /* Page Transition Effects */
 /* line 3, ../sass/_page-transitions.scss */
 .page.ng-leave {
@@ -250,12 +275,6 @@
   margin: 35px;
   transition: .5s ease;
   /*
-      @include hover-focus-active {
-        background-color: $blue;
-        transform: scale(1.03);
-        transition: .5s ease;
-      }
-  
      p {
       font-family: 'Rozha One', serif;
       position: absolute;
@@ -271,46 +290,44 @@
   
       */
 }
-/* line 67, ../sass/_works.scss */
+/* line 61, ../sass/_works.scss */
 .tile p {
   font-family: 'Rozha One', serif;
   font-size: 18px;
   opacity: 1;
   transition: .5s ease;
-  color: #E6E6E6;
+  color: #B1B1B1;
 }
-/* line 75, ../sass/_works.scss */
+/* line 69, ../sass/_works.scss */
 .tile img {
   opacity: 1;
   transition: .5s ease;
 }
 
-/*
-.tile {
-  @include hover-focus-active {
-    p {
-      opacity: 1;
-    }
-   img {
-      opacity: 0;
-    }
-  }
+/* line 32, ../sass/styles.scss */
+.tile:hover, .tile:focus, .tile:active {
+  transform: scale(1.03);
+  transition: .5s ease;
 }
-*/
-/* line 94, ../sass/_works.scss */
+/* line 80, ../sass/_works.scss */
+.tile:hover p, .tile:focus p, .tile:active p {
+  color: #E6E6E6;
+}
+
+/* line 86, ../sass/_works.scss */
 .works-footer {
   height: 125px;
 }
 
 @media (max-width: 960px) {
-  /* line 104, ../sass/_works.scss */
+  /* line 96, ../sass/_works.scss */
   .tile {
     width: 300px;
     height: 300px;
   }
 }
 @media (max-width: 768px) {
-  /* line 113, ../sass/_works.scss */
+  /* line 105, ../sass/_works.scss */
   .tile {
     width: 250px;
     height: 250px;
@@ -530,48 +547,50 @@
 }
 
 /* unvisited link */
-/* line 42, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 a, a:link, a:visited {
   color: #E6E6E6;
+  transition: .5s ease;
 }
 
-/* line 47, ../sass/styles.scss */
-a:hover {
+/* line 32, ../sass/styles.scss */
+a:hover, a:focus, a:active {
   color: #32CFE0;
+  font-size: 1.85rem;
 }
 
-/* line 52, ../sass/styles.scss */
+/* line 62, ../sass/styles.scss */
 .page {
   position: absolute;
 }
 
-/* line 57, ../sass/styles.scss */
+/* line 67, ../sass/styles.scss */
 .page-home {
   background-color: #E7E7E7;
   width: 100vw;
 }
 
-/* line 58, ../sass/styles.scss */
+/* line 68, ../sass/styles.scss */
 .page-contact {
   background-color: #66DF4C;
 }
 
-/* line 59, ../sass/styles.scss */
+/* line 69, ../sass/styles.scss */
 .page-about {
   background-color: #506AC0;
 }
 
-/* line 60, ../sass/styles.scss */
+/* line 70, ../sass/styles.scss */
 .page-nwc {
   background-color: #C66F61;
 }
 
-/* line 63, ../sass/styles.scss */
+/* line 73, ../sass/styles.scss */
 .nav {
   width: 100vw;
   padding: 25px 25px 0px;
 }
-/* line 67, ../sass/styles.scss */
+/* line 77, ../sass/styles.scss */
 .nav ul > li {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -581,12 +600,12 @@ a:hover {
   color: #E6E6E6;
 }
 
-/* line 77, ../sass/styles.scss */
+/* line 87, ../sass/styles.scss */
 .nav-list {
   float: right;
 }
 
-/* line 81, ../sass/styles.scss */
+/* line 91, ../sass/styles.scss */
 .mobile-nav-btn {
   visibility: hidden;
   width: 40px;
@@ -594,28 +613,28 @@ a:hover {
   background-color: #DD9833;
 }
 
-/* line 88, ../sass/styles.scss */
+/* line 98, ../sass/styles.scss */
 .mobile-nav {
   visibility: hidden;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 95, ../sass/styles.scss */
+  /* line 105, ../sass/styles.scss */
   .nav {
     padding: 1rem 1rem 0;
   }
 
-  /* line 99, ../sass/styles.scss */
+  /* line 109, ../sass/styles.scss */
   .desktop-nav {
     visibility: hidden;
   }
 
-  /* line 103, ../sass/styles.scss */
+  /* line 113, ../sass/styles.scss */
   .mobile-nav-btn {
     visibility: visible;
   }
 
-  /* line 107, ../sass/styles.scss */
+  /* line 117, ../sass/styles.scss */
   .mobile-nav {
     position: absolute;
     z-index: 10;
@@ -624,19 +643,19 @@ a:hover {
     background-color: #92FF6E;
   }
 
-  /* line 115, ../sass/styles.scss */
+  /* line 125, ../sass/styles.scss */
   .nav-list {
     float: none;
     padding-right: 40px;
     text-align: center;
   }
 
-  /* line 121, ../sass/styles.scss */
+  /* line 131, ../sass/styles.scss */
   .nav {
     width: 100vw;
     padding: 25px 25px 0px;
   }
-  /* line 125, ../sass/styles.scss */
+  /* line 135, ../sass/styles.scss */
   .nav ul > li {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;

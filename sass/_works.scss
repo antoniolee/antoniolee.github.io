@@ -43,12 +43,6 @@
   transition: .5s ease;
 
 /*
-    @include hover-focus-active {
-      background-color: $blue;
-      transform: scale(1.03);
-      transition: .5s ease;
-    }
-
    p {
     font-family: 'Rozha One', serif;
     position: absolute;
@@ -69,7 +63,7 @@
     font-size: 18px;
     opacity: 1;
     transition: .5s ease;
-    color: $white;
+    color: $light-gray;
   }
 
   img {
@@ -78,18 +72,16 @@
   }
 }
 
-/*
 .tile {
   @include hover-focus-active {
+    transform: scale(1.03);
+    transition: .5s ease;
+
     p {
-      opacity: 1;
-    }
-   img {
-      opacity: 0;
+      color: $white;
     }
   }
 }
-*/
 
 .works-footer {
   height: 125px;

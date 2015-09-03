@@ -19,6 +19,12 @@ $orange: #DD9833;
 $dark-pink: #C66F61;
 $nwc-yellow: #F7E4B6;
 
+.green { color: $green; }
+.blue { color: $blue; }
+.orange { color: $orange; }
+.yellow { color: $nwc-yellow; }
+.gray { color: $light-gray;}
+
 //Fonts
 $nav-font-size: 1.75rem;
 
@@ -42,10 +48,14 @@ $nav-font-size: 1.75rem;
 a,a:link,a:visited
 {
  color:$white;
+ transition: .5s ease;
 }
 
-a:hover {
-  color:$blue;
+a {
+  @include hover-focus-active {
+    color:$blue;
+    font-size: $nav-font-size + .1;
+  }
 }
 
 // Page Settings
