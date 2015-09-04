@@ -64,11 +64,11 @@ a {
 
 // Page Settings
 .page {
-	position:absolute;
+  width: 100%;
 }
 
 // Page Specific Settings
-.page-home { background-color: #E7E7E7; width: 100vw}
+.page-home { background-color: #E7E7E7; }
 .page-contact { background-color: #66DF4C; }
 .page-about { background-color: #506AC0; }
 .page-nwc { background-color: #C66F61 }
@@ -76,7 +76,7 @@ a {
 // Default Nav Bar
 .nav {
     width: 100vw;
-    padding: 25px 25px 0px;
+    padding: 25px 25px 25px 0px;
     
     ul > li {
         font-family: 'Open Sans', sans-serif;
