@@ -6,6 +6,7 @@ $padding: 20px;
 
 .dict-container {
     min-height: 100vh;
+    width: 100vw;
     position: relative;
     background-color: $dark-gray;   
 }
@@ -130,10 +131,10 @@ $padding: 20px;
 .home-content {
     @extend .dict-content;
     margin: auto;
-    position: absolute;
+    position:absolute;
     top: 50%; 
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);    
 }
 
 // Media Queries
@@ -141,6 +142,12 @@ $padding: 20px;
     .home-container {
 
     }
+}
+
+// Home Contact
+
+.home-contact {
+    height: 640px;
 }
 
 @media only screen and (max-height: 500px), screen and (max-width: 768px) {
