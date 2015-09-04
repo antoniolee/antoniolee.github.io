@@ -26,7 +26,12 @@ $nwc-yellow: #F7E4B6;
 .gray { color: $light-gray;}
 
 //Fonts
+html {
+
+}
+
 $nav-font-size: 1.75rem;
+
 
 @mixin hover-focus-active() {
   &:hover,
@@ -53,7 +58,6 @@ a,a:link,a:visited
 
 a {
   @include hover-focus-active {
-    color:$blue;
     font-size: $nav-font-size + .1;
   }
 }

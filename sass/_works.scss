@@ -59,11 +59,11 @@
     */
   
   p {
-    font-family: 'Rozha One', serif;
-    font-size: 18px;
+    font-family: 'Open Sans', serif;
+    font-size: 1.25em;
     opacity: 1;
     transition: .5s ease;
-    color: $light-gray;
+    color: $white;
   }
 
   img {
@@ -80,6 +80,7 @@
     p {
       color: $white;
     }
+
   }
 }
 
