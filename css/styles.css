@@ -104,58 +104,60 @@
 }
 
 /* line 7, ../sass/_home.scss */
-.dict-container, .home-container, .blog-container {
-  width: 100%;
-  position: relative;
-  background-image: url("images/home-cover.png");
+#cover {
+  background-image: url("../images/home-cover.png");
   background-size: cover;
 }
 
-/* line 15, ../sass/_home.scss */
+/* line 12, ../sass/_home.scss */
+.dict-container, .home-container, .blog-container {
+  width: 100%;
+  position: relative;
+}
+
+/* line 18, ../sass/_home.scss */
 .dict-content, .home-content, .study-content, .nwc-content, .blog-content {
   padding: 0 35px;
   min-width: 300px;
   max-width: 660px;
-  margin: auto;
-  /* Center the item vertically & horizontally */
 }
-/* line 23, ../sass/_home.scss */
+/* line 26, ../sass/_home.scss */
 .dict-content h1, .home-content h1, .study-content h1, .nwc-content h1, .blog-content h1 {
   font-size: 4.5em;
   color: #E6E6E6;
   font-family: 'Istok Web', sans-serif;
 }
-/* line 30, ../sass/_home.scss */
+/* line 33, ../sass/_home.scss */
 .dict-content p, .home-content p, .study-content p, .nwc-content p, .blog-content p {
   font-family: 'Palanquin', sans-serif;
   font-size: 1.66rem;
   font-weight: 200;
 }
-/* line 37, ../sass/_home.scss */
+/* line 40, ../sass/_home.scss */
 .dict-content p.pronounce, .home-content p.pronounce, .study-content p.pronounce, .nwc-content p.pronounce, .blog-content p.pronounce {
   color: #B1B1B1;
 }
-/* line 42, ../sass/_home.scss */
+/* line 45, ../sass/_home.scss */
 .dict-content p.verb, .home-content p.verb, .study-content p.verb, .nwc-content p.verb, .blog-content p.verb {
   color: #B1B1B1;
   font-style: italic;
 }
-/* line 48, ../sass/_home.scss */
+/* line 51, ../sass/_home.scss */
 .dict-content .description, .home-content .description, .study-content .description, .nwc-content .description, .blog-content .description {
   color: #E6E6E6;
 }
-/* line 53, ../sass/_home.scss */
+/* line 56, ../sass/_home.scss */
 .dict-content p.description, .home-content p.description, .study-content p.description, .nwc-content p.description, .blog-content p.description {
   position: relative;
   width: 100%;
 }
-/* line 59, ../sass/_home.scss */
+/* line 62, ../sass/_home.scss */
 .dict-content span.description, .home-content span.description, .study-content span.description, .nwc-content span.description, .blog-content span.description {
   float: left;
   position: absolute;
   left: 10px;
 }
-/* line 66, ../sass/_home.scss */
+/* line 69, ../sass/_home.scss */
 .dict-content .skills-header, .home-content .skills-header, .study-content .skills-header, .nwc-content .skills-header, .blog-content .skills-header {
   margin-top: 25px;
   color: #B1B1B1;
@@ -163,12 +165,12 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
-/* line 74, ../sass/_home.scss */
+/* line 77, ../sass/_home.scss */
 .dict-content .skills, .home-content .skills, .study-content .skills, .nwc-content .skills, .blog-content .skills {
   padding-top: 10px;
   overflow: auto;
 }
-/* line 78, ../sass/_home.scss */
+/* line 81, ../sass/_home.scss */
 .dict-content .skills p, .home-content .skills p, .study-content .skills p, .nwc-content .skills p, .blog-content .skills p {
   float: left;
   border-style: solid;
@@ -180,48 +182,46 @@
   font-weight: 300;
   color: #B1B1B1;
 }
-/* line 92, ../sass/_home.scss */
+/* line 95, ../sass/_home.scss */
 .dict-content .border, .home-content .border, .study-content .border, .nwc-content .border, .blog-content .border, .dict-content .green, .home-content .dict-content .green, .dict-content .home-content .green, .study-content .dict-content .green, .dict-content .study-content .green, .nwc-content .dict-content .green, .dict-content .nwc-content .green, .blog-content .dict-content .green, .dict-content .blog-content .green, .dict-content .home-content .green, .home-content .dict-content .green, .home-content .green, .study-content .home-content .green, .home-content .study-content .green, .nwc-content .home-content .green, .home-content .nwc-content .green, .blog-content .home-content .green, .home-content .blog-content .green, .dict-content .study-content .green, .study-content .dict-content .green, .home-content .study-content .green, .study-content .home-content .green, .study-content .green, .nwc-content .study-content .green, .study-content .nwc-content .green, .blog-content .study-content .green, .study-content .blog-content .green, .dict-content .nwc-content .green, .nwc-content .dict-content .green, .home-content .nwc-content .green, .nwc-content .home-content .green, .study-content .nwc-content .green, .nwc-content .study-content .green, .nwc-content .green, .blog-content .nwc-content .green, .nwc-content .blog-content .green, .dict-content .blog-content .green, .blog-content .dict-content .green, .home-content .blog-content .green, .blog-content .home-content .green, .study-content .blog-content .green, .blog-content .study-content .green, .nwc-content .blog-content .green, .blog-content .nwc-content .green, .blog-content .green, .dict-content .blue, .home-content .dict-content .blue, .dict-content .home-content .blue, .study-content .dict-content .blue, .dict-content .study-content .blue, .nwc-content .dict-content .blue, .dict-content .nwc-content .blue, .blog-content .dict-content .blue, .dict-content .blog-content .blue, .dict-content .home-content .blue, .home-content .dict-content .blue, .home-content .blue, .study-content .home-content .blue, .home-content .study-content .blue, .nwc-content .home-content .blue, .home-content .nwc-content .blue, .blog-content .home-content .blue, .home-content .blog-content .blue, .dict-content .study-content .blue, .study-content .dict-content .blue, .home-content .study-content .blue, .study-content .home-content .blue, .study-content .blue, .nwc-content .study-content .blue, .study-content .nwc-content .blue, .blog-content .study-content .blue, .study-content .blog-content .blue, .dict-content .nwc-content .blue, .nwc-content .dict-content .blue, .home-content .nwc-content .blue, .nwc-content .home-content .blue, .study-content .nwc-content .blue, .nwc-content .study-content .blue, .nwc-content .blue, .blog-content .nwc-content .blue, .nwc-content .blog-content .blue, .dict-content .blog-content .blue, .blog-content .dict-content .blue, .home-content .blog-content .blue, .blog-content .home-content .blue, .study-content .blog-content .blue, .blog-content .study-content .blue, .nwc-content .blog-content .blue, .blog-content .nwc-content .blue, .blog-content .blue, .dict-content .orange, .home-content .dict-content .orange, .dict-content .home-content .orange, .study-content .dict-content .orange, .dict-content .study-content .orange, .nwc-content .dict-content .orange, .dict-content .nwc-content .orange, .blog-content .dict-content .orange, .dict-content .blog-content .orange, .dict-content .home-content .orange, .home-content .dict-content .orange, .home-content .orange, .study-content .home-content .orange, .home-content .study-content .orange, .nwc-content .home-content .orange, .home-content .nwc-content .orange, .blog-content .home-content .orange, .home-content .blog-content .orange, .dict-content .study-content .orange, .study-content .dict-content .orange, .home-content .study-content .orange, .study-content .home-content .orange, .study-content .orange, .nwc-content .study-content .orange, .study-content .nwc-content .orange, .blog-content .study-content .orange, .study-content .blog-content .orange, .dict-content .nwc-content .orange, .nwc-content .dict-content .orange, .home-content .nwc-content .orange, .nwc-content .home-content .orange, .study-content .nwc-content .orange, .nwc-content .study-content .orange, .nwc-content .orange, .blog-content .nwc-content .orange, .nwc-content .blog-content .orange, .dict-content .blog-content .orange, .blog-content .dict-content .orange, .home-content .blog-content .orange, .blog-content .home-content .orange, .study-content .blog-content .orange, .blog-content .study-content .orange, .nwc-content .blog-content .orange, .blog-content .nwc-content .orange, .blog-content .orange, .dict-content .pink, .home-content .dict-content .pink, .dict-content .home-content .pink, .study-content .dict-content .pink, .dict-content .study-content .pink, .nwc-content .dict-content .pink, .dict-content .nwc-content .pink, .blog-content .dict-content .pink, .dict-content .blog-content .pink, .dict-content .home-content .pink, .home-content .dict-content .pink, .home-content .pink, .study-content .home-content .pink, .home-content .study-content .pink, .nwc-content .home-content .pink, .home-content .nwc-content .pink, .blog-content .home-content .pink, .home-content .blog-content .pink, .dict-content .study-content .pink, .study-content .dict-content .pink, .home-content .study-content .pink, .study-content .home-content .pink, .study-content .pink, .nwc-content .study-content .pink, .study-content .nwc-content .pink, .blog-content .study-content .pink, .study-content .blog-content .pink, .dict-content .nwc-content .pink, .nwc-content .dict-content .pink, .home-content .nwc-content .pink, .nwc-content .home-content .pink, .study-content .nwc-content .pink, .nwc-content .study-content .pink, .nwc-content .pink, .blog-content .nwc-content .pink, .nwc-content .blog-content .pink, .dict-content .blog-content .pink, .blog-content .dict-content .pink, .home-content .blog-content .pink, .blog-content .home-content .pink, .study-content .blog-content .pink, .blog-content .study-content .pink, .nwc-content .blog-content .pink, .blog-content .nwc-content .pink, .blog-content .pink, .dict-content .yellow, .home-content .dict-content .yellow, .dict-content .home-content .yellow, .study-content .dict-content .yellow, .dict-content .study-content .yellow, .nwc-content .dict-content .yellow, .dict-content .nwc-content .yellow, .blog-content .dict-content .yellow, .dict-content .blog-content .yellow, .dict-content .home-content .yellow, .home-content .dict-content .yellow, .home-content .yellow, .study-content .home-content .yellow, .home-content .study-content .yellow, .nwc-content .home-content .yellow, .home-content .nwc-content .yellow, .blog-content .home-content .yellow, .home-content .blog-content .yellow, .dict-content .study-content .yellow, .study-content .dict-content .yellow, .home-content .study-content .yellow, .study-content .home-content .yellow, .study-content .yellow, .nwc-content .study-content .yellow, .study-content .nwc-content .yellow, .blog-content .study-content .yellow, .study-content .blog-content .yellow, .dict-content .nwc-content .yellow, .nwc-content .dict-content .yellow, .home-content .nwc-content .yellow, .nwc-content .home-content .yellow, .study-content .nwc-content .yellow, .nwc-content .study-content .yellow, .nwc-content .yellow, .blog-content .nwc-content .yellow, .nwc-content .blog-content .yellow, .dict-content .blog-content .yellow, .blog-content .dict-content .yellow, .home-content .blog-content .yellow, .blog-content .home-content .yellow, .study-content .blog-content .yellow, .blog-content .study-content .yellow, .nwc-content .blog-content .yellow, .blog-content .nwc-content .yellow, .blog-content .yellow {
   border-width: 2px;
   min-width: 50px;
 }
-/* line 97, ../sass/_home.scss */
+/* line 100, ../sass/_home.scss */
 .dict-content .green, .home-content .green, .study-content .green, .nwc-content .green, .blog-content .green {
   border-color: #92FF6E;
 }
-/* line 102, ../sass/_home.scss */
+/* line 105, ../sass/_home.scss */
 .dict-content .blue, .home-content .blue, .study-content .blue, .nwc-content .blue, .blog-content .blue {
   border-color: #32CFE0;
 }
-/* line 107, ../sass/_home.scss */
+/* line 110, ../sass/_home.scss */
 .dict-content .orange, .home-content .orange, .study-content .orange, .nwc-content .orange, .blog-content .orange {
   border-color: #DD9833;
 }
-/* line 112, ../sass/_home.scss */
+/* line 115, ../sass/_home.scss */
 .dict-content .pink, .home-content .pink, .study-content .pink, .nwc-content .pink, .blog-content .pink {
   border-color: #C66F61;
 }
-/* line 117, ../sass/_home.scss */
+/* line 120, ../sass/_home.scss */
 .dict-content .yellow, .home-content .yellow, .study-content .yellow, .nwc-content .yellow, .blog-content .yellow {
   border-color: #F7E4B6;
 }
 
-/* line 131, ../sass/_home.scss */
+/* line 134, ../sass/_home.scss */
 .home-content {
-  margin: auto;
+  margin-left: 52%;
   position: relative;
-  top: 0;
-  left: 0;
-  transform: translate(0%, 0%);
   padding-top: 10vh;
   height: 100vh;
+  min-height: 500px;
 }
 
 /* line 152, ../sass/_home.scss */
 .home-contact {
   color: #E6E6E6;
   height: 380px;
-  background-color: #42837E;
+  background-color: #1A1A1A;
   text-align: center;
 }
 
@@ -274,43 +274,63 @@
   font-weight: 200;
 }
 
-@media only screen and (max-height: 500px), screen and (max-width: 768px) {
+@media only screen and (max-height: 500px), screen and (max-width: 950px) {
   /* line 207, ../sass/_home.scss */
   .home-content {
     padding-top: 5vh;
+    margin: auto;
+    overflow: auto;
+    overflow-y: hidden;
   }
-  /* line 211, ../sass/_home.scss */
+  /* line 214, ../sass/_home.scss */
   .home-content h1 {
     font-size: 2.75em;
   }
-  /* line 216, ../sass/_home.scss */
+  /* line 219, ../sass/_home.scss */
   .home-content p {
     font-size: 1.5rem;
   }
 
-  /* line 221, ../sass/_home.scss */
+  /* line 224, ../sass/_home.scss */
+  #cover {
+    background-image: url("../images/home-cover-dark.png");
+    background-size: cover;
+  }
+
+  /* line 229, ../sass/_home.scss */
   .contact-header {
     float: left;
     margin-top: 50px;
   }
 
-  /* line 226, ../sass/_home.scss */
+  /* line 234, ../sass/_home.scss */
   .home-contact {
     height: 450px;
     padding-left: 40px;
   }
 
-  /* line 231, ../sass/_home.scss */
+  /* line 239, ../sass/_home.scss */
   .contact-contact {
     position: relative;
     top: 0px;
   }
 
-  /* line 236, ../sass/_home.scss */
+  /* line 244, ../sass/_home.scss */
   .contact-tile {
     display: block;
     text-align: left;
-    margin: 20px;
+    margin: 0 20px 20px 20px;
+  }
+}
+@media only screen and (max-width: 443px) {
+  /* line 252, ../sass/_home.scss */
+  .home-content {
+    min-height: 700px;
+  }
+
+  /* line 256, ../sass/_home.scss */
+  #cover {
+    background-image: url("../images/home-cover-small.png");
   }
 }
 /* line 2, ../sass/_works.scss */

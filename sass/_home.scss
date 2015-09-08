@@ -4,11 +4,14 @@ $padding: 20px;
 
 // Dictionary Theme
 
+#cover {
+    background-image: url("../images/home-cover.png");
+    background-size: cover;
+}
+
 .dict-container {
     width: 100%;
     position: relative;
-    background-image: url("images/home-cover.png");
-    background-size: cover;
 }
 
 // Home Page Content
@@ -17,7 +20,7 @@ $padding: 20px;
     min-width: 300px;
     max-width: 660px;
  // overflow: auto; /* Recommended in case content is larger than the container */
-    margin: auto; /* Center the item vertically & horizontally */
+ //   margin: auto; /* Center the item vertically & horizontally */
 
 // Header Settings
     h1 {
@@ -130,14 +133,11 @@ $padding: 20px;
 
 .home-content {
     @extend .dict-content;
-        margin: auto;
+        margin-left: 52%;
         position: relative;
-        top: 0; 
-        left: 0;
-        transform: translate(0%,0%);    
         padding-top: 10vh;
         height: 100vh;
-
+        min-height: 500px;
 }
 
 // Media Queries
@@ -152,7 +152,7 @@ $padding: 20px;
 .home-contact {
     color: $white;
     height: 380px;
-    background-color: $teal;
+    background-color: $dark-gray;
     text-align: center;
 }
 
@@ -202,10 +202,13 @@ $padding: 20px;
 
 }
 
-@media only screen and (max-height: 500px), screen and (max-width: 768px) {
+@media only screen and (max-height: 500px), screen and (max-width: 950px) {
     // Home Page Content
     .home-content {
-        padding-top: 5vh;    
+        padding-top: 5vh;
+        margin: auto; 
+        overflow: auto;
+        overflow-y: hidden;
 
     // Header Settings
         h1 {
@@ -216,6 +219,11 @@ $padding: 20px;
         p {
             font-size: 1.5rem;
         }    
+    }
+
+    #cover {
+        background-image: url("../images/home-cover-dark.png");
+        background-size: cover;
     }
 
     .contact-header{
@@ -236,7 +244,17 @@ $padding: 20px;
     .contact-tile {
         display: block;
         text-align: left;
-        margin: 20px;
+        margin: 0 20px 20px 20px;
+    }
+}
+
+@media only screen and (max-width: 443px) {
+    .home-content {
+        min-height: 700px;
+    }
+
+    #cover {
+        background-image: url("../images/home-cover-small.png");
     }
 
 }
