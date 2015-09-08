@@ -105,7 +105,7 @@
 
 /* line 7, ../sass/_home.scss */
 #cover {
-  background-image: url("../images/home-cover.png");
+  background-image: url("../images/home-cover.jpg");
   background-size: cover;
 }
 
@@ -293,7 +293,7 @@
 
   /* line 224, ../sass/_home.scss */
   #cover {
-    background-image: url("../images/home-cover-dark.png");
+    background-image: url("../images/home-cover-dark.jpg");
     background-size: cover;
   }
 
@@ -330,7 +330,7 @@
 
   /* line 256, ../sass/_home.scss */
   #cover {
-    background-image: url("../images/home-cover-small.png");
+    background-image: url("../images/home-cover-small.jpg");
   }
 }
 /* line 2, ../sass/_works.scss */
