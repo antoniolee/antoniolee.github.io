@@ -13,18 +13,18 @@
 
     p {
         font-family: 'Palanquin', sans-serif;
-        font-weight: 100;
+        font-weight: 400;
         color: $white;
     }
 
     p.header {
-        font-size: 2.25rem;
+        font-size: 3rem;
     }
 
     p.pronounce {
         position: relative;
         top: -5px;
-        font-size: 1.45rem;
+        font-size: 1.75rem;
         color: $light-gray;
     }
 }
@@ -104,9 +104,21 @@
 @media (max-width: 768px) {
 
     .tile {
-        width: 250px;
-        height: 250px;
-    }
+          width: 250px;
+          height: 250px;
+      }
+
+      .works-header {
+
+      p.header {
+          font-size: 2.25rem;
+      }
+
+      p.pronounce {
+          font-size: 1.45rem;
+
+      }
+  }
 
 }
 

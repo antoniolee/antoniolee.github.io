@@ -53,13 +53,14 @@ $nav-font-size: 1.75rem;
 /* unvisited link */
 a,a:link,a:visited
 {
- color:$white;
+ color:$light-gray;
  transition: .5s ease;
 }
 
 a {
   @include hover-focus-active {
     font-size: $nav-font-size + .1;
+    color: $white;
   }
 }
 

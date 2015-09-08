@@ -5,13 +5,14 @@ $padding: 20px;
 // Dictionary Theme
 
 #cover {
-    background-image: url("../images/home-cover.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../images/home-cover.jpg");
     background-size: cover;
 }
 
 .dict-container {
     width: 100%;
     position: relative;
+    transition: .5s ease;
 }
 
 // Home Page Content
@@ -19,6 +20,7 @@ $padding: 20px;
     padding: 0 35px;
     min-width: 300px;
     max-width: 660px;
+    transition: .5s ease;
  // overflow: auto; /* Recommended in case content is larger than the container */
  //   margin: auto; /* Center the item vertically & horizontally */
 
@@ -190,6 +192,7 @@ $padding: 20px;
 .contact-info {
     font-size: 1.1em;
     font-weight: 200;
+    color: $teal;
 }
 
 .contact-reserved {
@@ -222,8 +225,7 @@ $padding: 20px;
     }
 
     #cover {
-        background-image: url("../images/home-cover-dark.jpg");
-        background-size: cover;
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../images/home-cover.jpg");
     }
 
     .contact-header{
@@ -254,8 +256,9 @@ $padding: 20px;
     }
 
     #cover {
-        background-image: url("../images/home-cover-small.jpg");
-    }
+        background: url("../images/home-cover-small.jpg");
+        background-size: cover;
+     }
 
 }
 
