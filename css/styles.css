@@ -107,7 +107,7 @@
 .dict-container, .home-container, .blog-container {
   width: 100%;
   position: relative;
-  background-image: url("images/cover-home.png");
+  background-image: url("images/home-cover.png");
   background-size: cover;
 }
 
