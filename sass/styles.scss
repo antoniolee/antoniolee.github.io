@@ -18,6 +18,7 @@ $blue: #32CFE0;
 $orange: #DD9833;
 $dark-pink: #C66F61;
 $nwc-yellow: #F7E4B6;
+$teal: #42837E;
 
 .green { color: $green; }
 .blue { color: $blue; }
@@ -75,8 +76,8 @@ a {
 
 // Default Nav Bar
 .nav {
-    width: 100vw;
-    padding: 25px 25px 25px 0px;
+    width: 100%;
+    padding: 1em 1.5em 0 0;
     
     ul > li {
         font-family: 'Open Sans', sans-serif;
@@ -106,10 +107,6 @@ a {
 @media only screen and (max-width: 768px) {
   $nav-font-size: 1rem;
 
-  .nav {
-    padding: 1rem 1rem 0;
-  }
-
   .desktop-nav {
     visibility: hidden;
   }
@@ -133,7 +130,7 @@ a {
   }
 
   .nav {
-    width: 100vw;
+    width: 100%;
     padding: 25px 25px 0px;
     
     ul > li {
