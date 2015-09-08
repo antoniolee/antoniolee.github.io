@@ -53,7 +53,7 @@ $nav-font-size: 1.75rem;
 /* unvisited link */
 a,a:link,a:visited
 {
- color:$light-gray;
+ color:$white;
  transition: .5s ease;
 }
 
@@ -104,6 +104,39 @@ a {
 .mobile-nav {
   visibility: hidden;
 }
+
+    .border { 
+        border-width: 2px;
+        min-width: 50px;
+    }
+
+    .green {
+        @extend .border;
+        border-color: $green;
+    }
+
+    .blue {
+        @extend .border;
+        border-color: $blue;
+    }
+
+    .orange {
+        @extend .border;
+        border-color: $orange;
+    }
+
+    .pink {
+        @extend .border;
+        border-color: $dark-pink;
+    }
+
+    .yellow {
+        @extend .border;
+        border-color: $nwc-yellow;
+    }
+
+
+
 
 @media only screen and (max-width: 768px) {
   $nav-font-size: 1rem;
