@@ -5,10 +5,11 @@ $padding: 20px;
 // Dictionary Theme
 
 .dict-container {
-    min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
-    background-color: $dark-gray;   
+    background: $dark-gray;
+    background-image: url("images/cover-home.png");
+    background-size: cover;
 }
 
 // Home Page Content
@@ -130,11 +131,14 @@ $padding: 20px;
 
 .home-content {
     @extend .dict-content;
-    margin: auto;
-    position:absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%,-50%);    
+        margin: auto;
+        position: relative;
+        top: 0; 
+        left: 0;
+        transform: translate(0%,0%);    
+        padding-top: 10vh;
+        height: 100vh;
+
 }
 
 // Media Queries
@@ -147,17 +151,62 @@ $padding: 20px;
 // Home Contact
 
 .home-contact {
-    height: 640px;
+    color: $white;
+    height: 380px;
+    background-color: $teal;
+    text-align: center;
+}
+
+.contact-tile {
+    display: inline-block;
+    text-align: left;
+    margin: 20px;
+}
+
+.contact-header {
+    font-family: 'Palanquin', sans-serif;
+    font-size: 2.25em;
+    font-weight: 400;
+    padding-right: 40px;
+}
+
+.contact-description {
+    max-width: 240px;
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.contact-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.contact-contact {
+    position: relative;
+    top: 100px;
+}
+
+.contact-info {
+    font-size: 1.1em;
+    font-weight: 200;
+}
+
+.contact-reserved {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: 200;
+}
+
+.contact-1 {
+
 }
 
 @media only screen and (max-height: 500px), screen and (max-width: 768px) {
     // Home Page Content
-    .dict-content {
-        margin: auto;
-        position: relative;
-        top: 0; 
-        left: 0;
-        transform: translate(0%,0%);    
+    .home-content {
+        padding-top: 5vh;    
 
     // Header Settings
         h1 {
@@ -169,5 +218,27 @@ $padding: 20px;
             font-size: 1.5rem;
         }    
     }
+
+    .contact-header{
+        float:left;
+        margin-top: 50px;
+    }
+
+    .home-contact {
+        height: 450px;
+        padding-left: 40px;
+    }
+
+    .contact-contact {
+        position: relative;
+        top: 0px;
+    }
+
+    .contact-tile {
+        display: block;
+        text-align: left;
+        margin: 20px;
+    }
+
 }
 
