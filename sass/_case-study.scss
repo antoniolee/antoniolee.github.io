@@ -66,7 +66,6 @@
 }
 
 
-
 // NWC Container 
 .nwc-container {
     @extend .study-container;
@@ -127,6 +126,7 @@
 
     a {
       @include hover-focus-active {
+        font-size: $nav-font-size + .1;
         color: $dark-gray;
       }
     }

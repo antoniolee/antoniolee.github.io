@@ -37,9 +37,9 @@
 /* line 3, ../sass/_page-transitions.scss */
 .page.ng-leave {
   z-index: 9999;
-  -webkit-animation: fadeOut .25s both ease-in;
-  -moz-animation: fadeOut .25s both ease-in;
-  animation: fadeOut .25s both ease-in;
+  -webkit-animation: fadeOut .33s both ease-in;
+  -moz-animation: fadeOut .33s both ease-in;
+  animation: fadeOut .33s both ease-in;
 }
 
 /* line 10, ../sass/_page-transitions.scss */
@@ -510,12 +510,12 @@
   float: left;
 }
 
-/* line 71, ../sass/_case-study.scss */
+/* line 70, ../sass/_case-study.scss */
 .nwc-container {
   background-color: #C66F61;
 }
 
-/* line 77, ../sass/_case-study.scss */
+/* line 76, ../sass/_case-study.scss */
 .nwc-content {
   text-align: left;
   position: relative;
@@ -523,54 +523,55 @@
   transform: translateY(-50%);
 }
 
-/* line 86, ../sass/_case-study.scss */
+/* line 85, ../sass/_case-study.scss */
 .nwc-tile, .nwc-tile-desktop {
   max-width: 600px;
   height: 300px;
 }
 
-/* line 92, ../sass/_case-study.scss */
+/* line 91, ../sass/_case-study.scss */
 .nwc-tile-mobile {
   max-width: 600px;
   height: 300px;
   display: none;
 }
 
-/* line 99, ../sass/_case-study.scss */
+/* line 98, ../sass/_case-study.scss */
 .nwc-cover-logo {
   width: 350px;
   height: 350px;
   margin: auto;
 }
 
-/* line 105, ../sass/_case-study.scss */
+/* line 104, ../sass/_case-study.scss */
 .nwc-body-img {
   width: 100%;
   padding: 20px;
 }
 
-/* line 110, ../sass/_case-study.scss */
+/* line 109, ../sass/_case-study.scss */
 .nwc-cover-row {
   text-align: center;
 }
 
-/* line 114, ../sass/_case-study.scss */
+/* line 113, ../sass/_case-study.scss */
 .nwc-footer-space {
   height: 75px;
 }
 
-/* line 118, ../sass/_case-study.scss */
+/* line 117, ../sass/_case-study.scss */
 .nwc-footer {
   background-color: #F7E4B6;
   color: #1A1A1A;
 }
-/* line 123, ../sass/_case-study.scss */
+/* line 122, ../sass/_case-study.scss */
 .nwc-footer a, .nwc-footer a:link, .nwc-footer a:visited {
   color: #1A1A1A;
   transition: .5s ease;
 }
 /* line 38, ../sass/styles.scss */
 .nwc-footer a:hover, .nwc-footer a:focus, .nwc-footer a:active {
+  font-size: 1.85rem;
   color: #1A1A1A;
 }
 

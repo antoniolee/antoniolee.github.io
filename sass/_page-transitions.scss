@@ -2,9 +2,9 @@
 
 .page.ng-leave  { 
     z-index:9999; 
-    -webkit-animation:fadeOut .25s both ease-in;
-    -moz-animation:fadeOut .25s both ease-in;
-    animation:fadeOut .25s both ease-in;    
+    -webkit-animation:fadeOut .33s both ease-in;
+    -moz-animation:fadeOut .33s both ease-in;
+    animation:fadeOut .33s both ease-in;    
 }
 
 .page.ng-enter  {
@@ -67,6 +67,6 @@
     animation:bounceOut .5s both ease-in;    
 }
 
-.page-nwc.ng-enter        {  
+.page-nwc.ng-enter  {  
 
 }
