@@ -1,10 +1,7 @@
 // Case Study Container
 .study-container {
     padding: 0;
-
-    .row {
-        margin: 0;
-    }
+    overflow-y: hidden;
 }
 
 
@@ -14,38 +11,30 @@
 
 .study-tile {
     display: inline-block;
-}
-
-.study-image-wrapper {
-    max-height: 1000px;
-    max-width: 1000px;
-}
-
-.study-image {
-    width: 400px;
-    height: 400px;
+    vertical-align: top; 
 }
 
 
 // Home Page Content
 .study-content {   
-
-    @extend .dict-content;
     position: relative;
-    text-align: left;
+    text-align: center;
+    padding: 0;
+
 
 // Header Settings
     h1 {
         font-size: 4.5em;
         color: $white;
-        font-family: 'Istok Web', sans-serif;
+        font-family: 'Lobster';
     }
 
 // Paragraph Settings
     p {
         font-family: 'Palanquin', sans-serif;
         font-size: 1.66rem;
-        font-weight: 200;
+        font-weight: 100;
+        padding: 20px;
     }
 
 // pronounication spell out
@@ -74,54 +63,6 @@
     span.description {
         float: left;
     }
-
-
-// Skills, Tools, etc.
-    .skills-header {
-        margin-top:25px;
-        color: $white;
-        font-size: 14px;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-    }
-
-    .skills{
-        overflow: auto;
-        padding-top: 10px;
-
-        p {
-          float: left;
-          border-style: solid;
-          border-radius: 25px;
-          padding: 5px;
-          margin-right: 5px;
-          font-size: 12px;
-          font-family: 'Open Sans', sans-serif;
-          font-weight: 300;
-          color: $white;
-        }
-
-    }
-
-    .border { 
-        border-width: 2px;
-        min-width: 50px;
-    }
-
-    .green {
-        @extend .border;
-        border-color: $green;
-    }
-
-    .blue {
-        @extend .border;
-        border-color: $blue;
-    }
-
-    .orange {
-        @extend .border;
-        border-color: $orange;
-    }
 }
 
 
@@ -130,26 +71,54 @@
 .nwc-container {
     @extend .study-container;
     background-color: $dark-pink;
-
-    .row {
-        margin: 0;
-    }
 }
 
 // NWC Container 
 .nwc-content {
     @extend .study-content;
+    text-align: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
+// NWC Tile
+.nwc-tile, .nwc-tile-desktop {
+    @extend .study-tile;
+    max-width: 600px;
+    height: 300px;
+}
 
+.nwc-tile-mobile {
+    @extend .study-tile;
+    max-width: 600px;
+    height: 300px;
+    display: none;
+}
 
+.nwc-cover-logo {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+
+.nwc-body-img {
+    width: 100%;
+    padding: 20px;
+}
+
+.nwc-cover-row {
+    text-align: center;
+}
+
+#nwc-footer {
+    height: 75px;
+}
 
 // Media Queries
 
 @media (max-width: 768px) {
-
     .study-content {
-
     // Header Settings
         h1 {
             font-size: 2.75em;
@@ -160,5 +129,38 @@
             font-size: 1.5rem;
         }    
     }
+
+    .nwc-cover-logo {
+        max-width: 250px;
+        max-height: 250px;
+    }
 }
+
+
+@media (max-width: 925px) {
+   .nwc-tile-desktop {
+        display: none;
+    }
+
+    .nwc-tile-mobile {
+        display: inline-block;
+    }
+}
+
+@media all and (max-width: 1215px) {
+    .nwc-content {
+        text-align: left;
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+    }
+
+    .nwc-tile, .nwc-tile-mobile, .nwc-tile-desktop {
+        max-width: 450px;
+        height: 100%;
+    }
+}
+
+
+
 

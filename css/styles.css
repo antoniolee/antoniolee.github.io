@@ -117,50 +117,50 @@
 }
 
 /* line 19, ../sass/_home.scss */
-.dict-content, .home-content, .study-content, .nwc-content, .blog-content {
+.dict-content, .home-content, .blog-content {
   padding: 0 35px;
   min-width: 300px;
   max-width: 660px;
   transition: .5s ease;
 }
 /* line 28, ../sass/_home.scss */
-.dict-content h1, .home-content h1, .study-content h1, .nwc-content h1, .blog-content h1 {
+.dict-content h1, .home-content h1, .blog-content h1 {
   font-size: 4.5em;
   color: #E6E6E6;
   font-family: 'Istok Web', sans-serif;
 }
 /* line 35, ../sass/_home.scss */
-.dict-content p, .home-content p, .study-content p, .nwc-content p, .blog-content p {
+.dict-content p, .home-content p, .blog-content p {
   font-family: 'Palanquin', sans-serif;
   font-size: 1.66rem;
   font-weight: 200;
 }
 /* line 42, ../sass/_home.scss */
-.dict-content p.pronounce, .home-content p.pronounce, .study-content p.pronounce, .nwc-content p.pronounce, .blog-content p.pronounce {
+.dict-content p.pronounce, .home-content p.pronounce, .blog-content p.pronounce {
   color: #B1B1B1;
 }
 /* line 47, ../sass/_home.scss */
-.dict-content p.verb, .home-content p.verb, .study-content p.verb, .nwc-content p.verb, .blog-content p.verb {
+.dict-content p.verb, .home-content p.verb, .blog-content p.verb {
   color: #B1B1B1;
   font-style: italic;
 }
 /* line 53, ../sass/_home.scss */
-.dict-content .description, .home-content .description, .study-content .description, .nwc-content .description, .blog-content .description {
+.dict-content .description, .home-content .description, .blog-content .description {
   color: #E6E6E6;
 }
 /* line 58, ../sass/_home.scss */
-.dict-content p.description, .home-content p.description, .study-content p.description, .nwc-content p.description, .blog-content p.description {
+.dict-content p.description, .home-content p.description, .blog-content p.description {
   position: relative;
   width: 100%;
 }
 /* line 64, ../sass/_home.scss */
-.dict-content span.description, .home-content span.description, .study-content span.description, .nwc-content span.description, .blog-content span.description {
+.dict-content span.description, .home-content span.description, .blog-content span.description {
   float: left;
   position: absolute;
   left: 10px;
 }
 /* line 71, ../sass/_home.scss */
-.dict-content .skills-header, .home-content .skills-header, .study-content .skills-header, .nwc-content .skills-header, .blog-content .skills-header {
+.dict-content .skills-header, .home-content .skills-header, .blog-content .skills-header {
   margin-top: 25px;
   color: #B1B1B1;
   font-size: 14px;
@@ -168,12 +168,12 @@
   font-weight: 300;
 }
 /* line 79, ../sass/_home.scss */
-.dict-content .skills, .home-content .skills, .study-content .skills, .nwc-content .skills, .blog-content .skills {
+.dict-content .skills, .home-content .skills, .blog-content .skills {
   padding-top: 10px;
   overflow: auto;
 }
 /* line 83, ../sass/_home.scss */
-.dict-content .skills p, .home-content .skills p, .study-content .skills p, .nwc-content .skills p, .blog-content .skills p {
+.dict-content .skills p, .home-content .skills p, .blog-content .skills p {
   float: left;
   border-style: solid;
   border-radius: 25px;
@@ -185,28 +185,28 @@
   color: #B1B1B1;
 }
 /* line 97, ../sass/_home.scss */
-.dict-content .border, .home-content .border, .study-content .border, .nwc-content .border, .blog-content .border, .dict-content .green, .home-content .dict-content .green, .dict-content .home-content .green, .study-content .dict-content .green, .dict-content .study-content .green, .nwc-content .dict-content .green, .dict-content .nwc-content .green, .blog-content .dict-content .green, .dict-content .blog-content .green, .dict-content .home-content .green, .home-content .dict-content .green, .home-content .green, .study-content .home-content .green, .home-content .study-content .green, .nwc-content .home-content .green, .home-content .nwc-content .green, .blog-content .home-content .green, .home-content .blog-content .green, .dict-content .study-content .green, .study-content .dict-content .green, .home-content .study-content .green, .study-content .home-content .green, .study-content .green, .nwc-content .study-content .green, .study-content .nwc-content .green, .blog-content .study-content .green, .study-content .blog-content .green, .dict-content .nwc-content .green, .nwc-content .dict-content .green, .home-content .nwc-content .green, .nwc-content .home-content .green, .study-content .nwc-content .green, .nwc-content .study-content .green, .nwc-content .green, .blog-content .nwc-content .green, .nwc-content .blog-content .green, .dict-content .blog-content .green, .blog-content .dict-content .green, .home-content .blog-content .green, .blog-content .home-content .green, .study-content .blog-content .green, .blog-content .study-content .green, .nwc-content .blog-content .green, .blog-content .nwc-content .green, .blog-content .green, .dict-content .blue, .home-content .dict-content .blue, .dict-content .home-content .blue, .study-content .dict-content .blue, .dict-content .study-content .blue, .nwc-content .dict-content .blue, .dict-content .nwc-content .blue, .blog-content .dict-content .blue, .dict-content .blog-content .blue, .dict-content .home-content .blue, .home-content .dict-content .blue, .home-content .blue, .study-content .home-content .blue, .home-content .study-content .blue, .nwc-content .home-content .blue, .home-content .nwc-content .blue, .blog-content .home-content .blue, .home-content .blog-content .blue, .dict-content .study-content .blue, .study-content .dict-content .blue, .home-content .study-content .blue, .study-content .home-content .blue, .study-content .blue, .nwc-content .study-content .blue, .study-content .nwc-content .blue, .blog-content .study-content .blue, .study-content .blog-content .blue, .dict-content .nwc-content .blue, .nwc-content .dict-content .blue, .home-content .nwc-content .blue, .nwc-content .home-content .blue, .study-content .nwc-content .blue, .nwc-content .study-content .blue, .nwc-content .blue, .blog-content .nwc-content .blue, .nwc-content .blog-content .blue, .dict-content .blog-content .blue, .blog-content .dict-content .blue, .home-content .blog-content .blue, .blog-content .home-content .blue, .study-content .blog-content .blue, .blog-content .study-content .blue, .nwc-content .blog-content .blue, .blog-content .nwc-content .blue, .blog-content .blue, .dict-content .orange, .home-content .dict-content .orange, .dict-content .home-content .orange, .study-content .dict-content .orange, .dict-content .study-content .orange, .nwc-content .dict-content .orange, .dict-content .nwc-content .orange, .blog-content .dict-content .orange, .dict-content .blog-content .orange, .dict-content .home-content .orange, .home-content .dict-content .orange, .home-content .orange, .study-content .home-content .orange, .home-content .study-content .orange, .nwc-content .home-content .orange, .home-content .nwc-content .orange, .blog-content .home-content .orange, .home-content .blog-content .orange, .dict-content .study-content .orange, .study-content .dict-content .orange, .home-content .study-content .orange, .study-content .home-content .orange, .study-content .orange, .nwc-content .study-content .orange, .study-content .nwc-content .orange, .blog-content .study-content .orange, .study-content .blog-content .orange, .dict-content .nwc-content .orange, .nwc-content .dict-content .orange, .home-content .nwc-content .orange, .nwc-content .home-content .orange, .study-content .nwc-content .orange, .nwc-content .study-content .orange, .nwc-content .orange, .blog-content .nwc-content .orange, .nwc-content .blog-content .orange, .dict-content .blog-content .orange, .blog-content .dict-content .orange, .home-content .blog-content .orange, .blog-content .home-content .orange, .study-content .blog-content .orange, .blog-content .study-content .orange, .nwc-content .blog-content .orange, .blog-content .nwc-content .orange, .blog-content .orange, .dict-content .pink, .home-content .dict-content .pink, .dict-content .home-content .pink, .study-content .dict-content .pink, .dict-content .study-content .pink, .nwc-content .dict-content .pink, .dict-content .nwc-content .pink, .blog-content .dict-content .pink, .dict-content .blog-content .pink, .dict-content .home-content .pink, .home-content .dict-content .pink, .home-content .pink, .study-content .home-content .pink, .home-content .study-content .pink, .nwc-content .home-content .pink, .home-content .nwc-content .pink, .blog-content .home-content .pink, .home-content .blog-content .pink, .dict-content .study-content .pink, .study-content .dict-content .pink, .home-content .study-content .pink, .study-content .home-content .pink, .study-content .pink, .nwc-content .study-content .pink, .study-content .nwc-content .pink, .blog-content .study-content .pink, .study-content .blog-content .pink, .dict-content .nwc-content .pink, .nwc-content .dict-content .pink, .home-content .nwc-content .pink, .nwc-content .home-content .pink, .study-content .nwc-content .pink, .nwc-content .study-content .pink, .nwc-content .pink, .blog-content .nwc-content .pink, .nwc-content .blog-content .pink, .dict-content .blog-content .pink, .blog-content .dict-content .pink, .home-content .blog-content .pink, .blog-content .home-content .pink, .study-content .blog-content .pink, .blog-content .study-content .pink, .nwc-content .blog-content .pink, .blog-content .nwc-content .pink, .blog-content .pink, .dict-content .yellow, .home-content .dict-content .yellow, .dict-content .home-content .yellow, .study-content .dict-content .yellow, .dict-content .study-content .yellow, .nwc-content .dict-content .yellow, .dict-content .nwc-content .yellow, .blog-content .dict-content .yellow, .dict-content .blog-content .yellow, .dict-content .home-content .yellow, .home-content .dict-content .yellow, .home-content .yellow, .study-content .home-content .yellow, .home-content .study-content .yellow, .nwc-content .home-content .yellow, .home-content .nwc-content .yellow, .blog-content .home-content .yellow, .home-content .blog-content .yellow, .dict-content .study-content .yellow, .study-content .dict-content .yellow, .home-content .study-content .yellow, .study-content .home-content .yellow, .study-content .yellow, .nwc-content .study-content .yellow, .study-content .nwc-content .yellow, .blog-content .study-content .yellow, .study-content .blog-content .yellow, .dict-content .nwc-content .yellow, .nwc-content .dict-content .yellow, .home-content .nwc-content .yellow, .nwc-content .home-content .yellow, .study-content .nwc-content .yellow, .nwc-content .study-content .yellow, .nwc-content .yellow, .blog-content .nwc-content .yellow, .nwc-content .blog-content .yellow, .dict-content .blog-content .yellow, .blog-content .dict-content .yellow, .home-content .blog-content .yellow, .blog-content .home-content .yellow, .study-content .blog-content .yellow, .blog-content .study-content .yellow, .nwc-content .blog-content .yellow, .blog-content .nwc-content .yellow, .blog-content .yellow {
+.dict-content .border, .home-content .border, .blog-content .border, .dict-content .green, .home-content .green, .blog-content .green, .dict-content .blue, .home-content .blue, .blog-content .blue, .dict-content .orange, .home-content .orange, .blog-content .orange, .dict-content .pink, .home-content .pink, .blog-content .pink, .dict-content .yellow, .home-content .yellow, .blog-content .yellow {
   border-width: 2px;
   min-width: 50px;
 }
 /* line 102, ../sass/_home.scss */
-.dict-content .green, .home-content .green, .study-content .green, .nwc-content .green, .blog-content .green {
+.dict-content .green, .home-content .green, .blog-content .green {
   border-color: #92FF6E;
 }
 /* line 107, ../sass/_home.scss */
-.dict-content .blue, .home-content .blue, .study-content .blue, .nwc-content .blue, .blog-content .blue {
+.dict-content .blue, .home-content .blue, .blog-content .blue {
   border-color: #32CFE0;
 }
 /* line 112, ../sass/_home.scss */
-.dict-content .orange, .home-content .orange, .study-content .orange, .nwc-content .orange, .blog-content .orange {
+.dict-content .orange, .home-content .orange, .blog-content .orange {
   border-color: #DD9833;
 }
 /* line 117, ../sass/_home.scss */
-.dict-content .pink, .home-content .pink, .study-content .pink, .nwc-content .pink, .blog-content .pink {
+.dict-content .pink, .home-content .pink, .blog-content .pink {
   border-color: #C66F61;
 }
 /* line 122, ../sass/_home.scss */
-.dict-content .yellow, .home-content .yellow, .study-content .yellow, .nwc-content .yellow, .blog-content .yellow {
+.dict-content .yellow, .home-content .yellow, .blog-content .yellow {
   border-color: #F7E4B6;
 }
 
@@ -449,133 +449,151 @@
 /* line 2, ../sass/_case-study.scss */
 .study-container, .nwc-container {
   padding: 0;
-}
-/* line 5, ../sass/_case-study.scss */
-.study-container .row, .nwc-container .row {
-  margin: 0;
+  overflow-y: hidden;
 }
 
-/* line 11, ../sass/_case-study.scss */
+/* line 8, ../sass/_case-study.scss */
 .study-row {
   text-align: center;
 }
 
-/* line 15, ../sass/_case-study.scss */
-.study-tile {
+/* line 12, ../sass/_case-study.scss */
+.study-tile, .nwc-tile, .nwc-tile-desktop, .nwc-tile-mobile {
   display: inline-block;
+  vertical-align: top;
 }
 
 /* line 19, ../sass/_case-study.scss */
-.study-image-wrapper {
-  max-height: 1000px;
-  max-width: 1000px;
-}
-
-/* line 24, ../sass/_case-study.scss */
-.study-image {
-  width: 400px;
-  height: 400px;
-}
-
-/* line 31, ../sass/_case-study.scss */
 .study-content, .nwc-content {
   position: relative;
-  text-align: left;
+  text-align: center;
+  padding: 0;
 }
-/* line 38, ../sass/_case-study.scss */
+/* line 26, ../sass/_case-study.scss */
 .study-content h1, .nwc-content h1 {
   font-size: 4.5em;
   color: #E6E6E6;
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Lobster';
 }
-/* line 45, ../sass/_case-study.scss */
+/* line 33, ../sass/_case-study.scss */
 .study-content p, .nwc-content p {
   font-family: 'Palanquin', sans-serif;
   font-size: 1.66rem;
-  font-weight: 200;
+  font-weight: 100;
+  padding: 20px;
 }
-/* line 52, ../sass/_case-study.scss */
+/* line 41, ../sass/_case-study.scss */
 .study-content p.pronounce, .nwc-content p.pronounce {
   color: #F7E4B6;
 }
-/* line 57, ../sass/_case-study.scss */
+/* line 46, ../sass/_case-study.scss */
 .study-content p.verb, .nwc-content p.verb {
   color: #F7E4B6;
   font-style: italic;
 }
-/* line 63, ../sass/_case-study.scss */
+/* line 52, ../sass/_case-study.scss */
 .study-content .description, .nwc-content .description {
   color: #E6E6E6;
 }
-/* line 68, ../sass/_case-study.scss */
+/* line 57, ../sass/_case-study.scss */
 .study-content p.description, .nwc-content p.description {
   position: relative;
   width: 100%;
 }
-/* line 74, ../sass/_case-study.scss */
+/* line 63, ../sass/_case-study.scss */
 .study-content span.description, .nwc-content span.description {
   float: left;
 }
-/* line 80, ../sass/_case-study.scss */
-.study-content .skills-header, .nwc-content .skills-header {
-  margin-top: 25px;
-  color: #E6E6E6;
-  font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-}
-/* line 88, ../sass/_case-study.scss */
-.study-content .skills, .nwc-content .skills {
-  overflow: auto;
-  padding-top: 10px;
-}
-/* line 92, ../sass/_case-study.scss */
-.study-content .skills p, .nwc-content .skills p {
-  float: left;
-  border-style: solid;
-  border-radius: 25px;
-  padding: 5px;
-  margin-right: 5px;
-  font-size: 12px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  color: #E6E6E6;
-}
-/* line 106, ../sass/_case-study.scss */
-.study-content .border, .nwc-content .border, .study-content .green, .nwc-content .green, .study-content .blue, .nwc-content .blue, .study-content .orange, .nwc-content .orange, .study-content .pink, .nwc-content .pink, .study-content .yellow, .nwc-content .yellow {
-  border-width: 2px;
-  min-width: 50px;
-}
-/* line 111, ../sass/_case-study.scss */
-.study-content .green, .nwc-content .green {
-  border-color: #92FF6E;
-}
-/* line 116, ../sass/_case-study.scss */
-.study-content .blue, .nwc-content .blue {
-  border-color: #32CFE0;
-}
-/* line 121, ../sass/_case-study.scss */
-.study-content .orange, .nwc-content .orange {
-  border-color: #DD9833;
-}
 
-/* line 130, ../sass/_case-study.scss */
+/* line 71, ../sass/_case-study.scss */
 .nwc-container {
   background-color: #C66F61;
 }
-/* line 134, ../sass/_case-study.scss */
-.nwc-container .row {
-  margin: 0;
+
+/* line 77, ../sass/_case-study.scss */
+.nwc-content {
+  text-align: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 86, ../sass/_case-study.scss */
+.nwc-tile, .nwc-tile-desktop {
+  max-width: 600px;
+  height: 300px;
+}
+
+/* line 92, ../sass/_case-study.scss */
+.nwc-tile-mobile {
+  max-width: 600px;
+  height: 300px;
+  display: none;
+}
+
+/* line 99, ../sass/_case-study.scss */
+.nwc-cover-logo {
+  width: 350px;
+  height: 350px;
+  margin: auto;
+}
+
+/* line 105, ../sass/_case-study.scss */
+.nwc-body-img {
+  width: 100%;
+  padding: 20px;
+}
+
+/* line 110, ../sass/_case-study.scss */
+.nwc-cover-row {
+  text-align: center;
+}
+
+/* line 114, ../sass/_case-study.scss */
+#nwc-footer {
+  height: 75px;
 }
 
 @media (max-width: 768px) {
-  /* line 154, ../sass/_case-study.scss */
+  /* line 123, ../sass/_case-study.scss */
   .study-content h1, .nwc-content h1 {
     font-size: 2.75em;
   }
-  /* line 159, ../sass/_case-study.scss */
+  /* line 128, ../sass/_case-study.scss */
   .study-content p, .nwc-content p {
     font-size: 1.5rem;
+  }
+
+  /* line 133, ../sass/_case-study.scss */
+  .nwc-cover-logo {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+@media (max-width: 925px) {
+  /* line 141, ../sass/_case-study.scss */
+  .nwc-tile-desktop {
+    display: none;
+  }
+
+  /* line 145, ../sass/_case-study.scss */
+  .nwc-tile-mobile {
+    display: inline-block;
+  }
+}
+@media all and (max-width: 1215px) {
+  /* line 151, ../sass/_case-study.scss */
+  .nwc-content {
+    text-align: left;
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+  }
+
+  /* line 158, ../sass/_case-study.scss */
+  .nwc-tile, .nwc-tile-mobile, .nwc-tile-desktop {
+    max-width: 450px;
+    height: 100%;
   }
 }
 /* line 7, ../sass/_blog.scss */
