@@ -220,7 +220,7 @@
 }
 
 /* line 154, ../sass/_home.scss */
-.home-contact {
+.home-footer, .works-footer, .nwc-footer {
   color: #E6E6E6;
   height: 380px;
   background-color: #1A1A1A;
@@ -306,7 +306,7 @@
   }
 
   /* line 236, ../sass/_home.scss */
-  .home-contact {
+  .home-footer, .works-footer, .nwc-footer {
     height: 450px;
     padding-left: 40px;
   }
@@ -419,29 +419,34 @@
 }
 
 /* line 87, ../sass/_works.scss */
+.works-footer-space {
+  height: 75px;
+}
+
+/* line 91, ../sass/_works.scss */
 .works-footer {
-  height: 125px;
+  background: #42837E;
 }
 
 @media (max-width: 960px) {
-  /* line 97, ../sass/_works.scss */
+  /* line 102, ../sass/_works.scss */
   .tile {
     width: 300px;
     height: 300px;
   }
 }
 @media (max-width: 768px) {
-  /* line 106, ../sass/_works.scss */
+  /* line 111, ../sass/_works.scss */
   .tile {
     width: 250px;
     height: 250px;
   }
 
-  /* line 113, ../sass/_works.scss */
+  /* line 118, ../sass/_works.scss */
   .works-header p.header {
     font-size: 2.25rem;
   }
-  /* line 117, ../sass/_works.scss */
+  /* line 122, ../sass/_works.scss */
   .works-header p.pronounce {
     font-size: 1.45rem;
   }
@@ -550,39 +555,54 @@
 }
 
 /* line 114, ../sass/_case-study.scss */
-#nwc-footer {
+.nwc-footer-space {
   height: 75px;
 }
 
+/* line 118, ../sass/_case-study.scss */
+.nwc-footer {
+  background-color: #F7E4B6;
+  color: #1A1A1A;
+}
+/* line 123, ../sass/_case-study.scss */
+.nwc-footer a, .nwc-footer a:link, .nwc-footer a:visited {
+  color: #1A1A1A;
+  transition: .5s ease;
+}
+/* line 38, ../sass/styles.scss */
+.nwc-footer a:hover, .nwc-footer a:focus, .nwc-footer a:active {
+  color: #1A1A1A;
+}
+
 @media (max-width: 768px) {
-  /* line 123, ../sass/_case-study.scss */
+  /* line 141, ../sass/_case-study.scss */
   .study-content h1, .nwc-content h1 {
     font-size: 2.75em;
   }
-  /* line 128, ../sass/_case-study.scss */
+  /* line 146, ../sass/_case-study.scss */
   .study-content p, .nwc-content p {
     font-size: 1.5rem;
   }
 
-  /* line 133, ../sass/_case-study.scss */
+  /* line 151, ../sass/_case-study.scss */
   .nwc-cover-logo {
     max-width: 250px;
     max-height: 250px;
   }
 }
 @media (max-width: 925px) {
-  /* line 141, ../sass/_case-study.scss */
+  /* line 159, ../sass/_case-study.scss */
   .nwc-tile-desktop {
     display: none;
   }
 
-  /* line 145, ../sass/_case-study.scss */
+  /* line 163, ../sass/_case-study.scss */
   .nwc-tile-mobile {
     display: inline-block;
   }
 }
 @media all and (max-width: 1215px) {
-  /* line 151, ../sass/_case-study.scss */
+  /* line 169, ../sass/_case-study.scss */
   .nwc-content {
     text-align: left;
     position: relative;
@@ -590,7 +610,7 @@
     transform: translateY(0);
   }
 
-  /* line 158, ../sass/_case-study.scss */
+  /* line 176, ../sass/_case-study.scss */
   .nwc-tile, .nwc-tile-mobile, .nwc-tile-desktop {
     max-width: 450px;
     height: 100%;

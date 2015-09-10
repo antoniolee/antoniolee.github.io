@@ -84,8 +84,13 @@
   }
 }
 
+.works-footer-space {
+  height: 75px;
+}
+
 .works-footer {
-  height: 125px;
+  @extend .home-footer;
+  background: $teal;
 }
 
 
