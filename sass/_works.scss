@@ -35,7 +35,7 @@
   padding: 0;
 }
 
-.tile {
+.works-tile {
   display: inline-block;
   width: 400px;
   height: 400px;
@@ -72,7 +72,7 @@
   }
 }
 
-.tile {
+.works-tile {
   @include hover-focus-active {
     transform: scale(1.03);
     transition: .5s ease;
@@ -99,7 +99,7 @@
 
 @media (max-width: 960px) {
 
-    .tile {
+    .works-tile {
         width: 300px;
         height: 300px;
     }
@@ -108,7 +108,7 @@
 
 @media (max-width: 768px) {
 
-    .tile {
+    .works-tile {
           width: 250px;
           height: 250px;
       }

@@ -1,0 +1,275 @@
+// Case Study Container
+.study-container {
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.study-row {
+    text-align: center;
+}
+
+.study-tile {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.study-cover-tile {
+    @extend .study-tile;
+}
+
+// NWC Tile
+.study-mid-tile, .study-mid-tile-desktop {
+    @extend .study-tile;
+    max-width: 600px;
+    height: 300px;
+}
+
+.study-mid-tile-mobile {
+    @extend .study-tile;
+    max-width: 600px;
+    height: 300px;
+    display: none;
+}
+
+// Home Page Content
+.study-cover-content {   
+    // Header Settings
+    h1 {
+        font-size: 4.5em;
+        color: $white;
+        font-family: 'Istok Web';
+        margin: 0px;
+    }
+
+// Paragraph Settings
+    p {
+        font-family: 'Palanquin', sans-serif;
+        font-size: 1.66rem;
+        font-weight: 100;
+        padding: 20px;
+        margin: 0px;
+    }
+
+// pronounication spell out
+    p.pronounce {
+        color: $light-gray;
+    }
+
+// the descriptor (verb, noun, adj.)
+    p.verb {
+        color: $light-gray;
+        font-style: italic;
+    } 
+}
+
+// NWC Conter 
+.study-content {
+    text-align: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+// description settings
+    p.description {
+        color:$white;
+        padding: 20px;
+        font-size: 1.66rem;
+        font-weight: 300;
+        width: 600px;
+    }   
+}
+
+/*  ~~~~~~~ Now We're Cookin' ~~~~~~~~~~~~~~~ */
+
+
+// NWC Container 
+.nwc-container {
+    @extend .study-container;
+    background-color: $dark-pink;
+}
+
+// NWC Cover Page Content
+.nwc-cover-content {
+    @extend .study-cover-content;
+
+// Header Settings
+    h1 {
+        color: $white;
+        font-family: 'Lobster';
+    }
+
+// Paragraph Settings
+    p {
+        font-family: 'Palanquin', sans-serif;
+        font-weight: 100;
+    }
+
+// pronounication spell out
+    p.pronounce {
+        color: $nwc-yellow;
+    }
+
+// the descriptor (verb, noun, adj.)
+    p.verb {
+        color: $nwc-yellow;
+        font-style: italic;
+    } 
+}
+
+// NWC Cover Image
+.nwc-cover-logo {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+
+.nwc-body-img {
+    width: 100%;
+    padding: 20px;
+}
+
+.nwc-cover-row {
+    text-align: center;
+}
+
+.nwc-footer {
+    @extend .home-footer;
+    background-color: $nwc-yellow;
+    color: $dark-gray;
+
+    a,a:link,a:visited {
+     color:$dark-gray;
+     transition: .5s ease;
+    }
+
+    a {
+      @include hover-focus-active {
+        font-size: $nav-font-size + .1;
+        color: $dark-gray;
+      }
+    }
+}
+
+/* ~~~~~~~~~~ Moody ~~~~~~~~~~~~~~~~~~~~ */
+
+// Begin Moody CSS
+
+// NWC Container 
+.moody-container {
+    @extend .study-container;
+    background-color: $blue-1;
+}
+
+.moody-cover-content {
+    @extend .study-cover-content;
+}
+
+.moody-body-img {
+    padding: 0;
+    width: 100%;    
+    max-width: 600px;
+}
+
+.moody-wireframe {
+    max-width: 1000px;
+    width: 100%;
+    max-height: 1000px;
+    height: 100%;
+
+    padding: 50px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wireframe-title {
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1.66rem;
+    padding: 50px 25px 0px;
+    margin: 0px;
+    text-align: left;
+    color: white;
+}
+
+// Moody Summary  
+.moody-summary {
+    text-align: center;
+    height: 400px;
+
+// description settings
+    p.description {
+        text-align: left;
+        color:$white;
+        padding: 25px;
+        font-size: 1.66rem;
+        font-weight: 300;
+        width: 100%;
+    }   
+}
+
+/* ~~~~~~~  Media Queries  ~~~~~~~~~~~~~~~ */
+
+@media (max-width: 768px) {
+    .study-cover-content {
+    // Header Settings
+        h1 {
+            font-size: 2.75em;
+        }
+
+    // Paragraph Settings 
+        p {
+            font-size: 1.5rem;
+        }    
+    }
+
+    .nwc-cover-logo {
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    // Moody Summary  
+    .moody-summary {
+    // description settings
+        p.description {
+            font-size: 1.5rem;
+        }   
+    }
+}
+
+
+@media (max-width: 800px) {
+    .study-mid-tile-desktop {
+        display: none;
+    }
+
+    .study-mid-tile-mobile {
+        display: inline-block;
+    }
+}
+
+@media all and (max-width: 1215px) {
+    .study-content {
+        top: 0;
+        transform: translateY(0);
+
+        p.description {
+            font-size: 1.5rem;
+            width: 100%;
+        }
+    }
+
+    .study-mid-tile, .study-mid-tile-mobile, .study-mid-tile-desktop {
+        max-width: 400px;
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+

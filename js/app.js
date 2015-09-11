@@ -40,10 +40,16 @@ antonioApp.config(function($routeProvider /*$locationProvider*/) {
             controller: 'contactController'
         })
 
-        // case-study-template
+        // Now We're Cookin' Page
         .when('/nwc', {
             templateUrl: 'views/nwc.html',
             controller: 'nwcController'
+        })
+
+        // Moody
+        .when('/moody', {
+            templateUrl: 'views/moody.html',
+            controller: 'moodyController'
         });
 
    // $locationProvider.html5Mode(true);        
@@ -76,9 +82,13 @@ antonioApp.controller('contactController', function($scope) {
     $scope.pageClass = 'page-contact';
 });
 
-
 // nwc page controller
 antonioApp.controller('nwcController', function($scope) {
     $scope.pageClass = 'page-nwc';
+});
+
+// nwc page controller
+antonioApp.controller('moodyController', function($scope) {
+    $scope.pageClass = 'page-moody';
 });
 

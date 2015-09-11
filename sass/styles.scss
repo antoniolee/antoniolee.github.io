@@ -9,13 +9,36 @@
 }
 */
 
+
+.height-50px {
+  height: 50px;
+}
+
+.padding-bottom-75px {
+  padding-bottom: 75px;
+}
+
+.center-vertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
 // Colors
 $dark-gray: #1A1A1A;
 $light-gray: #B1B1B1;
 $white: #E6E6E6;
 $green: #92FF6E;
 $blue: #32CFE0;
+$light-blue: #9AB4C5;
+$blue-1: #6288A3;
+$blue-2: #80A0B5;
+$blue-3: #617988;
+$blue-4: #495B67;
+$blue-5: #2C4657;
 $orange: #DD9833;
+$dark-orange: #C28D63;
 $dark-pink: #C66F61;
 $nwc-yellow: #F7E4B6;
 $teal: #42837E;
@@ -25,6 +48,12 @@ $teal: #42837E;
 .orange { color: $orange; }
 .yellow { color: $nwc-yellow; }
 .gray { color: $light-gray;}
+
+.bg-blue-1 { background-color: $blue-1; }
+.bg-blue-2 { background-color: $blue-2; }
+.bg-blue-3 { background-color: $blue-3; }
+.bg-blue-4 { background-color: $blue-4; }
+.bg-blue-5 { background-color: $blue-5; }
 
 //Fonts
 html {
@@ -45,7 +74,7 @@ $nav-font-size: 1.75rem;
 @import "page-transitions";
 @import "home";
 @import "works";
-@import "case-study";
+@import "nwc";
 @import "blog";
 @import "menu-icon";
 
