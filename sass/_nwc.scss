@@ -196,6 +196,10 @@
     text-align: center;
     height: 400px;
 
+    .moody-description {
+        @extend .center-vertical;
+    }
+
 // description settings
     p.description {
         text-align: left;
@@ -229,6 +233,14 @@
 
     // Moody Summary  
     .moody-summary {
+    
+    // Moody Description Text
+    .moody-description {
+        top: 0;
+        transform: translateY(0);
+        padding-top: 13%;
+    }
+
     // description settings
         p.description {
             font-size: 1.5rem;
