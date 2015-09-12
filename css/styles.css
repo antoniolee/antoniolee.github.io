@@ -813,7 +813,7 @@
 }
 
 /* unvisited link */
-/* line 83, ../sass/styles.scss */
+/* line 88, ../sass/styles.scss */
 a, a:link, a:visited {
   color: #E6E6E6;
   transition: .5s ease;
@@ -825,37 +825,37 @@ a:hover, a:focus, a:active {
   color: #E6E6E6;
 }
 
-/* line 97, ../sass/styles.scss */
+/* line 102, ../sass/styles.scss */
 .page {
   width: 100%;
 }
 
-/* line 102, ../sass/styles.scss */
+/* line 107, ../sass/styles.scss */
 .page-home {
   background-color: #E7E7E7;
 }
 
-/* line 103, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .page-contact {
   background-color: #66DF4C;
 }
 
-/* line 104, ../sass/styles.scss */
+/* line 109, ../sass/styles.scss */
 .page-about {
   background-color: #506AC0;
 }
 
-/* line 105, ../sass/styles.scss */
+/* line 110, ../sass/styles.scss */
 .page-nwc {
   background-color: #C66F61;
 }
 
-/* line 108, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 .nav {
   width: 100%;
   padding: 1em 1.5em 0 0;
 }
-/* line 112, ../sass/styles.scss */
+/* line 117, ../sass/styles.scss */
 .nav ul > li {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -865,12 +865,12 @@ a:hover, a:focus, a:active {
   color: #E6E6E6;
 }
 
-/* line 122, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
 .nav-list {
   float: right;
 }
 
-/* line 126, ../sass/styles.scss */
+/* line 131, ../sass/styles.scss */
 .mobile-nav-btn {
   visibility: hidden;
   width: 40px;
@@ -878,23 +878,23 @@ a:hover, a:focus, a:active {
   background-color: #DD9833;
 }
 
-/* line 133, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 .mobile-nav {
   visibility: hidden;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 141, ../sass/styles.scss */
+  /* line 146, ../sass/styles.scss */
   .desktop-nav {
     visibility: hidden;
   }
 
-  /* line 145, ../sass/styles.scss */
+  /* line 150, ../sass/styles.scss */
   .mobile-nav-btn {
     visibility: visible;
   }
 
-  /* line 149, ../sass/styles.scss */
+  /* line 154, ../sass/styles.scss */
   .mobile-nav {
     position: absolute;
     z-index: 10;
@@ -903,19 +903,19 @@ a:hover, a:focus, a:active {
     background-color: #92FF6E;
   }
 
-  /* line 157, ../sass/styles.scss */
+  /* line 162, ../sass/styles.scss */
   .nav-list {
     float: none;
     padding-right: 40px;
     text-align: center;
   }
 
-  /* line 163, ../sass/styles.scss */
+  /* line 168, ../sass/styles.scss */
   .nav {
     width: 100%;
     padding: 25px 25px 0px;
   }
-  /* line 167, ../sass/styles.scss */
+  /* line 172, ../sass/styles.scss */
   .nav ul > li {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
