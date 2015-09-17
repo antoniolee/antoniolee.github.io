@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
 
-/* SHOW ALL ELEMENTS HIGHLIGHTED IN RED  
+/* SHOW ALL ELEMENTS HIGHLIGHTED IN RED 
 * {
    border: 1px solid red !important;
 }
@@ -18,6 +18,19 @@
   padding-bottom: 75px;
 }
 
+.padding-bottom-150px {
+  padding-bottom: 150px;
+}
+
+
+.padding-25px {
+  padding: 0px 25px;
+}
+
+.margin-top-15px {
+  padding-top: 15px;
+}
+
 .center-vertical {
     position: relative;
     top: 50%;
@@ -28,6 +41,7 @@
 // Colors
 $dark-gray: #1A1A1A;
 $light-gray: #B1B1B1;
+$gray: #464646;
 $white: #E6E6E6;
 $green: #92FF6E;
 $blue: #32CFE0;
@@ -42,18 +56,22 @@ $dark-orange: #C28D63;
 $dark-pink: #C66F61;
 $nwc-yellow: #F7E4B6;
 $teal: #42837E;
+$solarcrysis-blue: #394E8E;
 
 .green { color: $green; }
 .blue { color: $blue; }
 .orange { color: $orange; }
 .yellow { color: $nwc-yellow; }
 .gray { color: $light-gray;}
+.dark-gray { color: $dark-gray;}
 
+.bg-nwc-yellow { background-color: $nwc-yellow; }
 .bg-blue-1 { background-color: $blue-1; }
 .bg-blue-2 { background-color: $blue-2; }
 .bg-blue-3 { background-color: $blue-3; }
 .bg-blue-4 { background-color: $blue-4; }
 .bg-blue-5 { background-color: $blue-5; }
+.bg-light-gray { background-color: $light-gray; }
 
 //Fonts
 html {
@@ -74,7 +92,7 @@ $nav-font-size: 1.75rem;
 @import "page-transitions";
 @import "home";
 @import "works";
-@import "nwc";
+@import "case-study";
 @import "blog";
 @import "menu-icon";
 
@@ -93,7 +111,6 @@ a,a:link,a:visited
 
 a {
   @include hover-focus-active {
-    font-size: $nav-font-size + .1;
     color: $white;
   }
 }
@@ -140,6 +157,59 @@ a {
 }
 
 
+// Skills, Tools, etc.
+.skills-header {
+    color: $light-gray;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.skills{
+    padding-top: 10px;
+    overflow: auto;
+
+    p {
+        float: left;
+        border-style: solid;
+        border-radius: 25px;
+        padding: 5px;
+        margin-right: 5px;
+        font-size: 12px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        color: $light-gray;
+    }
+}
+
+.border {
+    border-width: 2px;
+    min-width: 50px;
+}
+
+.green {
+    @extend .border;
+    border-color: $green;
+}
+
+.blue {
+    @extend .border;
+    border-color: $blue;
+}
+.orange {
+    @extend .border;
+    border-color: $orange;
+}
+.pink {
+    @extend .border;
+    border-color: $dark-pink;
+}
+.yellow {
+    @extend .border;
+    border-color: $nwc-yellow;
+}
+
+
 @media only screen and (max-width: 768px) {
   $nav-font-size: 1rem;
 
@@ -161,7 +231,7 @@ a {
 
   .nav-list {
     float: none;
-    padding-right: 40px;
+    padding: 0px;
     text-align: center;
   }
 
@@ -178,7 +248,6 @@ a {
         color: $white;
     }
   }
-
 }
 
 

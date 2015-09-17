@@ -40,10 +40,22 @@ antonioApp.config(function($routeProvider /*$locationProvider*/) {
             controller: 'contactController'
         })
 
-        // Now We're Cookin' Page
+        // Now We're Cookin' 
         .when('/nwc', {
             templateUrl: 'views/nwc.html',
             controller: 'nwcController'
+        })
+
+        // Solar Crysis 
+        .when('/solarcrysis', {
+            templateUrl: 'views/solarcrysis.html',
+            controller: 'solarcrysisController'
+        })
+
+        // Falmouth 
+        .when('/falmouth', {
+            templateUrl: 'views/falmouth.html',
+            controller: 'falmouthController'
         })
 
         // Moody
@@ -90,5 +102,15 @@ antonioApp.controller('nwcController', function($scope) {
 // nwc page controller
 antonioApp.controller('moodyController', function($scope) {
     $scope.pageClass = 'page-moody';
+});
+
+// nwc page controller
+antonioApp.controller('falmouthController', function($scope) {
+    $scope.pageClass = 'page-falmouth';
+});
+
+// nwc page controller
+antonioApp.controller('solarcrysisController', function($scope) {
+    $scope.pageClass = 'page-solarcrysis';
 });
 
