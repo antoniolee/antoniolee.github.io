@@ -58,6 +58,10 @@
     height: 300px;
 }
 
+.study-mid-tile-desktop {
+    padding-left: 30px;
+}
+
 .study-mid-tile-mobile {
     @extend .study-tile;
     max-width: 600px;

@@ -523,20 +523,25 @@
 }
 
 /* line 61, ../sass/_case-study.scss */
+.study-mid-tile-desktop {
+  padding-left: 30px;
+}
+
+/* line 65, ../sass/_case-study.scss */
 .study-mid-tile-mobile {
   max-width: 600px;
   height: 300px;
   display: none;
 }
 
-/* line 71, ../sass/_case-study.scss */
+/* line 75, ../sass/_case-study.scss */
 .study-cover-content h1, .nwc-cover-content h1, .moody-cover-content h1 {
   font-size: 4.5em;
   color: #E6E6E6;
   font-family: 'Istok Web';
   margin: 0px;
 }
-/* line 79, ../sass/_case-study.scss */
+/* line 83, ../sass/_case-study.scss */
 .study-cover-content p, .nwc-cover-content p, .moody-cover-content p {
   font-family: 'Palanquin', sans-serif;
   font-size: 1.66rem;
@@ -544,24 +549,24 @@
   padding: 20px;
   margin: 0px;
 }
-/* line 88, ../sass/_case-study.scss */
+/* line 92, ../sass/_case-study.scss */
 .study-cover-content p.pronounce, .nwc-cover-content p.pronounce, .moody-cover-content p.pronounce {
   color: #B1B1B1;
 }
-/* line 93, ../sass/_case-study.scss */
+/* line 97, ../sass/_case-study.scss */
 .study-cover-content p.verb, .nwc-cover-content p.verb, .moody-cover-content p.verb {
   color: #B1B1B1;
   font-style: italic;
 }
 
-/* line 100, ../sass/_case-study.scss */
+/* line 104, ../sass/_case-study.scss */
 .study-content {
   text-align: left;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 107, ../sass/_case-study.scss */
+/* line 111, ../sass/_case-study.scss */
 .study-content p.description {
   color: #E6E6E6;
   padding: 20px;
@@ -571,69 +576,69 @@
 }
 
 /*  ~~~~~~~ Now We're Cookin' ~~~~~~~~~~~~~~~ */
-/* line 120, ../sass/_case-study.scss */
+/* line 124, ../sass/_case-study.scss */
 .nwc-container {
   background-color: #C66F61;
 }
 
-/* line 130, ../sass/_case-study.scss */
+/* line 134, ../sass/_case-study.scss */
 .nwc-cover-content h1 {
   color: #E6E6E6;
   font-family: 'Lobster';
 }
-/* line 136, ../sass/_case-study.scss */
+/* line 140, ../sass/_case-study.scss */
 .nwc-cover-content p {
   font-family: 'Palanquin', sans-serif;
   font-weight: 100;
 }
-/* line 142, ../sass/_case-study.scss */
+/* line 146, ../sass/_case-study.scss */
 .nwc-cover-content p.pronounce {
   color: #F7E4B6;
 }
-/* line 147, ../sass/_case-study.scss */
+/* line 151, ../sass/_case-study.scss */
 .nwc-cover-content p.verb {
   color: #F7E4B6;
   font-style: italic;
 }
 
-/* line 153, ../sass/_case-study.scss */
+/* line 157, ../sass/_case-study.scss */
 .nwc-body-img {
   width: 100%;
   padding: 20px;
 }
 
-/* line 158, ../sass/_case-study.scss */
+/* line 162, ../sass/_case-study.scss */
 .nwc-cover-row {
   text-align: center;
 }
 
-/* line 165, ../sass/_case-study.scss */
+/* line 169, ../sass/_case-study.scss */
 .nwc-case-summary p.description {
   color: #1A1A1A;
 }
-/* line 169, ../sass/_case-study.scss */
+/* line 173, ../sass/_case-study.scss */
 .nwc-case-summary p.skills-header {
   color: #1A1A1A;
 }
-/* line 173, ../sass/_case-study.scss */
+/* line 177, ../sass/_case-study.scss */
 .nwc-case-summary div.skills p {
   color: #1A1A1A;
 }
 
 /* ~~~~~~~~~~ Moody ~~~~~~~~~~~~~~~~~~~~ */
-/* line 183, ../sass/_case-study.scss */
+/* line 187, ../sass/_case-study.scss */
 .moody-container {
   background-color: #6288A3;
 }
 
-/* line 192, ../sass/_case-study.scss */
+/* line 196, ../sass/_case-study.scss */
 .moody-body-img {
   padding: 0;
   width: 100%;
   max-width: 600px;
 }
 
-/* line 198, ../sass/_case-study.scss */
+/* line 202, ../sass/_case-study.scss */
 .moody-wireframe {
   max-width: 1000px;
   width: 100%;
@@ -645,7 +650,7 @@
   margin-right: auto;
 }
 
-/* line 210, ../sass/_case-study.scss */
+/* line 214, ../sass/_case-study.scss */
 .wireframe-title {
   font-family: 'Palanquin', sans-serif;
   font-size: 1.66rem;
@@ -656,82 +661,82 @@
 }
 
 /* ~~~~~~~  Solar Crysis  ~~~~~~~~~~~~~~~ */
-/* line 221, ../sass/_case-study.scss */
+/* line 225, ../sass/_case-study.scss */
 .solarcrysis-container {
   background-color: #394E8E;
 }
 
 /* ~~~~~~~  Falmouth   ~~~~~~~~~~~~~~~ */
-/* line 228, ../sass/_case-study.scss */
+/* line 232, ../sass/_case-study.scss */
 .falmouth-container {
   background-color: #464646;
 }
 
 /* ~~~~~~~  Media Queries  ~~~~~~~~~~~~~~~ */
 @media (max-width: 768px) {
-  /* line 240, ../sass/_case-study.scss */
+  /* line 244, ../sass/_case-study.scss */
   .study-cover-content h1, .nwc-cover-content h1, .moody-cover-content h1 {
     font-size: 2.75em;
   }
-  /* line 245, ../sass/_case-study.scss */
+  /* line 249, ../sass/_case-study.scss */
   .study-cover-content p, .nwc-cover-content p, .moody-cover-content p {
     font-size: 1.5rem;
   }
 
-  /* line 250, ../sass/_case-study.scss */
+  /* line 254, ../sass/_case-study.scss */
   .cover-logo {
     max-width: 250px;
     max-height: 250px;
   }
 
-  /* line 259, ../sass/_case-study.scss */
+  /* line 263, ../sass/_case-study.scss */
   .case-summary .case-description, .nwc-case-summary .case-description {
     top: 0;
     transform: translateY(0);
     padding-top: 10%;
   }
-  /* line 266, ../sass/_case-study.scss */
+  /* line 270, ../sass/_case-study.scss */
   .case-summary p.description, .nwc-case-summary p.description {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 800px) {
-  /* line 274, ../sass/_case-study.scss */
+  /* line 278, ../sass/_case-study.scss */
   .study-row {
     margin-bottom: 0px;
     padding-bottom: 0px;
   }
 
-  /* line 279, ../sass/_case-study.scss */
+  /* line 283, ../sass/_case-study.scss */
   .study-mid-tile-desktop {
     display: none;
   }
 
-  /* line 283, ../sass/_case-study.scss */
+  /* line 287, ../sass/_case-study.scss */
   .study-mid-tile-mobile {
     display: inline-block;
   }
 }
 @media all and (max-width: 1215px) {
-  /* line 289, ../sass/_case-study.scss */
+  /* line 293, ../sass/_case-study.scss */
   .study-content {
     top: 0;
     transform: translateY(0);
   }
-  /* line 293, ../sass/_case-study.scss */
+  /* line 297, ../sass/_case-study.scss */
   .study-content p.description {
     font-size: 1.5rem;
     width: 100%;
   }
 
-  /* line 299, ../sass/_case-study.scss */
+  /* line 303, ../sass/_case-study.scss */
   .study-mid-tile, .study-mid-tile-mobile, .study-mid-tile-desktop {
     max-width: 400px;
     height: 100%;
   }
 }
 @media (max-width: 600px) {
-  /* line 310, ../sass/_case-study.scss */
+  /* line 314, ../sass/_case-study.scss */
   .case-summary .case-description, .nwc-case-summary .case-description {
     top: 0;
     transform: translateY(0);
