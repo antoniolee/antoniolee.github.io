@@ -240,10 +240,12 @@
     text-align: center;
     width: 100%;
 
-    a,a:link,a:visited
-    {
-     color:$dark-gray;
-     transition: .5s ease;
+    .nav {
+        a,a:link,a:visited
+        {
+         color:$dark-gray;
+         transition: .5s ease;
+        }
     }
 }
 
