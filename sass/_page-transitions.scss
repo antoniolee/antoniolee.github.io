@@ -1,15 +1,25 @@
 /* Page Transition Effects */
 
+.ng-enter       { z-index: 8888; }
+.ng-leave       { z-index: 9999; }
+
 .page.ng-leave  { 
-    z-index:9999; 
-    -webkit-animation:fadeOut .33s both ease-in;
-    -moz-animation:fadeOut .33s both ease-in;
-    animation:fadeOut .33s both ease-in;    
+
 }
 
 .page.ng-enter  {
-    z-index:8888; 
+ 
 }
+
+@media only screen and (min-width: 550px) {
+    .page.ng-leave  { 
+        -webkit-animation:fadeOut .33s both ease-in;
+        -moz-animation:fadeOut .33s both ease-in;
+        animation:fadeOut .33s both ease-in;   
+    }
+}
+
+
 
 /* Page specific animations ------------------------
 
