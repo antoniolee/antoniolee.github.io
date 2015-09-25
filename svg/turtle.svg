@@ -1,0 +1,57 @@
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="300px" height="200px" viewBox="0 0 300 200" style="enable-background:new 0 0 300 200;" xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:none;stroke:#414042;stroke-width:8;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#414042;stroke-width:8;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#414042;stroke-width:4;stroke-miterlimit:10;}
+]]>
+
+.st0 {
+	stroke-dasharray: 800;
+	stroke-dashoffset: 0;
+	-webkit-animation: dash 10s linear forwards;
+}
+
+.st1 {
+	stroke-dasharray: 800;
+	stroke-dashoffset: 0;
+	-webkit-animation: dash 5s linear forwards;
+}
+
+
+@-webkit-keyframes dash {
+	from {
+		stroke-dashoffset: 800;
+	}
+	to {
+		stroke-dashoffset:1;
+	}
+}
+
+</style>
+<g id="Eyes">
+	<line id="EYE" class="st2" x1="278.84" y1="111.12" x2="267.68" y2="111.12"/>
+	<line id="EYE_1_" class="st2" x1="245.36" y1="111.12" x2="234.2" y2="111.12"/>
+</g>
+<polygon id="Body" class="st1" points="30,144.6 223.04,144.6 223.04,99.96 200.72,66.48 178.4,44.16 144.92,33 111.44,33 
+	77.96,44.16 55.64,66.48 33.32,99.96 33.32,144.6 "/>
+<polyline class="st1" points="200.72,144.6 200.72,166.92 223.04,166.92 223.04,144.6 290,144.6 290,99.96 267.68,77.64 
+	256.52,77.64 245.36,77.64 234.2,88.8 223.04,99.96 "/>
+<path class="st0" d="M167.24,144.6"/>
+<polyline class="st0" points="55.64,144.6 55.64,166.92 33.32,166.92 33.32,144.6 "/>
+<polyline class="st0" points="77.96,144.6 77.96,166.92 55.64,166.92 "/>
+<polyline class="st0" points="33.32,133.44 22.16,133.44 11,122.28 11,111.12 33.32,111.12 "/>
+<path class="st0" d="M200.72,66.48"/>
+<path class="st0" d="M133.76,144.6"/>
+<polyline class="st0" points="189.56,144.6 178.4,144.6 178.4,166.92 200.72,166.92 "/>
+<line class="st0" x1="33.32" y1="99.96" x2="55.64" y2="66.48"/>
+<path class="st0" d="M111.44,33"/>
+<polyline class="st0" points="44.48,77.64 77.96,99.96 89.12,144.6 "/>
+<polyline class="st0" points="77.96,99.96 111.44,88.8 133.76,99.96 144.92,144.6 "/>
+<polyline class="st0" points="133.76,99.96 167.24,88.8 189.56,99.96 178.4,144.6 "/>
+<line class="st0" x1="189.56" y1="99.96" x2="211.88" y2="88.8"/>
+<polyline class="st0" points="111.44,88.8 111.44,55.32 77.96,44.16 "/>
+<polyline class="st0" points="111.44,55.32 156.08,44.16 167.24,88.8 "/>
+</svg>

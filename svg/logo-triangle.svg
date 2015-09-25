@@ -1,0 +1,14 @@
+
+<svg version="1.1" id="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="300px" viewBox="0 0 500 300" style="enable-background:new 0 0 500 300;" xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#FBD992;stroke:#414042;stroke-width:13;stroke-miterlimit:10;}
+	.st1{fill:#9EDBF9;stroke:#414042;stroke-width:13;stroke-miterlimit:10;}
+]]>
+</style>
+<polygon class="st1" points="36.295,262.05 322.865,262.05 178.866,46.05 36.295,259.905 "/>
+<path class="st0" d="M465.295,259.618L322.865,39.05H183.798c-0.699,1.391-1.47,2.755-2.303,4.072l141.37,218.928h142.43V259.618z"
+	/>
+<polygon class="st0" points="168.484,132.395 121.392,203.033 121.392,203.723 214.392,203.723 214.392,201.223 168.507,132.395 "/>
+</svg>

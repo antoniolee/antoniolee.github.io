@@ -1,0 +1,50 @@
+
+<svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="300px" height="300px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<defs>
+	<style type="text/css">
+		.arrow{fill:none;stroke:#414042;stroke-width:10;stroke-miterlimit:10;transition:.4s;}
+		.circle{fill:#FFFFFF;stroke:#414042;stroke-width:10;stroke-miterlimit:10; transition:.4s;}
+	
+		#icon:hover {
+			cursor: pointer;
+		}
+
+		#icon:hover .circle{
+			fill:#64CC54;
+			stroke:#FFFFFF;
+			transition: .4s;
+		}
+
+		#icon:hover .arrow{
+			stroke:#1E5216;
+			transition: .4s;
+		}
+
+		#icon.clicktrigger .circle{
+			fill: #A81D1D !important;
+			transition: .4s;
+		}
+
+		#icon.clicktrigger .arrow{
+			stroke: #FFFFFF;
+			transition: .4s;
+		}
+
+
+	</style>
+
+	<script type="text/javascript">
+		var clickAnim = document.querySelector('#icon');
+		
+		clickAnim.addEventListener('click', function (){
+			this.classList.toggle('clicktrigger');
+		})
+	</script>
+
+</defs>
+<circle class="circle" cx="150" cy="150" r="135"/>
+<line class="arrow" x1="150" y1="66.25" x2="150" y2="178.75"/>
+<line class="arrow" x1="82.5" y1="161.25" x2="150" y2="228.75"/>
+<line class="arrow" x1="217.5" y1="161.25" x2="146.438" y2="232.312"/>
+</svg>

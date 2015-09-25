@@ -62,6 +62,12 @@ antonioApp.config(function($routeProvider /*$locationProvider*/) {
         .when('/moody', {
             templateUrl: 'views/moody.html',
             controller: 'moodyController'
+        })
+
+        // SVG
+        .when('/svg', {
+            templateUrl: 'views/svg.html',
+            controller: 'svgController'
         });
 
    // $locationProvider.html5Mode(true);        
@@ -99,18 +105,23 @@ antonioApp.controller('nwcController', function($scope) {
     $scope.pageClass = 'page-nwc';
 });
 
-// nwc page controller
+// moody page controller
 antonioApp.controller('moodyController', function($scope) {
     $scope.pageClass = 'page-moody';
 });
 
-// nwc page controller
+// falmouth page controller
 antonioApp.controller('falmouthController', function($scope) {
     $scope.pageClass = 'page-falmouth';
 });
 
-// nwc page controller
+// solarcrysis page controller
 antonioApp.controller('solarcrysisController', function($scope) {
     $scope.pageClass = 'page-solarcrysis';
+});
+
+// svg page controller
+antonioApp.controller('svgController', function($scope) {
+    $scope.pageClass = 'page-svg';
 });
 

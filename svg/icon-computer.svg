@@ -1,0 +1,64 @@
+
+<svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="300px" height="300px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<defs>	
+	<style type="text/css">
+
+		.st0{fill:#414042;stroke:#414042;stroke-width:10;stroke-miterlimit:10;}
+		.st1{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
+		.st2{fill:#FFFFFF; transition: .4s;}
+		.st3{fill:none;stroke:#414042;stroke-width:10;stroke-miterlimit:10;}
+		.circle{fill:#FFFFFF;stroke:#414042;stroke-width:10;stroke-miterlimit:10; transition: .4s;}
+		.st5{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
+		.st6{fill:#414042;}
+
+		#icon:hover {
+			cursor: pointer;
+		}
+
+
+		#icon:hover .st2{
+			fill:#90B3CB;
+			transition: .4s;
+		}
+
+		#icon:hover .circle{
+			fill:#FBD992;
+			stroke: #E2A016;
+			transition: .4s;
+		}
+
+		#icon.clicktrigger .circle{
+			fill: #00C975 !important;
+			stroke: #267C58;
+			transition: .4s;
+		}
+		
+	</style>
+
+	<script type="text/javascript">
+		var clickAnim = document.querySelector('#icon');
+		
+		clickAnim.addEventListener('click', function (){
+			this.classList.toggle('clicktrigger');
+		})
+	</script>
+</defs>
+<circle class="circle" cx="150" cy="150" r="135"/>
+<path class="st0" d="M221.25,162.5c0,9.836-10.635,17.813-23.75,17.813h-95c-13.117,0-23.75-7.977-23.75-17.813V91.25
+	c0-9.836,10.633-17.813,23.75-17.813h95c13.115,0,23.75,7.976,23.75,17.813V162.5z"/>
+<g>
+	<path class="st2" d="M205.47,160.668c0,0.55-0.45,1-1,1H95.53c-0.55,0-1-0.45-1-1V87.605c0-0.55,0.45-1,1-1H204.47
+		c0.55,0,1,0.45,1,1V160.668z"/>
+	<path class="st5" d="M205.47,160.668c0,0.55-0.45,1-1,1H95.53c-0.55,0-1-0.45-1-1V87.605c0-0.55,0.45-1,1-1H204.47
+		c0.55,0,1,0.45,1,1V160.668z"/>
+</g>
+<g>
+	<path class="st6" d="M219.584,225.336c0,0.55-0.45,1-1,1H81.416c-0.55,0-1-0.45-1-1v-25.671c0-0.55,0.45-1,1-1h137.168
+		c0.55,0,1,0.45,1,1V225.336z"/>
+	<path class="st3" d="M219.584,225.336c0,0.55-0.45,1-1,1H81.416c-0.55,0-1-0.45-1-1v-25.671c0-0.55,0.45-1,1-1h137.168
+		c0.55,0,1,0.45,1,1V225.336z"/>
+</g>
+<line class="st1" x1="92.813" y1="212.5" x2="156.563" y2="212.5"/>
+<circle class="st2" cx="205.625" cy="212.5" r="5.804"/>
+</svg>

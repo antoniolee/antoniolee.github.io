@@ -1,0 +1,62 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"
+	 height="100%" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" id="icon">
+<defs>
+	<style type="text/css">
+
+		.lines{fill:#FFFFFF;stroke:#414042;stroke-width:10;stroke-miterlimit:10; transition: .4s;}
+
+		#icon:hover {
+			cursor: pointer;
+		}
+
+		#icon:hover .lines {
+			fill: #335672;;
+			stroke: white;
+			transition: .4s;
+		}
+
+		#icon.clicktrigger .lines{
+			fill: white !important;
+			stroke: #335672;
+			transition: .4s;
+		}
+		
+	</style>
+
+	<script type="text/javascript">
+		var clickAnim = document.querySelector('#icon');
+		
+		clickAnim.addEventListener('click', function (){
+			this.classList.toggle('clicktrigger');
+		})
+
+
+	</script>
+</defs>
+
+<g id="icon-circle">
+	<path class="lines" d="M286.966,150c0,40.564-17.634,77.01-45.654,102.09C217.08,273.778,185.08,286.966,150,286.966
+		c-75.644,0-136.966-61.322-136.966-136.966C13.034,74.356,74.356,13.034,150,13.034C225.644,13.034,286.966,74.356,286.966,150z"/>
+</g>
+<g id="shape">
+	<g>
+		<path class="lines" d="M81.517,150v69.896c0,5.5,4.5,10,10,10h28.917c5.5,0,14.5,0,20,0h68.049c5.5,0,10-4.5,10-10V150"/>
+		<path class="lines" d="M81.517,150v69.896c0,5.5,4.5,10,10,10h28.917c5.5,0,14.5,0,20,0h68.049c5.5,0,10-4.5,10-10V150"/>
+	</g>
+	<g>
+		<path class="lines" d="M245.653,142.929c3.89,3.889,2.571,7.071-2.929,7.071h-94.138c-5.5,0-14.5,0-20,0H57.276
+			c-5.5,0-6.818-3.182-2.929-7.071l88.582-88.582c3.889-3.889,10.253-3.889,14.143,0L245.653,142.929z"/>
+		<path class="lines" d="M245.653,142.929c3.89,3.889,2.571,7.071-2.929,7.071h-94.138c-5.5,0-14.5,0-20,0H57.276
+			c-5.5,0-6.818-3.182-2.929-7.071l88.582-88.582c3.889-3.889,10.253-3.889,14.143,0L245.653,142.929z"/>
+	</g>
+	<path class="lines" d="M138.586,184.241"/>
+	<g>
+		<path class="lines" d="M172.827,225.896c0,2.2-1.8,4-4,4h-37.655c-2.2,0-4-1.8-4-4v-49.069c0-2.2,1.8-4,4-4h37.655c2.2,0,4,1.8,4,4
+			V225.896z"/>
+		<path class="lines" d="M172.827,225.896c0,2.2-1.8,4-4,4h-37.655c-2.2,0-4-1.8-4-4v-49.069c0-2.2,1.8-4,4-4h37.655c2.2,0,4,1.8,4,4
+			V225.896z"/>
+	</g>
+</g>
+<g id="details">
+</g>
+</svg>

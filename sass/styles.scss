@@ -10,6 +10,12 @@
 */
 
 
+.row {
+  width: 100%;
+  margin: 0;
+}
+
+
 .height-50px {
   height: 50px;
 }
@@ -111,7 +117,7 @@ a,a:link,a:visited
 
 a {
   @include hover-focus-active {
-    color: $white;
+
   }
 }
 

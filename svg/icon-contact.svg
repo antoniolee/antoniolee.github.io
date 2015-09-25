@@ -1,0 +1,40 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="300px" height="300px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" id="icon">
+<defs>
+	<style type="text/css">
+
+		.head{fill:#F7D59F;stroke:#414042;stroke-width:10;stroke-miterlimit:10;}
+		.circle{fill:#FFFFFF;stroke:#414042;stroke-width:10;stroke-miterlimit:10; transition: .4s;}
+		.body{fill:#7A8487;stroke:#414042;stroke-width:10;stroke-miterlimit:10;}
+
+		#icon:hover {
+			cursor: pointer;
+		}
+
+		#icon:hover .circle{
+			fill:#6CB7F1;
+			stroke:#335672;
+			transition: .4s;
+		}
+
+		#icon.clicktrigger .circle{
+			fill: #64CC54 !important;
+			stroke: #1E5216;
+			transition: .4s;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		var clickAnim = document.querySelector('#icon');
+		
+		clickAnim.addEventListener('click', function (){
+			this.classList.toggle('clicktrigger');
+		})
+	</script>
+</defs>
+<circle class="circle" cx="150" cy="150" r="135"/>
+<path class="body" d="M222.63,219.17c0,39.79-145.259,39.79-145.259,0c0-39.795,32.518-72.057,72.629-72.057
+	C190.112,147.113,222.63,179.375,222.63,219.17z"/>
+<circle class="head" cx="150" cy="110.798" r="54.471"/>
+</svg>

@@ -234,6 +234,58 @@
     background-color: $gray;
 }
 
+/* Svg Page and SVG's ================================================================ */
+
+#section-svg{
+    text-align: center;
+    width: 100%;
+
+    a,a:link,a:visited
+    {
+     color:$dark-gray;
+     transition: .5s ease;
+    }
+}
+
+.svg-logo{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 320px) {
+    .svg-logo{
+        width: 200px;
+        height: 100px;
+    }
+}
+
+#svg-contact {
+    width: 75px;
+    height: 75px;
+}
+
+.svg-icon {
+    width: 75%;
+    height: 75%;
+    padding: 50px;
+}
+
+.svg-header {
+    padding: 25px;
+    font-family: 'Palanquin', sans-serif;
+}
+
+.svg-header h1{
+    font-size: 72px;
+    margin-bottom: 0px;
+}
+
+@media (max-width:768px){
+    .svg-header h1{
+        font-size: 42px;
+    }
+}
+
 
 /* ~~~~~~~  Media Queries  ~~~~~~~~~~~~~~~ */
 

@@ -1,0 +1,47 @@
+
+<svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="300px" height="300px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<defs>
+	<style type="text/css">
+
+		.st0{fill:#B3B0A1;stroke:#414042;stroke-width:10;stroke-miterlimit:10;}
+		.st1{fill:#CCFFD9;stroke:#414042;stroke-width:10;stroke-miterlimit:10;}
+		.circle{fill:#FFFFFF;stroke:#414042;stroke-width:10;stroke-miterlimit:10; transition: .4s;}
+		.st3{fill:#B3A1A1;stroke:#414042;stroke-width:10;stroke-miterlimit:10;}
+
+		#icon:hover .circle{
+			fill:#F9EE8A;
+			stroke:#C6A55A;
+			transition: .4s;
+		}
+
+		#icon:hover {
+			cursor: pointer;
+		}
+
+
+		#icon.clicktrigger .circle{
+			fill: #64CC54 !important;
+			stroke: #1E5216;
+			transition: .4s;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		var clickAnim = document.querySelector('#icon');
+		
+		clickAnim.addEventListener('click', function (){
+			this.classList.toggle('clicktrigger');
+		})
+	</script>
+
+</defs>
+<circle class="circle" cx="150" cy="150" r="135"/>
+<path class="st3" d="M122.698,78.717l-46.447,27.951v96.727l3.195,3.195l43.888-18.256V79.167
+	C123.121,79.018,122.909,78.867,122.698,78.717z"/>
+<path class="st0" d="M170.834,208.544V107.917l-45.869-27.604c-0.404,0.207-0.809,0.414-1.214,0.619v108.651l46.458,19.323
+	C170.418,208.787,170.626,208.666,170.834,208.544z"/>
+<path class="st1" d="M212.648,84.255l-41.397,24.912v99.532c0.628,0.304,1.25,0.618,1.872,0.939l45.211-18.805V89.94L212.648,84.255
+	z"/>
+</svg>
