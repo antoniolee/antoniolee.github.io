@@ -27,6 +27,7 @@
 
 .study-cover-tile {
     @extend .study-tile;
+    padding-top: 50px;
 }
 
 
@@ -239,14 +240,7 @@
 #section-svg{
     text-align: center;
     width: 100%;
-
-    .nav {
-        a,a:link,a:visited
-        {
-         color:$dark-gray;
-         transition: .5s ease;
-        }
-    }
+    background-color: $light-gray;
 }
 
 .svg-logo{
@@ -293,6 +287,10 @@
 
 
 @media (max-width: 768px) {
+    .study-cover-tile {
+        padding-top: 75px;
+    }
+
     .study-cover-content {
     // Header Settings
         h1 {

@@ -1,12 +1,10 @@
 // Home Page Container
-
-$padding: 20px;
-
 // Dictionary Theme
 
 #cover {
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../images/home-cover.jpg");
     background-size: cover;
+    min-height: 900px;
 }
 
 .dict-container {
@@ -79,7 +77,7 @@ $padding: 20px;
     @extend .dict-content;
         margin-left: 52%;
         position: relative;
-        padding-top: 10vh;
+        padding-top: 12.5vh;
         height: 100vh;
         min-height: 500px;
 }
@@ -91,66 +89,10 @@ $padding: 20px;
     }
 }
 
-// Home Contact
-
-.home-footer {
-    color: $white;
-    height: 380px;
-    background-color: $dark-gray;
-    text-align: center;
-}
-
-.contact-tile {
-    display: inline-block;
-    text-align: left;
-    margin: 20px;
-}
-
-.contact-header {
-    font-family: 'Palanquin', sans-serif;
-    font-size: 2.25em;
-    font-weight: 400;
-    padding-right: 40px;
-}
-
-.contact-description {
-    max-width: 240px;
-    font-family: 'Palanquin', sans-serif;
-    font-size: 1.1em;
-    font-weight: 400;
-}
-
-.contact-title {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5em;
-    font-weight: 100;
-}
-
-.contact-contact {
-    position: relative;
-    top: 100px;
-}
-
-.contact-info {
-    font-size: 1.1em;
-    font-weight: 200;
-    color: $teal;
-}
-
-.contact-reserved {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.1em;
-    font-weight: 200;
-}
-
-.contact-1 {
-
-}
-
 @media only screen and (max-height: 500px), screen and (max-width: 950px) {
     // Home Page Content
     .home-content {
-        padding-top: 5vh;
+        padding-top: 10vh;
         margin: auto; 
         overflow: auto;
         overflow-y: hidden;
@@ -168,28 +110,9 @@ $padding: 20px;
 
     #cover {
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../images/home-cover.jpg");
+        min-height: 550px;
     }
 
-    .contact-header{
-        float:left;
-        margin-top: 50px;
-    }
-
-    .home-footer {
-        height: 450px;
-        padding-left: 40px;
-    }
-
-    .contact-contact {
-        position: relative;
-        top: 0px;
-    }
-
-    .contact-tile {
-        display: block;
-        text-align: left;
-        margin: 0 20px 20px 20px;
-    }
 }
 
 @media only screen and (max-width: 443px) {
@@ -200,6 +123,7 @@ $padding: 20px;
     #cover {
         background: url("../images/home-cover-small.jpg");
         background-size: cover;
+        min-height: 750px;
      }
 
 }

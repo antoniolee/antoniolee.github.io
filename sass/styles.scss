@@ -42,13 +42,13 @@
     transform: translateY(-50%);
 }
 
-
 // Colors
 $dark-gray: #1A1A1A;
 $light-gray: #B1B1B1;
 $gray: #464646;
 $white: #E6E6E6;
 $green: #92FF6E;
+$dark-green: #013220;
 $blue: #32CFE0;
 $light-blue: #9AB4C5;
 $blue-1: #6288A3;
@@ -78,20 +78,11 @@ $solarcrysis-blue: #394E8E;
 .bg-blue-5 { background-color: $blue-5; }
 .bg-light-gray { background-color: $light-gray; }
 
-//Fonts
-html {
-
-}
-
-$nav-font-size: 1.75rem;
-
-
 @mixin hover-focus-active() {
   &:hover,
   &:focus,
   &:active { @content }
 }
-
 
 // @import "compass/reset";
 @import "page-transitions";
@@ -101,22 +92,23 @@ $nav-font-size: 1.75rem;
 @import "blog";
 @import "menu-icon";
 
-
-#myModal {
-  
+// Body
+body {
+  background-color: $dark-gray;
 }
+
 
 // Page Links
 /* unvisited link */
 a,a:link,a:visited
 {
- color:$white;
  transition: .5s ease;
+ color: $white;
 }
 
 a {
   @include hover-focus-active {
-
+    color: $white;
   }
 }
 
@@ -131,8 +123,12 @@ a {
 .page-about { background-color: #506AC0; }
 .page-nwc { background-color: #C66F61 }
 
+$nav-font-size: 1.75rem;
+
 // Default Nav Bar
 .nav {
+    position: absolute;
+    z-index: 10;
     width: 100%;
     padding: 1em 1.5em 0 0;
     
@@ -142,7 +138,6 @@ a {
         display: inline;
         font-size: $nav-font-size;
         margin-left: 3rem;
-        color: $white;
     }
 }
 
@@ -150,17 +145,61 @@ a {
   float:right;
 }
 
-.mobile-nav-btn {
-  visibility: hidden;
-  width: 40px;
-  height: 40px;
-  background-color: $orange;
+.nav-element {
+  color: $dark-gray;
 }
 
-.mobile-nav {
-  visibility: hidden;
+// Contact Footer
+
+.footer {
+    color: $white;
+    height: 380px;
+    background-color: $dark-gray;
+    text-align: center;
 }
 
+.contact-tile {
+    display: inline-block;
+    text-align: left;
+    margin: 0 20px;
+}
+
+.contact-header {
+    font-family: 'Palanquin', sans-serif;
+    font-size: 2.25em;
+    font-weight: 400;
+    padding-right: 40px;
+}
+
+.contact-description {
+    max-width: 240px;
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.contact-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.contact-contact {
+    position: relative;
+    top: 100px;
+}
+
+.contact-info {
+    font-size: 1.1em;
+    font-weight: 200;
+    color: $white;
+}
+
+.contact-reserved {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: 200;
+}
 
 // Skills, Tools, etc.
 .skills-header {
@@ -253,6 +292,29 @@ a {
         color: $white;
     }
   }
+}
+
+@media only screen and (max-height: 500px), screen and (max-width: 950px) {
+    .contact-header{
+        float:left;
+        margin-top: 50px;
+    }
+
+    .footer {
+        height: 450px;
+        padding-left: 40px;
+    }
+
+    .contact-contact {
+        position: relative;
+        top: 0px;
+    }
+
+    .contact-tile {
+        display: block;
+        text-align: left;
+        margin: 0 20px 20px 20px;
+    }
 }
 
 

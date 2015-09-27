@@ -8,8 +8,8 @@
 
 // Works Header
 .works-header {
-
     text-align: center;
+    padding-top: 50px;
 
     p {
         font-family: 'Palanquin', sans-serif;
@@ -74,23 +74,16 @@
 
 .works-tile {
   @include hover-focus-active {
-    transform: scale(1.03);
     transition: .5s ease;
 
-    p {
-      color: $white;
+    img {
+        transform: scale(1.03);
     }
+  
+    p {
 
+      }
   }
-}
-
-.works-footer-space {
-  height: 75px;
-}
-
-.works-footer {
-  @extend .home-footer;
-  background: $teal;
 }
 
 
@@ -113,18 +106,18 @@
           height: 250px;
       }
 
-      .works-header {
+    .works-header {
+       padding-top: 75px;
 
-      p.header {
-          font-size: 2.25rem;
-      }
+       p.header {
+         font-size: 2.25rem;
+       }
 
-      p.pronounce {
-          font-size: 1.45rem;
-
-      }
-  }
-
+       p.pronounce {
+        font-size: 1.45rem;
+       }
+    }
+    
 }
 
 
