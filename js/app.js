@@ -78,16 +78,21 @@ antonioApp.config(function($routeProvider /*$locationProvider*/) {
 // home page controller
 antonioApp.controller('mainController', function($scope) {
     $scope.pageClass = 'page-home';
-});
+    $(".nav").removeClass('opacity')
+    
+    function loadingAnimation() {
+        // CSS Animation
+        $('.home-content').removeClass("hidden");
+        $('.home-content').addClass("animated fadeIn");
+      }
 
-// about page controller
-antonioApp.controller('aboutController', function($scope) {
-    $scope.pageClass = 'page-about';
+    setTimeout(loadingAnimation, 1000);
 });
 
 // works page controller
 antonioApp.controller('worksController', function($scope) {
     $scope.pageClass = 'page-works';
+    $(".nav").removeClass('opacity')
 });
 
 // blog page controller
@@ -123,7 +128,9 @@ antonioApp.controller('solarcrysisController', function($scope) {
 // svg page controller
 antonioApp.controller('svgController', function($scope) {
     $scope.pageClass = 'page-svg';
+    $(".nav").addClass('opacity');
 });
+
 
 
 

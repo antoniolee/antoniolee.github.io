@@ -1,16 +1,16 @@
 // Blog container
 .blog-container {
     @extend .dict-container;
-
+    min-height: 700px;
 }
 
 .blog-content {
     @extend .dict-content;
-    margin: auto;
+    padding-top: 50px;
     position: relative;
-    top: 0; 
     left: 0;
-    transform: translate(0%,0%);    
+    top: 50%;
+    transform: translateY(50%);
 }
 
 
