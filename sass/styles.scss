@@ -99,6 +99,7 @@ $solarcrysis-blue: #394E8E;
 @import "case-study";
 @import "blog";
 @import "menu-icon";
+@import "overlay";
 
 // Body
 body {
@@ -119,33 +120,12 @@ a {
   }
 }
 
-// Loading Animation
-.loading-circle {
-  margin: 0 50px;
-  width: 80%;
-  max-width: 600px;
-  max-height: 600px;
-  border-radius: 50%;
-  background-color: white;
-  z-index: 21;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-}
-
-.loading-animation {
-  width: 80%;
-  max-width: 400px;
-  height: 200px;
-  z-index: 20;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-}
-
-svg path,
-svg rect{
-  fill: #FF6700;
+// Trigger Overlay Menu Effect 
+#trigger-overlay {
+  display: none;
+  background: url(../images/menu-icon.png);
+  width: 40px;
+  height: 40px;
 }
 
 
@@ -165,7 +145,7 @@ $nav-font-size: 1.75rem;
 // Default Nav Bar
 .nav {
     position: absolute;
-    z-index: 10;
+    z-index: 40;
     width: 100%;
     padding: 1em 1.5em 0 0;
     
@@ -193,6 +173,11 @@ $nav-font-size: 1.75rem;
     height: 380px;
     background-color: $dark-gray;
     text-align: center;
+}
+
+.contact-icon {
+  width: 25px;
+  height: 25px;
 }
 
 .contact-tile {
@@ -291,34 +276,22 @@ $nav-font-size: 1.75rem;
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 950px) {
   // Loading Animation
-  .loading-circle {
-    width: 400px;
-    height: 400px;
+  #trigger-overlay {
+    display: inherit;
   }
 
-  .loading-animation{
-    width: 300px;
-    height: 150px;
+  .nav-list {
+    display: none;
   }
 
-  .desktop-nav {
-    visibility: hidden;
-  }
-  
-  .mobile-nav-btn {
-    visibility: visible;
+  .nav {
+    width: 100%;
+    padding: 0 15px 10px 0;
   }
 
-  .mobile-nav {
-    position: absolute;
-    z-index: 10;
-    width: 100vw;
-    height: 50vh;
-    background-color: $green;
-  }
-
+/*
   .nav-list {
     float: none;
     padding: 0px;
@@ -338,6 +311,7 @@ $nav-font-size: 1.75rem;
         color: $white;
     }
   }
+*/
 }
 
 @media only screen and (max-width: 500px) {

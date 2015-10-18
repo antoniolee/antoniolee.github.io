@@ -18,18 +18,20 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/modernizr.custom.js"></script>
 </head>
 
 <!-- apply our angular app -->
 <body ng-app="antonioApp">
-
   <div class="nav hidden">
+    <div id="trigger-overlay" class="pull-right"></div>
     <ul class="nav-list">
       <li><a href="#works">Works</a></li>
       <li><a href="https://drive.google.com/file/d/0ByQz8rOk6l16OWdYRzlEdzQ0OE0/view?usp=sharing" target="_blank">Resume</a></li>
       <li><a href="#">Home</a></li>
     </ul>
   </div>
+
 
 	<div class="page {{pageClass}}" ng-view></div>
 
@@ -42,16 +44,29 @@
       </div>
       <div class="contact-tile contact-contact">
         <p class="contact-title">Contact</p>
-        <p><a class="contact-info" href="mailto:antoniolee@outlook.com" >antoniolee@outlook.com</a></p>
-        <p><a class="contact-info" href="https://www.linkedin.com/pub/antonio-lee/61/196/351">LinkedIn</a></p>
-        <p><a class="contact-info" href="https://codepen.io/antoniolee/">CodePen</a></p>
-        <p><a class="contact-info" href="https://github.com/antoniolee">GitHub</a></p>
+        <p><a class="contact-info" href="mailto:antoniolee@outlook.com">antoniolee@outlook.com</a></p>
+        <p><a class="contact-info" href="https://www.linkedin.com/pub/antonio-lee/61/196/351"><img class="contact-icon" src="images/linkedin-icon.png">&nbsp&nbsp LinkedIn</a></p>
+        <p><a class="contact-info" href="https://codepen.io/antoniolee/"><img class="contact-icon" src="images/codepen-icon.png">&nbsp&nbsp CodePen</a></p>
+        <p><a class="contact-info" href="https://github.com/antoniolee"><img class="contact-icon" src="images/github-icon.png">&nbsp&nbsp GitHub</a></p>
       </div>
       <div class="contact-tile contact-reserved">
         <p>&copy; 2015 Antonio Lee</p>
         <p>All rights reserved</p>
       </div>
   </div>
+
+  <!-- open/close overlay-->
+    <div class="overlay overlay-hugeinc">
+      <button type="button" class="overlay-close">Close</button>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#works">Work</a></li>
+          <li><a href="https://drive.google.com/file/d/0ByQz8rOk6l16OWdYRzlEdzQ0OE0/view?usp=sharing" target="_blank">Resume</a></li>
+          <li><a class="contact-info" href="mailto:antoniolee@outlook.com">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
 </body>
 
@@ -62,13 +77,37 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.min.js"></script>
+<script src="js/classie.js"></script>
 <script src="js/app.js"></script>
 <script src="js/pace.min.js"></script>
+<script src="js/overlay.js"></script>
 <script>
 
 // A $( document ).ready() block.
 $( document ).ready(function() {
   console.log( "Page loaded." );
+
+/*
+  var winWidth = window.innerWidth;
+  console.log("Window.innerWidth = "+winWidth);
+
+  $(window).on('resize', function() {
+      if($(window).width() <= 768) {
+          $('#trigger-overlay').removeClass("hidden");
+      }else{
+          $('#trigger-overlay').addClass("hidden");
+      }
+  })
+  */
+
+  $("#trigger-overlay").click(function() {
+    $(".nav").addClass("hidden");
+  });
+
+  $(".overlay-close").click(function() {
+    $('.nav').removeClass("hidden");
+  });
+
 
   function loadingAnimation1() {
     $('.loading-circle').addClass("animated fadeOut");
