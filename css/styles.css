@@ -861,8 +861,9 @@
 }
 
 /* Overlay closing cross */
-/* line 17, ../sass/_overlay.scss */
-.overlay .overlay-close {
+/* line 21, ../sass/_overlay.scss */
+.close-button {
+  background: url(../images/cross.png) no-repeat center center;
   width: 80px;
   height: 80px;
   position: absolute;
@@ -870,7 +871,6 @@
   top: 20px;
   overflow: hidden;
   border: none;
-  background: url(../images/cross.png) no-repeat center center;
   text-indent: 200%;
   color: #E6E6E6;
   outline: none;
@@ -878,7 +878,7 @@
 }
 
 /* Menu style */
-/* line 33, ../sass/_overlay.scss */
+/* line 37, ../sass/_overlay.scss */
 .overlay nav {
   text-align: center;
   position: relative;
@@ -889,7 +889,7 @@
   transform: translateY(-50%);
 }
 
-/* line 43, ../sass/_overlay.scss */
+/* line 47, ../sass/_overlay.scss */
 .overlay ul {
   list-style: none;
   padding: 0;
@@ -899,7 +899,7 @@
   position: relative;
 }
 
-/* line 52, ../sass/_overlay.scss */
+/* line 56, ../sass/_overlay.scss */
 .overlay ul li {
   display: block;
   height: 20%;
@@ -907,7 +907,7 @@
   min-height: 54px;
 }
 
-/* line 59, ../sass/_overlay.scss */
+/* line 63, ../sass/_overlay.scss */
 .overlay ul li a {
   font-weight: 300;
   display: block;
@@ -917,14 +917,14 @@
   margin-bottom: 25px;
 }
 
-/* line 68, ../sass/_overlay.scss */
+/* line 72, ../sass/_overlay.scss */
 .overlay ul li a:hover,
 .overlay ul li a:focus {
   color: #e3fcb1;
 }
 
 /* Effects */
-/* line 74, ../sass/_overlay.scss */
+/* line 78, ../sass/_overlay.scss */
 .overlay-hugeinc {
   opacity: 0;
   visibility: hidden;
@@ -932,7 +932,7 @@
   transition: opacity 0.5s, visibility 0s 0.5s;
 }
 
-/* line 81, ../sass/_overlay.scss */
+/* line 85, ../sass/_overlay.scss */
 .overlay-hugeinc.open {
   opacity: 1;
   visibility: visible;
@@ -940,13 +940,13 @@
   transition: opacity 0.5s;
 }
 
-/* line 88, ../sass/_overlay.scss */
+/* line 92, ../sass/_overlay.scss */
 .overlay-hugeinc nav {
   -webkit-perspective: 1200px;
   perspective: 1200px;
 }
 
-/* line 93, ../sass/_overlay.scss */
+/* line 97, ../sass/_overlay.scss */
 .overlay-hugeinc nav ul {
   opacity: 0.4;
   -webkit-transform: translateY(-25%) rotateX(35deg);
@@ -955,27 +955,27 @@
   transition: transform 0.5s, opacity 0.5s;
 }
 
-/* line 101, ../sass/_overlay.scss */
+/* line 105, ../sass/_overlay.scss */
 .overlay-hugeinc.open nav ul {
   opacity: 1;
   -webkit-transform: rotateX(0deg);
   transform: rotateX(0deg);
 }
 
-/* line 107, ../sass/_overlay.scss */
+/* line 111, ../sass/_overlay.scss */
 .overlay-hugeinc.close nav ul {
   -webkit-transform: translateY(25%) rotateX(-35deg);
   transform: translateY(25%) rotateX(-35deg);
 }
 
 @media screen and (max-height: 30.5em) {
-  /* line 113, ../sass/_overlay.scss */
+  /* line 117, ../sass/_overlay.scss */
   .overlay nav {
     height: 70%;
     font-size: 34px;
   }
 
-  /* line 117, ../sass/_overlay.scss */
+  /* line 121, ../sass/_overlay.scss */
   .overlay ul li {
     min-height: 34px;
   }
@@ -1068,16 +1068,17 @@ a:hover, a:focus, a:active {
 .contact-icon {
   width: 25px;
   height: 25px;
+  margin-right: 10px;
 }
 
-/* line 183, ../sass/styles.scss */
+/* line 184, ../sass/styles.scss */
 .contact-tile {
   display: inline-block;
   text-align: left;
   margin: 0 20px;
 }
 
-/* line 189, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 .contact-header {
   font-family: 'Palanquin', sans-serif;
   font-size: 2.25em;
@@ -1085,7 +1086,7 @@ a:hover, a:focus, a:active {
   padding-right: 40px;
 }
 
-/* line 196, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .contact-description {
   max-width: 240px;
   font-family: 'Palanquin', sans-serif;
@@ -1093,34 +1094,34 @@ a:hover, a:focus, a:active {
   font-weight: 400;
 }
 
-/* line 203, ../sass/styles.scss */
+/* line 204, ../sass/styles.scss */
 .contact-title {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   font-weight: 100;
 }
 
-/* line 209, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .contact-contact {
   position: relative;
   top: 100px;
 }
 
-/* line 214, ../sass/styles.scss */
+/* line 215, ../sass/styles.scss */
 .contact-info {
   font-size: 1.1em;
   font-weight: 200;
   color: #E6E6E6;
 }
 
-/* line 220, ../sass/styles.scss */
+/* line 221, ../sass/styles.scss */
 .contact-reserved {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.1em;
   font-weight: 200;
 }
 
-/* line 227, ../sass/styles.scss */
+/* line 228, ../sass/styles.scss */
 .skills-header {
   color: #B1B1B1;
   font-size: 12px;
@@ -1128,12 +1129,12 @@ a:hover, a:focus, a:active {
   font-weight: 300;
 }
 
-/* line 234, ../sass/styles.scss */
+/* line 235, ../sass/styles.scss */
 .skills {
   padding-top: 10px;
   overflow: auto;
 }
-/* line 238, ../sass/styles.scss */
+/* line 239, ../sass/styles.scss */
 .skills p {
   float: left;
   border-style: solid;
@@ -1146,49 +1147,49 @@ a:hover, a:focus, a:active {
   color: #B1B1B1;
 }
 
-/* line 251, ../sass/styles.scss */
+/* line 252, ../sass/styles.scss */
 .border, .green, .blue, .orange, .pink, .yellow {
   border-width: 2px;
   min-width: 50px;
 }
 
-/* line 256, ../sass/styles.scss */
+/* line 257, ../sass/styles.scss */
 .green {
   border-color: #92FF6E;
 }
 
-/* line 261, ../sass/styles.scss */
+/* line 262, ../sass/styles.scss */
 .blue {
   border-color: #32CFE0;
 }
 
-/* line 265, ../sass/styles.scss */
+/* line 266, ../sass/styles.scss */
 .orange {
   border-color: #DD9833;
 }
 
-/* line 269, ../sass/styles.scss */
+/* line 270, ../sass/styles.scss */
 .pink {
   border-color: #C66F61;
 }
 
-/* line 273, ../sass/styles.scss */
+/* line 274, ../sass/styles.scss */
 .yellow {
   border-color: #F7E4B6;
 }
 
 @media only screen and (max-width: 950px) {
-  /* line 281, ../sass/styles.scss */
+  /* line 282, ../sass/styles.scss */
   #trigger-overlay {
     display: inherit;
   }
 
-  /* line 285, ../sass/styles.scss */
+  /* line 286, ../sass/styles.scss */
   .nav-list {
     display: none;
   }
 
-  /* line 289, ../sass/styles.scss */
+  /* line 290, ../sass/styles.scss */
   .nav {
     width: 100%;
     padding: 0 15px 10px 0;
@@ -1217,38 +1218,38 @@ a:hover, a:focus, a:active {
   */
 }
 @media only screen and (max-width: 500px) {
-  /* line 319, ../sass/styles.scss */
+  /* line 320, ../sass/styles.scss */
   .loading-circle {
     width: 250px;
     height: 250px;
   }
 
-  /* line 324, ../sass/styles.scss */
+  /* line 325, ../sass/styles.scss */
   .loading-animation {
     width: 200px;
     height: 100px;
   }
 }
 @media only screen and (max-height: 500px), screen and (max-width: 950px) {
-  /* line 331, ../sass/styles.scss */
+  /* line 332, ../sass/styles.scss */
   .contact-header {
     float: left;
     margin-top: 50px;
   }
 
-  /* line 336, ../sass/styles.scss */
+  /* line 337, ../sass/styles.scss */
   .footer {
     height: 450px;
     padding-left: 40px;
   }
 
-  /* line 341, ../sass/styles.scss */
+  /* line 342, ../sass/styles.scss */
   .contact-contact {
     position: relative;
     top: 0px;
   }
 
-  /* line 346, ../sass/styles.scss */
+  /* line 347, ../sass/styles.scss */
   .contact-tile {
     display: block;
     text-align: left;

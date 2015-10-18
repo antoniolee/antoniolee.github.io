@@ -27,7 +27,7 @@
     <div id="trigger-overlay" class="pull-right"></div>
     <ul class="nav-list">
       <li><a href="#works">Works</a></li>
-      <li><a href="https://drive.google.com/file/d/0ByQz8rOk6l16OWdYRzlEdzQ0OE0/view?usp=sharing" target="_blank">Resume</a></li>
+      <li><a href="https://drive.google.com/file/d/0ByQz8rOk6l16cnJSZnh1SUM4Z00/view?usp=sharing" target="_blank">Resume</a></li>
       <li><a href="#">Home</a></li>
     </ul>
   </div>
@@ -45,9 +45,9 @@
       <div class="contact-tile contact-contact">
         <p class="contact-title">Contact</p>
         <p><a class="contact-info" href="mailto:antoniolee@outlook.com">antoniolee@outlook.com</a></p>
-        <p><a class="contact-info" href="https://www.linkedin.com/pub/antonio-lee/61/196/351"><img class="contact-icon" src="images/linkedin-icon.png">&nbsp&nbsp LinkedIn</a></p>
-        <p><a class="contact-info" href="https://codepen.io/antoniolee/"><img class="contact-icon" src="images/codepen-icon.png">&nbsp&nbsp CodePen</a></p>
-        <p><a class="contact-info" href="https://github.com/antoniolee"><img class="contact-icon" src="images/github-icon.png">&nbsp&nbsp GitHub</a></p>
+        <p><a class="contact-info" href="https://www.linkedin.com/pub/antonio-lee/61/196/351"><img class="contact-icon" src="images/linkedin-icon.png">LinkedIn</a></p>
+        <p><a class="contact-info" href="https://codepen.io/antoniolee/"><img class="contact-icon" src="images/codepen-icon.png">CodePen</a></p>
+        <p><a class="contact-info" href="https://github.com/antoniolee"><img class="contact-icon" src="images/github-icon.png">GitHub</a></p>
       </div>
       <div class="contact-tile contact-reserved">
         <p>&copy; 2015 Antonio Lee</p>
@@ -57,12 +57,12 @@
 
   <!-- open/close overlay-->
     <div class="overlay overlay-hugeinc">
-      <button type="button" class="overlay-close">Close</button>
+      <button type="button" class="overlay-close close-button">Close</button>
       <nav>
-        <ul>
+        <ul class="overlay-close">
           <li><a href="#">Home</a></li>
           <li><a href="#works">Work</a></li>
-          <li><a href="https://drive.google.com/file/d/0ByQz8rOk6l16OWdYRzlEdzQ0OE0/view?usp=sharing" target="_blank">Resume</a></li>
+          <li><a href="https://drive.google.com/file/d/0ByQz8rOk6l16cnJSZnh1SUM4Z00/view?usp=sharing" target="_blank">Resume</a></li>
           <li><a class="contact-info" href="mailto:antoniolee@outlook.com">Contact</a></li>
         </ul>
       </nav>
@@ -106,6 +106,7 @@ $( document ).ready(function() {
 
   $(".overlay-close").click(function() {
     $('.nav').removeClass("hidden");
+    console.log("overlay closed")
   });
 
 

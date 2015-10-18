@@ -15,6 +15,11 @@
 
 /* Overlay closing cross */
 .overlay .overlay-close {
+	
+}
+
+.close-button {
+	background: url(../images/cross.png) no-repeat center center;
 	width: 80px;
 	height: 80px;
 	position: absolute;
@@ -22,7 +27,6 @@
 	top: 20px;
 	overflow: hidden;
 	border: none;
-	background: url(../images/cross.png) no-repeat center center;
 	text-indent: 200%;
 	color: $white;
 	outline: none;
