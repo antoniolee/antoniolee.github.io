@@ -96,6 +96,7 @@
         margin: auto; 
         overflow: auto;
         overflow-y: hidden;
+        min-height: 725px;
 
     // Header Settings
         h1 {
@@ -111,18 +112,17 @@
     #cover {
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../images/home-cover.jpg");
         min-height: 550px;
+        background-size: cover;
     }
 
 }
 
 @media only screen and (max-width: 443px) {
     .home-content {
-        min-height: 700px;
+        
     }
 
     #cover {
-        background: url("../images/home-cover-small.jpg");
-        background-size: cover;
         min-height: 750px;
      }
 
