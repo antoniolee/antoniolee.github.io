@@ -1,0 +1,75 @@
+// Works Row 
+.fofofadi-container {
+	@extend .home-container;
+}
+
+.fofofadi-row {
+
+}
+
+.fofodadi-tile {
+
+}
+
+.fofofadi-bg {
+	min-width: 700px;
+	min-height: 700px;
+	width: 100%;
+	height: 100%;
+}
+
+#turtle-smoking {
+	max-width: 1000px;
+	max-height: 500px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.turtle-smoking-small {
+	max-width: 350px;
+	max-height: 220px;
+	position: absolute;
+    top: 50%;
+    left: 53%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+@-webkit-keyframes disco {  
+  0% { background-color: #FF7F2C; }
+  13% { background-color: white; }
+  25% { background-color: $light-green; }
+  40% { background-color: #500887; }
+  58% { background-color: $yellow; }
+  71% { background-color: #FFF82C; }
+  85% { background-color: $red; }
+  100% { background-color: #1116CD; }
+}
+
+@-webkit-keyframes rgy {  
+  0% { background-color: #bd27ad; }
+  50% { background-color: $light-green; }
+  51% { background-color: $yellow; }
+  100% { background-color: $red; }
+}
+
+.blinkdiv {
+    height: 100px;
+    background-color: white;
+    -webkit-animation-name: rgy;  
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 2.5s; 
+}  
+
+.discodiv {
+    height: 100px;
+    background-color: white;
+    -webkit-animation-name: disco;  
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 2.5s; 
+}  

@@ -3,11 +3,12 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
 
-/* SHOW ALL ELEMENTS HIGHLIGHTED IN RED 
+/* SHOW ALL ELEMENTS HIGHLIGHTED IN RED *//*
 * {
    border: 1px solid red !important;
 }
 */
+
 
 .row {
   width: 100%;
@@ -49,6 +50,7 @@ $gray: #464646;
 $white: #E6E6E6;
 $green: #92FF6E;
 $dark-green: #013220;
+$light-green: #66DF4C;
 $blue: #32CFE0;
 $light-blue: #9AB4C5;
 $blue-1: #6288A3;
@@ -59,9 +61,11 @@ $blue-5: #2C4657;
 $orange: #DD9833;
 $dark-orange: #C28D63;
 $dark-pink: #C66F61;
+$yellow: #FAD523;
 $nwc-yellow: #F7E4B6;
 $teal: #42837E;
 $solarcrysis-blue: #394E8E;
+$red: #FA2323;
 
 .white { color: $white; }
 .green { color: $green; }
@@ -100,6 +104,7 @@ $solarcrysis-blue: #394E8E;
 @import "blog";
 @import "menu-icon";
 @import "overlay";
+@import "fofofadi";
 
 // Body
 body {
@@ -123,10 +128,10 @@ a {
 // Trigger Overlay Menu Effect 
 #trigger-overlay {
   display: none;
-  background: url(../images/menu-icon-2.png);
-  width: 35px;
-  height: 33px;
-  margin-top: 18px;
+  background: url(../images/menu-icon.png);
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
   margin-right: 5px;
 }
 
