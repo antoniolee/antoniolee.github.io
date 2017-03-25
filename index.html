@@ -1,140 +1,31 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="description" content="Antonio Lee Personal Website">
-  <meta name="author" content="Antonio Lee">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Pace -->
-  <!--link rel="stylesheet" href="css/pace.css"-->
-
-	<!-- CSS -->
-	<link href='http://fonts.googleapis.com/css?family=Palanquin:100,200,300,400,600|Rozha+One|Istok+Web|Open+Sans:400,300|Lobster' rel='stylesheet' type='text/css'>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/modernizr.custom.js"></script>
+	<link rel="stylesheet" href="antoniolee.css">
+	<title>antoniolee.me</title>
 </head>
+<body>
 
-<!-- apply our angular app -->
-<body ng-app="antonioApp">
-  <div class="nav hidden">
-    <div id="trigger-overlay" class="pull-right"></div>
-    <ul class="nav-list">
-      <li><a href="#works">Works</a></li>
-      <li><a href="https://drive.google.com/file/d/0ByQz8rOk6l16cnJSZnh1SUM4Z00/view?usp=sharing" target="_blank">Resume</a></li>
-      <li><a href="#">Home</a></li>
-    </ul>
-  </div>
+	<div class="background">
+		<div class="about-me">
+			<img src="imgs/selfie.png" alt="">
+			<h1>Antonio Lee</h1>
+			<p class="pronounce">(an, ən) - tō - nē - ō /  [ lē ]</p>
+			<p>Design and Development based out of <br> San Jose, California</p>
 
+			<ul>
+				<li>contact: <a href="mailto:antoniolee@outlook.com">antoniolee@outlook.com</a></li>
+				<li><a href="https://www.linkedin.com/pub/antonio-lee/61/196/351">LinkedIn</a></li>
+				<li><a href="https://codepen.io/antoniolee/">CodePen</a></li>
+				<li><a href="https://github.com/antoniolee">GitHub</a></li>
+			</ul>
 
-	<div class="page {{pageClass}}" ng-view></div>
-
-  <div class="footer hidden">
-      <div class="contact-tile">
-        <p class="contact-header">Antonio Lee</p>
-      </div>
-      <div class="contact-tile">
-        <p class="contact-description">Design & Development based out of San Jose, California</p>
-      </div>
-      <div class="contact-tile contact-contact">
-        <p class="contact-title">Contact</p>
-        <p><a class="contact-info" href="mailto:antoniolee@outlook.com">antoniolee@outlook.com</a></p>
-        <p><a class="contact-info" href="https://www.linkedin.com/pub/antonio-lee/61/196/351"><img class="contact-icon" src="images/linkedin-icon.png">LinkedIn</a></p>
-        <p><a class="contact-info" href="https://codepen.io/antoniolee/"><img class="contact-icon" src="images/codepen-icon.png">CodePen</a></p>
-        <p><a class="contact-info" href="https://github.com/antoniolee"><img class="contact-icon" src="images/github-icon.png">GitHub</a></p>
-      </div>
-      <div class="contact-tile contact-reserved">
-        <p>&copy; 2015 Antonio Lee</p>
-        <p>All rights reserved</p>
-      </div>
-  </div>
-
-  <!-- open/close overlay-->
-    <div class="overlay overlay-hugeinc">
-      <button type="button" class="overlay-close close-button">Close</button>
-      <nav>
-        <ul class="overlay-close">
-          <li><a href="#">Home</a></li>
-          <li><a href="#works">Work</a></li>
-          <li><a href="https://drive.google.com/file/d/0ByQz8rOk6l16cnJSZnh1SUM4Z00/view?usp=sharing" target="_blank">Resume</a></li>
-          <li><a class="contact-info" href="mailto:antoniolee@outlook.com">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-
+		<p>© 2017 Antonio Lee, All right reserved</p>
+		</div>
+	</div>
+	
 </body>
-
-<!-- JS -->
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<!-- load angular, ngRoute, ngAnimate -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/app.js"></script>
-<!-- script src="js/pace.min.js"></script -->
-<script src="js/overlay.js"></script>
-<script>
-
-// A $( document ).ready() block.
-$( document ).ready(function() {
-  console.log( "Page loaded." );
-
-/*
-  var winWidth = window.innerWidth;
-  console.log("Window.innerWidth = "+winWidth);
-
-  $(window).on('resize', function() {
-      if($(window).width() <= 768) {
-          $('#trigger-overlay').removeClass("hidden");
-      }else{
-          $('#trigger-overlay').addClass("hidden");
-      }
-  })
-  */
-
-  $("#trigger-overlay").click(function() {
-    $(".nav").addClass("hidden");
-  });
-
-  $(".overlay-close").click(function() {
-    $('.nav').removeClass("hidden");
-    console.log("overlay closed")
-  });
-
-
-  function loadingAnimation1() {
-    $('.loading-circle').addClass("animated fadeOut");
-  }
-
-  function loadingAnimation2() {
-  // CSS Animations
-    $('.loading-circle').hide();
-    $(".nav").removeClass('hidden');
-    $(".footer").removeClass("hidden");
-    $(".nav").addClass("animated fadeIn");
-  }
-
-  setTimeout(loadingAnimation1, 100);
-  setTimeout(loadingAnimation2, 250);
-
-
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-65025688-1', 'auto');
-  ga('send', 'pageview');
-});
-
-</script>
-
-
 </html>
