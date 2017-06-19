@@ -10,7 +10,7 @@ permalink: /random-thoughts/
 		<div class="left">
 			<span>002</span>
 			<h1>Random Thoughts</h1>
-			<p>Most of the things I like to do in life were once way out of reach.&lrm;</p>
+			<p>June 19, 2017&lrm;</p>
 		</div>
 		<div class="right">
 			<p>
