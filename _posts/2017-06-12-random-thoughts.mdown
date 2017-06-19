@@ -10,7 +10,7 @@ permalink: /random-thoughts/
 		<div class="left">
 			<span>002</span>
 			<h1>Random Thoughts</h1>
-			<p>But it probably won't because these are just some random thoughts.&lrm;</p>
+			<p>It's kinda meta, once you think about it...&lrm;</p>
 		</div>
 		<div class="right">
 			<p>
