@@ -30,6 +30,4 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - _site
-  - .sass-cache
 include: ['_pages', 'js']
