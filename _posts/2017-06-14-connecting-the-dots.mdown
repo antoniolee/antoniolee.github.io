@@ -1,0 +1,16 @@
+---
+layout: default
+title: '004: Connecting the Dots'
+date: 2017-06-14
+permalink: /connecting-the-dots/
+---
+
+<div class="container writing">
+	<div class="left">
+		<h1>Connecting the Dots</h1>
+		<p>Most of the things I like to do in life were once way out of reach.&lrm;</p>
+	</div>
+	<div class="right">
+		<p>I always say, you can never connect the dots going forward, but you can always trace them back.</p>
+	</div>
+</div>

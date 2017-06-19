@@ -1,8 +1,25 @@
---- 
-layout: default 
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>antoniolee.me</title>
+	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	
+	<nav>
+	<p><a href="/">Antonio Lee</a></p>
+    <ul>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a href="/#writings">Writings</a></li>
+    </ul>
+</nav>
 
-<script src="js/typed.min.js/"></script>
+	
+	<script src="js/typed.min.js/"></script>
 <script src="js/typed-settings.js/"></script>
 
 <div class="homepage">
@@ -31,10 +48,16 @@ layout: default
         </div>
         <div class="right">
             <ul>
-                {% assign sorted = (site.posts| sort: 'date') %}
-                {% for posts in sorted %}
-                <li><a href="{{ site.url }}{{ posts.url }}">{{ posts.title }}</a></li>
-                {% endfor %}
+                
+                
+                <li><a href="http://localhost:4000/beginnings/">001: Beginnings</a></li>
+                
+                <li><a href="http://localhost:4000/random-thoughts/">002: Random Thoughts</a></li>
+                
+                <li><a href="http://localhost:4000/purpose-over-passion/">003: Purpose Over Passion</a></li>
+                
+                <li><a href="http://localhost:4000/connecting-the-dots/">004: Connecting the Dots</a></li>
+                
             </ul>
         </div>
     </div>
@@ -49,3 +72,7 @@ layout: default
     </div>    
 </div>
 
+
+
+</body>
+</html>

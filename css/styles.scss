@@ -1,0 +1,17 @@
+---
+# styles.scss
+---
+
+@font-face {
+	font-family: 'Avenir';
+	src: local("AvenirNext"),
+	url("fonts/AvenirNextLTPro-Regular.otf");
+}
+
+@import "nav";
+@import "homepage";
+@import "about";
+@import "works";
+@import "blog";
+@import "reset";
+

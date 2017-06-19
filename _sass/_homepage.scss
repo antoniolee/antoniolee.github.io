@@ -1,0 +1,369 @@
+// _homepage.scss
+// This is a partial.
+// It lies in <source>/_sass, just waiting to be imported.
+// It does not contain the YAML front matter and has no corresponding output file in the built site.
+.homepage {
+	background-image: url("imgs/bg-2.jpg");
+	background-size: cover;
+}
+
+// =================================	~ Left / Right Design ~	=======================
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-family: "Avenir";
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 88px;
+        margin: 0 0 15px;
+    }
+    p {
+        line-height: 34px;
+        font-size: 24px;
+        font-family: "Avenir";
+        margin-bottom: 20px;
+    }
+
+    p:last-child {
+		margin-bottom: 0;
+    }
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    direction: rtl;
+    width: 50%;
+    max-width: 500px;
+    padding-right: 100px;
+}
+
+.right {
+    border-left: 1px solid white;
+    width: 50%;
+    max-width: 500px;
+    padding-left: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        .left {
+            padding: 0 60px;
+
+            h1 {
+                font-size: 48px;
+                line-height: 66px;
+            }
+        }
+
+        .right {
+            padding: 0 60px;
+
+            p, ul > li > a {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        .left {
+            padding: 0 60px;
+            width: 100%;
+
+            h1 {
+                margin-bottom: 20px;
+            }
+        }
+
+        .right {
+            padding: 0 60px;
+            width: 100%;
+
+            p, ul > li > a {
+
+            }
+        }
+    }
+}
+
+// =================================	~ Intro ~	===================================
+.intro {
+    padding: 0 60px;
+	background-color: rgba(0,0,0,.3);
+    color: white;
+    height: 100vh;
+    min-height: 700px;
+    .left {
+        max-width: 500px;
+        direction: ltr;
+    }
+    .right {
+        max-width: 500px;
+    }
+
+    .definition {
+        .opacity-text {
+            color: rgba(255,255,255,.7);
+        }
+    }
+}
+
+.type-wrap {
+	display: inline !important;
+	flex-direction: row;
+    font-family: "Avenir";
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 88px;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+// .typed-cursor {
+//     float: right;
+// }
+
+.links {
+    margin: 20px 0;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .intro {
+        .left {
+            p {
+                max-width: 100%;
+                font-size: 20px;
+            }
+        }
+
+        .right {
+            h1 {
+                font-size: 48px;
+                line-height: 66px;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    .type-wrap {
+        font-size: 48px;
+        line-height: 66px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .intro {
+        flex-direction: column-reverse;
+        padding: 0 30px;
+
+        .left {
+            direction: ltr;
+            padding: 30px 0 0px;
+        }
+        .right {
+            border-left: none;
+            border-bottom: 1px solid white;
+            padding: 0 0 30px;
+        }
+    }
+
+    .type-wrap {
+        text-align: left;
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+
+/* code for animated blinking cursor */
+
+.typed-cursor {
+    opacity: 1;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.typed-fade-out {
+    opacity: 0;
+    animation: 0;
+    transition: opacity .25s;
+}
+
+
+// =================================	~ Writings ~	===================================
+
+.writings { 
+    padding: 0 60px;
+	color: white;
+	height: 700px;
+	background-color: rgba(0,0,0,.5);
+
+	.right {
+		li {
+			margin-bottom: 30px;
+		}
+
+		li:last-child {
+			margin-bottom: 0;
+		}
+
+		a {
+			font-family: "Avenir";
+			font-size: 24px;
+            line-height: 32px;
+		}
+	}
+}
+
+// @media screen and (max-width: 1000px) {
+//     .writings {
+//         .right {
+//             p {
+//                 font-size: 20px;
+//             }
+//         }
+//     }
+// }
+
+@media screen and (max-width: 800px) {
+    .writings {
+        flex-direction: column;
+
+        .left {
+            padding: 0;
+            text-align: left;
+        }
+
+        .right {
+            padding: 30px 0 0;
+            border-top: 1px solid white;
+            border-left: none;
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+// =================================	~ Contact ~  	===================================
+
+.contact { 
+    padding: 0 60px;
+	color: white;
+	height: 700px;
+	background-color: rgba(0,0,0,.7);
+
+    .left, .right {
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contact {
+        .right {
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contact {
+        flex-direction: column;
+        
+        .left {
+            padding: 0 0 10spx;
+            text-align: left;
+        }
+
+        .right {
+            border-top: 1px solid white;
+            border-left: none;
+            padding: 30px 0 0;
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}

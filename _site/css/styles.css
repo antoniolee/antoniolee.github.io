@@ -1,0 +1,422 @@
+@font-face {
+  font-family: 'Avenir';
+  src: local("AvenirNext"), url("fonts/AvenirNextLTPro-Regular.otf"); }
+nav {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.34);
+  flex-direction: row;
+  height: 60px;
+  font-size: 16px;
+  font-family: "Avenir";
+  margin-right: 60px; }
+
+nav p {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Avenir";
+  margin-left: 30px;
+  color: white;
+  max-width: 700px; }
+
+nav ul {
+  max-width: 700px;
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end; }
+
+nav ul li {
+  font-size: 16px;
+  font-family: "Avenir";
+  margin-right: 30px; }
+
+nav ul li:first-child {
+  display: flex;
+  justify-content: flex-start; }
+
+.homepage {
+  background-image: url("imgs/bg-2.jpg");
+  background-size: cover; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .container h1 {
+    font-family: "Avenir";
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 88px;
+    margin: 0 0 15px; }
+  .container p {
+    line-height: 34px;
+    font-size: 24px;
+    font-family: "Avenir";
+    margin-bottom: 20px; }
+  .container p:last-child {
+    margin-bottom: 0; }
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column; }
+
+.left {
+  direction: rtl;
+  width: 50%;
+  max-width: 500px;
+  padding-right: 100px; }
+
+.right {
+  border-left: 1px solid white;
+  width: 50%;
+  max-width: 500px;
+  padding-left: 100px; }
+
+@media screen and (max-width: 1000px) {
+  .container .left {
+    padding: 0 60px; }
+    .container .left h1 {
+      font-size: 48px;
+      line-height: 66px; }
+  .container .right {
+    padding: 0 60px; }
+    .container .right p, .container .right ul > li > a {
+      font-size: 20px; } }
+@media screen and (max-width: 800px) {
+  .container .left {
+    padding: 0 60px;
+    width: 100%; }
+    .container .left h1 {
+      margin-bottom: 20px; }
+  .container .right {
+    padding: 0 60px;
+    width: 100%; } }
+.intro {
+  padding: 0 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  height: 100vh;
+  min-height: 700px; }
+  .intro .left {
+    max-width: 500px;
+    direction: ltr; }
+  .intro .right {
+    max-width: 500px; }
+  .intro .definition .opacity-text {
+    color: rgba(255, 255, 255, 0.7); }
+
+.type-wrap {
+  display: inline !important;
+  flex-direction: row;
+  font-family: "Avenir";
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 88px;
+  margin-bottom: 15px;
+  text-align: right; }
+
+.links {
+  margin: 20px 0;
+  font-size: 0.75em;
+  text-align: center; }
+
+@media screen and (max-width: 1200px) {
+  .intro .left p {
+    max-width: 100%;
+    font-size: 20px; }
+  .intro .right h1 {
+    font-size: 48px;
+    line-height: 66px; }
+  .intro .right p {
+    font-size: 20px;
+    line-height: 30px; }
+
+  .type-wrap {
+    font-size: 48px;
+    line-height: 66px; } }
+@media screen and (max-width: 800px) {
+  .intro {
+    flex-direction: column-reverse;
+    padding: 0 30px; }
+    .intro .left {
+      direction: ltr;
+      padding: 30px 0 0px; }
+    .intro .right {
+      border-left: none;
+      border-bottom: 1px solid white;
+      padding: 0 0 30px; }
+
+  .type-wrap {
+    text-align: left;
+    font-size: 24px;
+    line-height: 32px; } }
+/* code for animated blinking cursor */
+.typed-cursor {
+  opacity: 1;
+  font-weight: 100;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  -ms-animation: blink 0.7s infinite;
+  -o-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-ms-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-o-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.typed-fade-out {
+  opacity: 0;
+  animation: 0;
+  transition: opacity .25s; }
+
+.writings {
+  padding: 0 60px;
+  color: white;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .writings .right li {
+    margin-bottom: 30px; }
+  .writings .right li:last-child {
+    margin-bottom: 0; }
+  .writings .right a {
+    font-family: "Avenir";
+    font-size: 24px;
+    line-height: 32px; }
+
+@media screen and (max-width: 800px) {
+  .writings {
+    flex-direction: column; }
+    .writings .left {
+      padding: 0;
+      text-align: left; }
+    .writings .right {
+      padding: 30px 0 0;
+      border-top: 1px solid white;
+      border-left: none; }
+      .writings .right p {
+        font-size: 20px; } }
+.contact {
+  padding: 0 60px;
+  color: white;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+@media screen and (max-width: 1000px) {
+  .contact .right p {
+    font-size: 20px; } }
+@media screen and (max-width: 800px) {
+  .contact {
+    flex-direction: column; }
+    .contact .left {
+      padding: 0 0 10spx;
+      text-align: left; }
+    .contact .right {
+      border-top: 1px solid white;
+      border-left: none;
+      padding: 30px 0 0; }
+      .contact .right p {
+        font-size: 20px; } }
+.about {
+  background-color: rgba(255, 0, 0, 0.1); }
+
+.works {
+  background-color: rgba(0, 255, 255, 0.1); }
+
+.writing {
+  padding: 150px 60px 100px;
+  align-items: flex-start; }
+  .writing .left, .writing .right {
+    max-width: 600px; }
+  .writing .left {
+    padding: 0 100px 0 0; }
+    .writing .left span {
+      max-width: 40px;
+      border: 1px solid white;
+      padding: 10px;
+      font-family: "Avenir";
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center; }
+    .writing .left h1 {
+      margin-top: 45px;
+      margin-bottom: 30px; }
+    .writing .left p {
+      max-width: 80%;
+      margin-top: 0;
+      opacity: .7; }
+  .writing .right {
+    padding: 0 0 0 100px; }
+    .writing .right p {
+      margin-top: 0;
+      opacity: .9; }
+
+.PageNavigation {
+  margin-top: 15px; }
+
+.PageNavigation a {
+  border: 1px solid white;
+  padding: 12px;
+  font-family: "Avenir";
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  transition: .33s ease all; }
+
+.PageNavigation a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  text-decoration: none; }
+
+.PageNavigation a:last-child {
+  margin-bottom: 0;
+  margin-right: 0; }
+
+.fa-arrow-circle-left, .fa-chevron-left {
+  margin-right: 12px; }
+
+.fa-arrow-circle-right, .fa-chevron-right {
+  margin-left: 12px; }
+
+@media screen and (max-width: 1200px) {
+  .writing .left {
+    padding-right: 60px; }
+    .writing .left h1 {
+      font-size: 48px;
+      line-height: 66px; }
+    .writing .left p {
+      max-width: 100%;
+      font-size: 20px; }
+  .writing .right {
+    padding-left: 60px; }
+    .writing .right p {
+      font-size: 20px;
+      line-height: 30px; } }
+@media screen and (max-width: 800px) {
+  .writing {
+    padding: 120px 60px;
+    flex-direction: column; }
+    .writing .left, .writing .right {
+      max-width: 100%;
+      width: 100%;
+      padding: 0; }
+    .writing .left {
+      direction: ltr;
+      margin-bottom: 30px;
+      padding-right: none; }
+      .writing .left h1 {
+        margin-top: 30px;
+        margin-bottom: 15px; }
+    .writing .right {
+      padding: 30px 0;
+      border-left: none;
+      border-top: 1px solid white; } }
+@media screen and (max-width: 480px) {
+  .writing {
+    padding: 90px 30px; }
+    .writing .left h1 {
+      font-size: 32px;
+      line-height: 44px; }
+    .writing .right p {
+      font-size: 16px;
+      line-height: 24px; } }
+#beginnings {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("imgs/bg-4.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white; }
+
+#random-thoughts {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("imgs/bg-1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white; }
+
+#purpose-over-passion {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("imgs/bg-3.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+ul, p,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1;
+  margin: 0; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  -webkit-font-smoothing: antialiased; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:visited {
+  color: #f2f2f2; }
