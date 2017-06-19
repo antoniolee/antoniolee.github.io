@@ -41,7 +41,7 @@ nav ul li:first-child {
   display: flex;
   justify-content: flex-start; }
 
-.homepage {
+#homepage {
   background-image: url("imgs/bg-2.jpg");
   background-size: cover; }
 
