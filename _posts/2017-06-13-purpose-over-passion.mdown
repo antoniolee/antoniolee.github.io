@@ -18,11 +18,8 @@ permalink: /purpose-over-passion/
 				“Happiness can only come as the unintended side-effect of pursuing a cause greater than yourself. Purpose trumps passion always.”<br><br>
 				Hmm… Do you agree? Author continues to say…<br><br>
 				“When your why is strong enough, you’ll be willing to do whatever it takes. You need a cause you truly believe in. You’ll be willing to figuratively throw yourself — or your feelings — under the bus.”<br><br>
-				I feel that.<br><br>
 				Continues with…<br><br>
-				“It’s not about you. It’s about the cause. It’s about your purpose, which is far greater than you.”<br><br>
-				Also feel it.<br><br>
-				“You don’t have to have “a box.” Let go of your imagined self-concept. Who you really are cannot be defined. Forgot what you think you are. Instead, follow your fears wherever they take you. They point the direction. Expose yourself.<br><br>
+				"You don’t have to have 'a box.' Let go of your imagined self-concept. Who you really are cannot be defined. Forgot what you think you are. Instead, follow your fears wherever they take you. They point the direction. Expose yourself."<br><br>
 				Be who you want to be, not who your fears define you as. Live for a purpose bigger than yourself, something you believe in your bones.”<br><br>
 				…<br><br>
 				Let go of your imagined self-concept. Think about it.<br><br>
@@ -30,7 +27,9 @@ permalink: /purpose-over-passion/
 				You can get comfortable living a life that is comfortable.<br><br>
 				Face your fears.<br><br>
 				Explore the unknown.<br><br>
-				Aim for the stars, and reach out to your dreams.
+				Aim for the stars, and reach out to your dreams.<br><br>
+
+				… <br><br>
 			</p>
 			{% include page-nav.html %}
 		</div>
