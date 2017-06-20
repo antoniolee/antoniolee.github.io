@@ -10,31 +10,26 @@ permalink: /random-thoughts/
 		<div class="left">
 			<span>002</span>
 			<h1>Random Thoughts</h1>
-			<p>It's kinda meta, once you think about it...&lrm;</p>
+			<p> &lrm;</p>
 		</div>
 		<div class="right">
 			<p>
-				So...
+				Everyone of us has a really unique voice, and when we read writings from people we know, we can hear their voice's when we read.<br><br> 
 
-				I'm standing on an applebox, trying to decide what I want to write about.<br><br>
+				... <br><br>
 
-				It's kinda meta, once you think about it.<br><br>
+				Whats good.<br><br>
 
-				...<br><br>
+				... <br><br>
 
-				I'm not really sure what kind of writings I'll write. I like a lot of different things and try and do different stuff. Differentiate myself. It keeps your options open. Anyways, stuff I'll talk about will include but not only contain: random stuff.<br><br>
+				I feel that some people I know could hear me saying that. If you've never met me before, hi.<br><br>
 
-				Guess that's not the most descriptive, so let's just go over several things I like to do.<br><br>
+				... <br><br>
 
-				...<br><br>
+				I've found it really important to be authentic in life. No one likes a phony, a liar, or a fake. When we write things for other people, we're usually not being authentic. I think we need to have an outlet where we can express ourselves and be truly authentic. <br><br>
 
-				I like to skateboard. It's my most consistent form of strenuous activity. I like to play video games, a lot. So much so that I went to college to learn how to make video games. I love music. Whether it be listening, playing an instrument (guitar or hitting pads on a drum machine), trying to produce or making a mixtape, it's always good fun. I've taken a bit of a break from music, but it's still on my list of things to do.<br><br>
+				... <br><br>
 
-				...<br><br>
-
-				So I hope that gives you an idea of what I might write about. But it probably won't because these are just some random thoughts. <br><br>
-
-				...<br><br>
 			</p>
 			{% include page-nav.html %}
 		</div>
