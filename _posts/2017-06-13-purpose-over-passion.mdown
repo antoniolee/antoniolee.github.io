@@ -10,7 +10,7 @@ permalink: /purpose-over-passion/
 		<div class="left">
 			<span>003</span>
 			<h1>Purpose Over Passion</h1>
-			<p>Most of the things I like to do in life were once way out of reach.&lrm;</p>
+			<p>I'm not saying go do crazy shit because if you live a comfy life, because who doesn't want to be comfortable?&lrm;</p>
 		</div>
 		<div class="right">
 			<p>
@@ -22,16 +22,16 @@ permalink: /purpose-over-passion/
 
 				…<br><br>
 
-				You can get complacent living a life that is comfortable.<br><br>
+				You can become really complacent living a life that is comfortable. I'm not saying go do crazy shit because if you live a comfy life, because who doesn't want to be comfortable?<br><br>
 
 				…<br><br>
 
-				Don't let your fears stop you from follwing your dreams.
+				Just don't let your complacency stop you from following your dreams. <br><br>
 
 				… <br><br>
 			</p>
 			{% include page-nav.html %}
 		</div>
-	</div>
+	</div>c
 </div>
 
