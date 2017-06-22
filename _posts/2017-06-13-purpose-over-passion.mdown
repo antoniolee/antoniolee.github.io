@@ -22,16 +22,16 @@ permalink: /purpose-over-passion/
 
 				…<br><br>
 
-				You can become really complacent living a life that is comfortable. I'm not saying go do crazy shit because if you live a comfy life, because who doesn't want to be comfortable?<br><br>
+				You can become really complacent living a life that is comfortable. I'm not saying go do crazy shit if you live a comfy life, because who doesn't want to be comfortable?<br><br>
 
 				…<br><br>
 
-				Just don't let your complacency stop you from following your dreams. <br><br>
+				Just don't let your complacency stop you from following your dreams.<br><br>
 
 				… <br><br>
 			</p>
 			{% include page-nav.html %}
 		</div>
-	</div>c
+	</div>
 </div>
 
