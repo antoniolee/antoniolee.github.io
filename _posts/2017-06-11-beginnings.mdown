@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: writing
 title: '001: Beginnings'
 date: 2017-06-11
 permalink: /beginnings/

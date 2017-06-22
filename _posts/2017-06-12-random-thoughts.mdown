@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: writing
 title: '002: Random Thoughts'
 date: 2017-06-12
 permalink: /random-thoughts/

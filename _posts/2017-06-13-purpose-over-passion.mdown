@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: writing
 title: '003: Purpose Over Passion'
 date: 2017-06-13
 permalink: /purpose-over-passion/
