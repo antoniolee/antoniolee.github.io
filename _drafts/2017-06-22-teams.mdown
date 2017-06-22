@@ -1,0 +1,32 @@
+---
+layout: writing
+title: '004: Teams'
+date: 2017-06-22
+permalink: /teams/
+---
+
+<div id="teams">
+	<div class="container writing">
+		<div class="left">
+			<span>001</span>
+			<h1>Teams</h1>
+			<p>Some people believe they have the magic formula to team building.&lrm;</p>
+		</div>
+		<div class="right">
+			<p>
+				The easiest way to get to where you want to be is to form a great team. Some people believe they have the magic formula to team building. I feel that the formula is simple; work with people who want to do the same thing as you. <br><br>
+
+				But that alone is really tough. Very rarely do you find a team where the focus for every team member is in unison. People work differently. Also people work differently by themselves, with one team member, or as a whole group. <br><br>
+
+				... <br><br>
+
+				I was going to write about this story I read about a pack of wolves and their group dynamics. But it turns out that was a bunch of bullshit. <br><br>
+
+				Why does the internet need to be filled with such bullshit?
+
+				...
+			</p>
+			{% include page-nav.html %}
+		</div>
+	</div>
+</div>
