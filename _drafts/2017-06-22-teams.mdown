@@ -8,23 +8,31 @@ permalink: /teams/
 <div id="teams">
 	<div class="container writing">
 		<div class="left">
-			<span>001</span>
+			<span>004</span>
 			<h1>Teams</h1>
 			<p>Some people believe they have the magic formula to team building.&lrm;</p>
 		</div>
 		<div class="right">
 			<p>
-				The easiest way to get to where you want to be is to form a great team. Some people believe they have the magic formula to team building. I feel that the formula is simple; work with people who want to do the same thing as you. <br><br>
+				The easiest way to get to where you want to be is to form a great team. Some people believe that there is a magic formula to team building. To me the formula is simple; work with people who want to do the same thing as you.<br><br>
 
 				But that alone is really tough. Very rarely do you find a team where the focus for every team member is in unison. People work differently. Also people work differently by themselves, with one team member, or as a whole group. <br><br>
 
 				... <br><br>
 
-				I was going to write about this story I read about a pack of wolves and their group dynamics. But it turns out that was a bunch of bullshit. <br><br>
+				Teams are tough. No matter the size, working with other humans to get a task accomplished is not as easy as it sounds. There will be fights, there will be arguments, there can be jealousy and there can be deceit. Trust doesn't come easy when working with others. <br><br>
 
-				Why does the internet need to be filled with such bullshit?
+				... <br><br>
 
-				...
+				To build the right team, you need to have the right pieces. In a game of chess, it'd be awesome to have a bunch of queens. But on a team, it's easier to delegate work if team members have designated roles. 
+
+				... <br><br>
+
+
+
+
+
+
 			</p>
 			{% include page-nav.html %}
 		</div>

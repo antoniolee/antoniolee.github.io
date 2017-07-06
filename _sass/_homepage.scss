@@ -3,7 +3,7 @@
 // It lies in <source>/_sass, just waiting to be imported.
 // It does not contain the YAML front matter and has no corresponding output file in the built site.
 #homepage {
-	background-image: url("imgs/bg-2.jpg");
+	background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) ), url("imgs/bg-2.jpg");
 	background-size: cover;
 }
 
@@ -72,7 +72,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .container {
         .left {
             padding: 0 60px;
@@ -165,7 +165,7 @@
     }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
     .intro {
         flex-direction: column-reverse;
         padding: 0 30px;
@@ -303,7 +303,7 @@
 //     }
 // }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .writings {
         flex-direction: column;
 
@@ -347,7 +347,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .contact {
         flex-direction: column;
         
