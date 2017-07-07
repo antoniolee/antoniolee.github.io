@@ -10,7 +10,7 @@ permalink: /purpose-over-passion/
 		<div class="left">
 			<span>003</span>
 			<h1>Purpose Over Passion</h1>
-			<p>It's important to not let titles and definitions confine you.&lrm;</p>
+			<p>It's important to not let titles and definitions define you.&lrm;</p>
 		</div>
 		<div class="right">
 			<p>
@@ -22,17 +22,31 @@ permalink: /purpose-over-passion/
 
 				... <br><br>
 
-				I cut out some words and moved some shit around, but that was what really stuck out to me. It's important to not let titles and definitions confine you. <br><br>
+				I cut out some words and moved some things around, but this is what really stuck out to me. It's important to not let titles and definitions define you. <br><br>
 
-				... <br><br> 
+				... <br><br>
 
 				A simple question, who do you want to be? <br><br>
 
 				... <br><br>
 
-				Simple questions usually ask for simple answers. So why do we have to make it so complicated? <br><br>
+				On my homepage I say that I am a designer and developer who explores the intersection between art and technology.<br><br>
 
-				… <br><br>
+				It works. I like the statement itself too. Recruiters probably get a hard on when they read something like that.<br><br>
+
+				It just kind of contradicts what I read. <i>Who you really are cannot be defined.</i> So why do we spend so much time trying to come up with a title for ourselves? <br><br>
+
+				I think the whole idea of trying to incapsulate all of your being into a couple of sentences <strike>is stupid</strike> isn't fair. It's like how most people portray themselves on social media. We pick and choose what to display, and that is what people come to believe.<br><br>
+
+				... <br><br>
+
+				Simple questions usually ask for simple answers.<br><br>
+
+				... <br><br>
+
+				But we aren't simple. <br><br>
+
+
 			</p>
 			{% include page-nav.html %}
 		</div>

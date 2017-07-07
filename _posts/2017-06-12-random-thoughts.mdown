@@ -10,39 +10,35 @@ permalink: /random-thoughts/
 		<div class="left">
 			<span>002</span>
 			<h1>Random Thoughts</h1>
-			<p>It's daunting trying to start anything, knowing that where you <b>want</b> to be will take <b>forever</b> to get to.&lrm;</p>
+			<p>It's daunting to start, knowing that where you <b>want</b> to be will take <b>forever</b> to get to.&lrm;</p>
 		</div>
 		<div class="right">
 			<p>
-				I've found it really important to be authentic in life. No one likes a phony, liar, or a fake.<br><br>
+				I've found it really important to be authentic in life. No one likes a phony, liar, or fake.<br><br>
 
-				Sometimes when we write things for other people, we're not being authentic. I'm speaking of the essays you wrote in class, where you had a little over an hour to read a story and write five paragraphs, proving that you actually read the god damn story.<br><br>
-
-				That's not really the best way to get a kid stoked on writing. I've found writing really important ever since I've been out of the classroom environment. I think we need to have outlets where we can express ourselves and be truly authentic. A couple of my go to outlets: a skateboard and a computer.<br><br>
+				Sometimes when we write things, we're not being authentic.<br><br>
 
 				... <br><br>
 
-				Skateboarding is awesome because it's focused.<br><br>
+				I've recently started to enjoy writing, after so many years of writing things I didn't truly care for. I'm talking about a hundred plus MLA Format, 12pt font, double-spaced papers. It's funny how something that once was a chore can become something you now do for enjoyment.<br><br>
 
-				At first all I ever wanted to do was ride a skateboard. But once you learn how to ride, you organically start learning new tricks. <br><br>
 
-				Once you've developed your skills enough, you can really focus on the tricks you want to land and do them they way you think is best. <br><br>
 
-				... <br><br>
+				<!-- ... <br><br>
 
-				I feel that the computer is a different beast. You can do too many things on a computer, you don't really know where to start. I've tried to learn everything from producing music, creating graphics and programming video games; all on a computer. Each one of those I could spend the rest of my life trying to master. <br><br>
+				It can be difficult and frustrating trying to learn something new. But things that come easy do not make us feel as accomplished, no matter the feat. <br><br>
 
-				... <br><br>
 
-				It's daunting trying to start anything, knowing that where you <b>want</b> to be will take <b>forever</b> to get to.<br><br>
+				It can be daunting to start something, knowing that where you <b>want</b> to be will take <b>forever</b> to get to...<br><br>
 
-				... <br><br>
-
-				But it is so gratifying getting there. You feel a certain type of way when you accomplish something you almost didn't think was possible. <br><br>
-
-				You feel? <br><br>
+				But when you get there, you will feel a true sense of accomplishment. You feel a certain type of way when you accomplish something you <i>almost</i> didn't think was possible. <br><br>
 
 				... <br><br>
+ -->
+				... <br><br>
+
+				Just some random thoughts. <br><br>
+
 
 			</p>
 			{% include page-nav.html %}

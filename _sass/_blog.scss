@@ -7,7 +7,6 @@
 .writing {
 	padding: 150px 60px 100px;
 	align-items: flex-start;
-	min-height: 100vh;
 
 	.left, .right {
 		max-width: 600px;
@@ -160,7 +159,7 @@
 
 		.right {
 			p {
-
+				font-size: 18px;
 			}
 		}
 	}
@@ -182,6 +181,7 @@
 	background-size: cover;
 	background-position: center;
 	color: white;
+	min-height: 100vh;
 }
 
 // 003
