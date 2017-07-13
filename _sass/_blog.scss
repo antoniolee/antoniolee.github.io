@@ -193,17 +193,28 @@
 }
 
 // 004
-#teams {
-	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4) ), url("imgs/bg-2.jpg");
-	background-size: cover;
-	background-position: center;
-	color: white;
-}
-
-// 005
-#the-internet {
+#focus {
 	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4) ), url("imgs/bg-5.jpg");
 	background-size: cover;
 	background-position: center;
 	color: white;
+	min-height: 100vh;
 }
+
+
+
+// // 004
+// #teams {
+// 	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4) ), url("imgs/bg-2.jpg");
+// 	background-size: cover;
+// 	background-position: center;
+// 	color: white;
+// }
+
+// // 005
+// #the-internet {
+// 	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4) ), url("imgs/bg-5.jpg");
+// 	background-size: cover;
+// 	background-position: center;
+// 	color: white;
+// }
