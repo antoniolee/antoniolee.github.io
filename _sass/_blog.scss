@@ -33,6 +33,11 @@
 		p {
 			max-width: 80%;
 			margin-top: 0;
+			opacity: .85;
+		}
+
+		.date {
+			font-size: 20px;
 			opacity: .7;
 		}
 	}
@@ -96,6 +101,10 @@
 			p {
 				max-width: 100%;
 				font-size: 20px;
+			}
+
+			.date {
+				font-size: 16px;
 			}
 		}
 
@@ -176,15 +185,6 @@
 }
 
 // 002
-#random-thoughts {
-	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) ), url("imgs/bg-1.jpg");
-	background-size: cover;
-	background-position: center;
-	color: white;
-	min-height: 100vh;
-}
-
-// 003
 #purpose-over-passion {
 	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4) ), url("imgs/bg-3.jpg");
 	background-size: cover;
@@ -192,15 +192,32 @@
 	color: white;
 }
 
-// 004
+// 003
 #focus {
-	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4) ), url("imgs/bg-5.jpg");
+	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) ), url("imgs/bg-5.jpg");
 	background-size: cover;
 	background-position: center;
 	color: white;
 	min-height: 100vh;
 }
 
+// 004
+#random-thoughts {
+	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4) ), url("imgs/bg-2.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+	min-height: 100vh;
+}
+
+// 005
+#in-the-particular-lies-the-universal {
+	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4) ), url("imgs/bg-1.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+	min-height: 100vh;
+}
 
 
 // // 004

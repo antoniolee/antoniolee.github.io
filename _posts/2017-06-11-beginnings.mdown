@@ -11,6 +11,7 @@ permalink: /beginnings/
 			<span>001</span>
 			<h1>Beginnings</h1>
 			<p>Most of the things I like to do in life were once way out of reach.&lrm;</p>
+			<p class="date">June 11, 2017</p>
 		</div>
 		<div class="right">
 			<p>

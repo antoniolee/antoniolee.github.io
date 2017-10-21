@@ -24,14 +24,7 @@ permalink: /teams/
 
 				... <br><br>
 
-				To build the right team, you need to have the right pieces. In a game of chess, it'd be awesome to have a bunch of queens. But on a team, it's easier to delegate work if team members have designated roles. 
-
-				... <br><br>
-
-
-
-
-
+				But trust me, when you accomplish a task with a team, you will feel more feelings than doing something alone.
 
 			</p>
 			{% include page-nav.html %}

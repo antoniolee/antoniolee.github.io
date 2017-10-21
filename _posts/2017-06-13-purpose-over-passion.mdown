@@ -11,6 +11,7 @@ permalink: /purpose-over-passion/
 			<span>002</span>
 			<h1>Purpose Over Passion</h1>
 			<p>It's important to not let titles and definitions define you.&lrm;</p>
+			<p class="date">June 13, 2017</p>
 		</div>
 		<div class="right">
 			<p>

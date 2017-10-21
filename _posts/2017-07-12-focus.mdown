@@ -11,6 +11,7 @@ permalink: /focus/
 			<span>003</span>
 			<h1>Focus</h1>
 			<p>In a particular moment in time, I felt a certain type of way to write about something.&lrm;</p>
+			<p class="date">July 12, 2017</p>
 		</div>
 		<div class="right">
 			<p>
