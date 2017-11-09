@@ -3,8 +3,9 @@
 // It lies in <source>/_sass, just waiting to be imported.
 // It does not contain the YAML front matter and has no corresponding output file in the built site.
 #homepage {
-	background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url("imgs/bg-2.jpg");
+	background: linear-gradient(45deg, rgba(0, 0, 0, .15), rgba(0, 0, 0, .5)), url("imgs/double-exposure.jpg");
 	background-size: cover;
+    background-position: center;
 }
 
 // =================================	~ Left / Right Design ~	=======================
