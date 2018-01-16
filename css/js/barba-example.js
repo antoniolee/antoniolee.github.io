@@ -1,6 +1,47 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
 
+    // Barba.js Views
+    // http://barbajs.org/views.html
+    // Handle Javascript states/events on different pages with pushState navigation
+
+    var Homepage = Barba.BaseView.extend({
+        namespace: 'homepage',
+        onEnter: function() {
+            // The new Container is ready and attached to the DOM.
+            Typed.new("#typed", {
+                stringsElement: document.getElementById('typed-strings'),
+                typeSpeed: 60,
+                backSpeed: 60,
+                backDelay: 2000,
+                loop: true,
+                fadeOut: true,
+                fadeOutClass: 'typed-fade-out',
+                contentType: 'html', // or text
+                // defaults to null for infinite loop
+                loopCount: null,
+                // callback: function() { foo(); },
+                // resetCallback: function() { newTyped(); }
+            });
+
+            var resetElement = document.querySelector('.reset');
+            if (resetElement) {
+                resetElement.addEventListener('click', function() {
+                    document.getElementById('typed')._typed.reset();
+                });
+            }
+        },
+        onEnterCompleted: function() {
+            // The Transition has just finished.
+        },
+        onLeave: function() {
+            // A new Transition toward a new page has just started.
+        },
+        onLeaveCompleted: function() {
+            // The Container has just been removed from the DOM.
+        }
+    });
+
     // Example from barba.js
     // Default behavior of loading pages
     var HideShowTransition = Barba.BaseTransition.extend({
@@ -69,52 +110,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         console.log("inside Barba.Pjax.getTransition")
         return FadeTransition;
     };
-
-
-
-    // Barba.js Views
-    // http://barbajs.org/views.html
-    // Handle Javascript states/events on different pages with pushState navigation
-
-    var Homepage = Barba.BaseView.extend({
-        namespace: 'homepage',
-        onEnter: function() {
-            // The new Container is ready and attached to the DOM.
-            Typed.new("#typed", {
-                stringsElement: document.getElementById('typed-strings'),
-                typeSpeed: 60,
-                backSpeed: 60,
-                backDelay: 2000,
-                loop: true,
-                fadeOut: true,
-                fadeOutClass: 'typed-fade-out',
-                contentType: 'html', // or text
-                // defaults to null for infinite loop
-                loopCount: null,
-                // callback: function() { foo(); },
-                // resetCallback: function() { newTyped(); }
-            });
-
-            var resetElement = document.querySelector('.reset');
-            if (resetElement) {
-                resetElement.addEventListener('click', function() {
-                    document.getElementById('typed')._typed.reset();
-                });
-            }
-        },
-        onEnterCompleted: function() {
-            // The Transition has just finished.
-        },
-        onLeave: function() {
-            // A new Transition toward a new page has just started.
-        },
-        onLeaveCompleted: function() {
-            // The Container has just been removed from the DOM.
-        }
-    });
-
-
-
 
     // Don't forget to init the view!
     Homepage.init();
