@@ -6,7 +6,7 @@ layout: default
     <div class="container intro">
         <div class="left type-wrap">
             <div id="typed-strings">
-                <p>A little bit of give-a-shit goes a long way...</p>
+                <p>Yo</p>
                 <p>Hey don't walk away from me</p>
                 <p>I mean don't slide that screen</p>
                 <p>Or hit that back button</p>
@@ -39,7 +39,7 @@ layout: default
         </div>
         <div class="right">
             <ul>
-                {% assign sorted = (site.posts| sort: 'date') %}
+                {% assign sorted = site.posts | sort: 'date' %}
                 {% for posts in sorted %}
                 <li><a href="{{ site.url }}{{ posts.url }}">{{ posts.title }}</a></li>
                 {% endfor %}
@@ -56,6 +56,3 @@ layout: default
         </div>
     </div>    
 </div>
-
-<script src="/css/js/smooth-scroll.js"></script>
-<script src="/css/js/typed-settings.js"></script>
