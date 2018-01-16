@@ -1,5 +1,5 @@
 ---
-layout: writing
+layout: default
 title: '003: Focus'
 date: 2017-07-12
 permalink: /focus/
