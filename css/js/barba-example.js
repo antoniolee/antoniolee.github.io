@@ -98,6 +98,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
             });
         }
     });
+
+
+    // Don't forget to init the view!
+    Homepage.init();
+
+    // Start Barba.js 
+    Barba.Pjax.start();
+
     /**
      * Next step, you have to tell Barba to use the new Transition
      */
@@ -110,10 +118,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
         console.log("inside Barba.Pjax.getTransition")
         return FadeTransition;
     };
-
-    // Don't forget to init the view!
-    Homepage.init();
-
-    // Start Barba.js 
-    Barba.Pjax.start();
 });
