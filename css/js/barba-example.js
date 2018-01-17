@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
 
+    Barba.Prefetch.init();
+
     // Barba.js Views
     // http://barbajs.org/views.html
     // Handle Javascript states/events on different pages with pushState navigation
