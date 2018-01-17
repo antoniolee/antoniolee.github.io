@@ -40,7 +40,7 @@ namespace: homepage
         </div>
         <div class="right">
             <ul>
-                {% assign sorted = (site.posts| sort: 'date') %}
+                {% assign sorted = site.posts| sort: 'date' %}
                 {% for posts in sorted %}
                 <li><a href="{{ site.url }}{{ posts.url }}">{{ posts.title }}</a></li>
                 {% endfor %}
