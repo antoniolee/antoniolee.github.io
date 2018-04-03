@@ -1,10 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
 
-    // Start Barba.js 
-    Barba.Pjax.start();
-
-
     // Barba.js Views
     // http://barbajs.org/views.html
     // Handle Javascript states/events on different pages with pushState navigation
@@ -13,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         namespace: 'homepage',
         onEnter: function() {
             // The new Container is ready and attached to the DOM.
-            // console.log("entered homepage");
+            console.log("entered homepage");
         },
         onEnterCompleted: function() {
             // The Transition has just finished.
@@ -25,11 +21,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             // The Container has just been removed from the DOM.
         }
     });
-
-    // Don't forget to init the view!
-    Homepage.init();
-
-
 
     // Example from barba.js
     // Default behavior of loading pages
@@ -97,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
          * For example you can use different Transition based on the current page or link...
          */
 
+        console.log("inside Barba.Pjax.getTransition")
 
         var transitionObj = FadeTransition;
 
@@ -104,7 +96,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         //     transitionObj = HideShowTransition;
         // }
 
-        // console.log("inside Barba.Pjax.getTransition")
         return transitionObj;
     };
+
+    // Don't forget to init the view!
+    Homepage.init();
+
+    // Start Barba.js 
+    Barba.Pjax.start();
+
 });
