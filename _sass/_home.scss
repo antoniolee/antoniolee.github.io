@@ -1,0 +1,129 @@
+// Homepage
+
+// This is a partial.
+// It lies in <source>/_sass, just waiting to be imported.
+// It does not contain the YAML front matter and has no corresponding output file in the built site.
+// The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file.
+
+:root {
+	font-size: 16px;
+}
+
+
+section.homepage {
+	// display: flex;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+
+	div.tile-definition {
+		background: linear-gradient(180deg, rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url(imgs/bg-portrait-antonio.jpg);
+		background-size: cover;
+		background-position: top;
+		box-sizing: border-box;
+	}
+
+	div.container-right {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		position: relative;
+		box-sizing: border-box;
+		padding: var(--grid-padding);
+		height: 100vh;
+		min-height: 600px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		div.big-nav {
+			display: flex;
+			flex-direction: column;
+			margin-right: 60px;
+
+			a {
+				font-size: 3rem;
+				font-weight: bold;
+				text-decoration: none;
+				opacity: .6;
+				color: #000;
+				margin-bottom: 30px;
+			}
+
+			a:last-child {
+				margin: 0;
+			}
+
+			a:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+	div.container-right:before {
+		display: block;
+	    content: "";
+	    width: var(--accent-width);
+	    height: var(--accent-width);
+	    position: absolute;
+	    top: var(--grid-padding);
+	    right: var(--grid-padding);
+	    border-right: 1px solid var(--accent-color);
+	    opacity: .25;
+	}
+
+	div.container-right:after {
+		display: block;
+	    content: "";
+	    width: var(--accent-width);
+	    height: var(--accent-width);
+	    position: absolute;
+	    bottom: var(--grid-padding);
+	    right: var(--grid-padding);
+	    border-bottom: 1px solid var(--accent-color);
+	    opacity: .25;
+	}
+}
+
+@media screen and (min-width: 1921px) {
+    :root {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+	section.homepage {
+		grid-template-columns: repeat(2, 1fr);
+		
+		div.container-right {
+			div.big-nav {
+				margin-right: 0;
+
+				a {
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	section.homepage {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+
+		div.container-right {
+			grid-column-start: 1;
+			grid-column-end: 1;
+		}
+
+		div.container-right:before {
+			border-top: 1px solid var(--accent-color);
+		}
+		div.container-right:after {
+			left: var(--grid-padding);
+			border-bottom: 1px solid var(--accent-color);
+			border-left: 1px solid var(--accent-color);
+		}
+	}
+}

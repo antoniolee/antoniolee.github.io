@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
 
+    // Start Barba.js 
+    Barba.Pjax.start();
+
+
     // Barba.js Views
     // http://barbajs.org/views.html
     // Handle Javascript states/events on different pages with pushState navigation
@@ -9,51 +13,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         namespace: 'homepage',
         onEnter: function() {
             // The new Container is ready and attached to the DOM.
-            Typed.new("#typed", {
-                stringsElement: document.getElementById('typed-strings'),
-                typeSpeed: 60,
-                backSpeed: 60,
-                backDelay: 2000,
-                loop: true,
-                fadeOut: true,
-                fadeOutClass: 'typed-fade-out',
-                contentType: 'html', // or text
-                // defaults to null for infinite loop
-                loopCount: null,
-                // callback: function() { foo(); },
-                // resetCallback: function() { newTyped(); }
-            });
-
-            var resetElement = document.querySelector('.reset');
-            if (resetElement) {
-                resetElement.addEventListener('click', function() {
-                    document.getElementById('typed')._typed.reset();
-                });
-            }
-
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-
+            // console.log("entered homepage");
         },
         onEnterCompleted: function() {
             // The Transition has just finished.
@@ -65,6 +25,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
             // The Container has just been removed from the DOM.
         }
     });
+
+    // Don't forget to init the view!
+    Homepage.init();
+
+
 
     // Example from barba.js
     // Default behavior of loading pages
@@ -123,13 +88,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     });
 
-
-    // Don't forget to init the view!
-    Homepage.init();
-
-    // Start Barba.js 
-    Barba.Pjax.start();
-
     /**
      * Next step, you have to tell Barba to use the new Transition
      */
@@ -139,7 +97,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
          * For example you can use different Transition based on the current page or link...
          */
 
-        console.log("inside Barba.Pjax.getTransition")
-        return FadeTransition;
+
+        var transitionObj = FadeTransition;
+
+        // if (Barba.HistoryManager.prevStatus().namespace === 'homepage') {
+        //     transitionObj = HideShowTransition;
+        // }
+
+        // console.log("inside Barba.Pjax.getTransition")
+        return transitionObj;
     };
 });

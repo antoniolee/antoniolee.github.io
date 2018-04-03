@@ -1,62 +1,27 @@
---- 
-layout: default 
+---
+layout: default
+title: "Home Page"
 namespace: homepage
 ---
 
-<div id="homepage">
-    <div class="container intro">
-        <div class="left type-wrap">
-            <div id="typed-strings">
-                <p>Yo</p>
-                <p>Hey don't walk away from me</p>
-                <p>I mean don't slide that screen</p>
-                <p>Or hit that back button</p>
-                <p>You want to know how long this goes on, don't you?</p>
-                <p>Yeah thought so.</p>
-                <p>This is too easy~</p>
-                <p>Um... I mean...</p> 
-                <p>Wait don't go!</p>
-                <p>jk- go.</p>
-                <p>Really.</p>
-                <p>It's about time you get along...</p>
-                <p>You'll be okay...</p>
-                <p>(╯°□°）╯ why wont you leave!?</p>
-                <p>Okay this is the end foreal.</p>
-                <p>Thanks for visiting! See ya!</p>
-            </div>
-            <span id="typed"></span>
-        </div>
-        <div class="right definition">
+<section class="homepage">
+    <div class="tile-definition">
+        {% include nav.html %}
+        <div class="definition">
+            <span>001</span>
             <h1>Antonio Lee</h1>
-            <p class="opacity-text">(an, ən) - tō - nē - ō /  [ lē ]</p>
-            <p><i>noun</i></p>
-            <p>Designer and developer exploring the intersection between the arts and technology.</p>
-            <p><span class="opacity-text">synonym: trying to have some fun while creating something new.</span></p>
+            <p class="pronunciation">(an, ən) - tō - nē - ō / [ lē ]</p>
+            <p class="classification"><i>Designer and Developer</i></p>
+            <p class="definition">1. a person who plans the form, look, or workings of something before its being made or built.</p>
+            <p class="definition">2. a person or thing that brings something into existence.</p>
         </div>
     </div>
-    <div id="writings" class="container writings">
-        <div class="left">
-            <h1>Writings</h1>
-        </div>
-        <div class="right">
-            <ul>
-                {% assign sorted = site.posts| sort: 'date' %}
-                {% for posts in sorted %}
-                <li><a href="{{ site.url }}{{ posts.url }}">{{ posts.title }}</a></li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-    <div id="contact" class="container contact">
-        <div class="left">
-            <h1>Contact</h1>
-        </div>
-        <div class="right">
-            <p>email: <a href="mailto:antoniolee@outlook.com">antoniolee@outlook.com</a></p>
-            <p>© 2018 Antonio Lee</p>
-        </div>
-    </div>    
-</div>
 
-<script src="/css/js/smooth-scroll.js"></script>
-<script src="/css/js/typed-settings.js"></script>
+    <div class="container-right">
+        <div class="big-nav">
+            <a href="{{ site.url }}/work/">Work</a>
+            <a href="#0">Tutorials</a>
+            <a href="mailto:antoniolee@outlook.com">Contact</a>
+        </div>
+    </div>
+</section>

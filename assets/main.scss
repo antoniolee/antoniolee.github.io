@@ -1,0 +1,36 @@
+---
+# main.scss
+---
+
+// Main SCSS
+// Variables
+:root {
+	--font:'Open Sans', 'Helvetica Neue', 'Arial';
+}
+
+body {
+	margin: 0;
+	background-color: #FCFCFC;
+	color: white;
+	font-family: var(--font);
+	-webkit-font-smoothing: antialiased;
+}
+
+// Imports
+// Navs
+@import "nav";
+@import "menu";
+
+// Grid & Tiles
+@import "grid";
+@import "tile-definition";
+
+// Pages
+@import "home";
+@import "work";
+
+
+
+
+
+

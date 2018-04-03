@@ -1,0 +1,75 @@
+// tile-definition
+
+// This is a partial.
+// It lies in <source>/_sass, just waiting to be imported.
+// It does not contain the YAML front matter and has no corresponding output file in the built site.
+// The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file.
+
+
+div.tile-definition {
+    position: relative;
+    padding: var(--grid-padding);
+    float: left;
+    width: 100%;
+    height: 100vh;
+    min-height: 700px; // box-shadow: 0 2px 4px rgba(0,0,0,.5);
+
+    div.definition {
+        position: absolute;
+        bottom: 0;
+        padding: 0 var(--grid-padding) var(--grid-padding) 0;
+        span {
+            display: inline-block;
+            border: 1px solid white;
+            padding: 6px 12px 5px;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 60px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        p {
+            font-size: 1rem;
+        }
+        p.pronunciation {
+            margin-top: .5rem;
+        }
+        p.classification {
+            margin: 1.5rem 0;
+        }
+        p.definition {
+            margin: .5rem 0;
+        }
+    }
+}
+
+div.tile-definition:before {
+    display: none;
+    content: "";
+    width: var(--accent-width);
+    height: var(--accent-width);
+    position: absolute;
+    top: var(--grid-padding);
+    right: var(--grid-padding);
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    opacity: .25;
+}
+
+@media screen and (max-width: 1366px) {
+    div.tile-definition {
+        div.definition {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    div.tile-definition:before {
+        display: block;
+    }
+}

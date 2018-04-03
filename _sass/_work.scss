@@ -1,0 +1,70 @@
+// Work
+
+// This is a partial.
+// It lies in <source>/_sass, just waiting to be imported.
+// It does not contain the YAML front matter and has no corresponding output file in the built site.
+// The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file.
+
+section.work {
+    color: #262626;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    #nav ul li a {
+        color: #262626;
+    }
+
+    div.tile-definition {
+        box-sizing: border-box;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+
+        .definition {
+            span {
+                border-color: #262626;
+            }
+        }
+    }
+
+    div.tile-work {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+    div.xilinx {
+        background-color: #D2001A;
+    }
+
+    div.galileo {
+        background-color: #42B9EE;
+    }
+
+    div.uegroup {
+        background-color: #FE5000;
+    }
+
+    div.santa-cruz {
+        background-color: #153A8A;
+    }
+
+    @media screen and (max-width: 1366px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+

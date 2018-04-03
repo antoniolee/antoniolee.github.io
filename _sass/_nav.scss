@@ -1,52 +1,48 @@
-// nav.scss
+// Nav
 
 // This is a partial.
 // It lies in <source>/_sass, just waiting to be imported.
 // It does not contain the YAML front matter and has no corresponding output file in the built site.
+// The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file.
 
+#nav {
+    ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
 
-nav {
-	width: 100%;
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: rgba(0,0,0,.34);
-	flex-direction: row;
-	height: 60px;
-	font-size: 16px;
-	font-family: "Avenir";
-	margin-right: 60px;
+        li {
+            margin-right: 30px;
+
+            a {
+                opacity: .6;
+                font-weight: bold;
+                color: white;
+                text-decoration: none;
+            }
+
+            a:hover {
+                opacity: 1;
+            }
+        }
+
+        li:last-child {
+            display: none;
+            margin-right: 0;
+        }
+    }
 }
 
-nav p {
-	display: flex;
-	flex: 1;
-	justify-content: flex-start;
-	align-items: center;
-	font-size: 16px;
-	font-family: "Avenir";
-	margin-left: 30px;
-	color: white;
-	max-width: 700px;
+@media screen and (max-width: 900px) {
+    #nav {
+        ul {
+            li {
+                display: none;
+            }
+            li:last-child {
+                display: inline;
+            }
+        }
+    }
 }
-
-nav ul {
-	max-width: 700px;
-	align-items: center;
-	display: flex;
-	flex: 1;
-	justify-content: flex-end;
-}
-
-nav ul li {
-	font-size: 16px;
-	font-family: "Avenir";
-	margin-right: 30px;
-}
-
-nav ul li:first-child {
-	display: flex;
-	justify-content: flex-start;
-}
-
