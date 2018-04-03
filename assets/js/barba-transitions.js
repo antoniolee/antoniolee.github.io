@@ -90,13 +90,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         console.log("inside Barba.Pjax.getTransition")
 
-        var transitionObj = FadeTransition;
+        return FadeTransition;
 
         // if (Barba.HistoryManager.prevStatus().namespace === 'homepage') {
         //     transitionObj = HideShowTransition;
         // }
-
-        return transitionObj;
     };
 
     // Don't forget to init the view!
