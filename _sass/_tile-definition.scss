@@ -69,6 +69,10 @@ div.tile-definition:before {
 }
 
 @media screen and (max-width: 900px) {
+    div.tile-definition {
+        min-height: 560px;
+    }
+
     div.tile-definition:before {
         display: block;
     }
