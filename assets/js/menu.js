@@ -1,14 +1,32 @@
-$( document ).ready(function() {
+// $( document ).ready(function() {
+//     function openNav() {
+//         $('.overlay').width("100%");
+//     }
+
+//     function closeNav() {
+//         $('.overlay').width("0%");
+//     }
+
+    
+//     $('.btn-open').click(openNav);
+//     $('.btn-close').click(closeNav);
+//     $('.overlay > div.overlay-content > a').click(closeNav);
+
+// });
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    console.log("DOM fully loaded and parsed");
+
     function openNav() {
-        document.getElementById("nav-overlay").style.width = "100%";
+        $('.overlay').width("100%");
     }
 
     function closeNav() {
-        document.getElementById("nav-overlay").style.width = "0%";
+        $('.overlay').width("0%");
     }
 
     
     $('.btn-open').click(openNav);
     $('.btn-close').click(closeNav);
-
+    $('.overlay > div.overlay-content > a').click(closeNav);
 });

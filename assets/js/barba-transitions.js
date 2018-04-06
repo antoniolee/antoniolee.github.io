@@ -97,6 +97,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // }
     };
 
+    // Function to do something when a new page is ready
+    Barba.Dispatcher.on('newPageReady', function(current, prev, container) {
+        //container is the html of the new `barba-container`
+        function openNav() {
+            $('.overlay').width("100%");
+        }
+    
+        function closeNav() {
+            $('.overlay').width("0%");
+        }
+    
+        
+        $('.btn-open').click(openNav);
+        $('.btn-close').click(closeNav);
+        $('.overlay > div.overlay-content > a').click(closeNav);            
+        
+     });
+
+    Barba.Prefetch.init();
+
     // Don't forget to init the view!
     Homepage.init();
 
