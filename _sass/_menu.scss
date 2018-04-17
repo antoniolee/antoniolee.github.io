@@ -19,31 +19,35 @@
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    background-color: rgb(255, 255, 255); /* Black fallback color */
+    background-color: rgba(255, 255, 255, 0.95); /* Black w/opacity */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
 .overlay-content {
+    display: flex;
+    flex-direction: column;
     position: relative;
     text-align: left; /* Centered text/links */
 }
 
 /* The navigation links inside the overlay */
 .overlay a {
+    position: relative;
     font-weight: bold;    
-    padding: 15px;
+    padding: 1rem;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 2rem;
     color: #818181;
-    display: block; /* Display block instead of inline */
+    display: inline; /* Display block instead of inline */
+    transition: .33s ease all;
 }
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: #262626;
 }
 
 /* Position the close button (top right corner) */
@@ -53,6 +57,49 @@
     right: 45px;
     font-size: 60px;
     font-weight: 400;
+}
+
+a::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: calc(50%);
+    left: 0;
+    width: 100%;
+    height: 40%;
+    pointer-events: none;
+    transform: scale3d(0, 1, 1);
+    transform-origin: 0% 50%;
+    transition: transform 0.33s;
+}
+
+a:hover::before {
+    transform: scale3d(1, 1, 1);
+    transform-origin: 0% 50%;
+}
+
+a.work::before {
+    background-color: var(--light-orange);
+}
+
+a.work:hover {
+    color: var(--dark-orange);
+}
+
+a.tutorials::before {
+    background-color: var(--light-blue);
+}
+
+a.tutorials:hover {
+    color: var(--dark-blue);
+}
+
+a.contact::before {
+    background-color: var(--light-gray);
+}
+
+a.contact:hover {
+    color: var(--dark-gray);
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
