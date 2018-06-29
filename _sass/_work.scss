@@ -30,32 +30,103 @@ section.work {
     }
 
     div.tile-work {
+        transition: .33s ease all;
         display: flex;
         align-items: center;
         justify-content: center;
         color: white;
 
         h2 {
+            transition: 0.66s ease all;
+            z-index: 10;
+            position: relative;
             font-size: 2rem;
             text-align: center;
+            padding: 0 .25em;
+            opacity: .75;
+        }
+
+        h2::before {
+            content: '';
+            z-index: -1;
+            position: absolute;
+            top: calc(50%);
+            left: 0;
+            width: 100%;
+            height: 50%;
+            pointer-events: none;
+            transform: scale3d(0, 1, 1);
+            transform-origin: 0% 50%;
+            transition: 0.66s ease all;
+            // background-color: rgba(255,255,255,.05);
         }
     }
 
+
+    div.tile-work:hover {
+        // cursor: pointer;
+
+        h2 {
+            opacity: 1;
+        }
+
+        h2::before {
+            transform: scale3d(1,1,1);
+            transform-origin: 0% 50%;
+        }
+    }
+
+
     div.xilinx {
-        background-color: #D2001A;
+        background-color: $xilinx-red;
     }
 
     div.galileo {
-        background-color: #42B9EE;
+        background-color: $galileo-blue;
     }
 
     div.uegroup {
-        background-color: #FE5000;
+        background-color: $uegroup-orange;
     }
 
     div.santa-cruz {
-        background-color: #153A8A;
+        background-color: $santa-cruz-blue;
     }
+
+    div.xilinx:hover {
+        background-color: darken($xilinx-red, 20%);
+
+        h2::before {
+            background-color: $xilinx-red;
+        }
+    }
+
+    div.galileo:hover {
+        background-color: darken($galileo-blue, 20%);
+
+        h2::before {
+            background-color: $galileo-blue;
+        }
+    }
+
+    div.uegroup:hover {
+        background-color: darken($uegroup-orange, 20%);
+
+        h2::before {
+            background-color: $uegroup-orange;
+        }
+    }
+
+    div.santa-cruz:hover {
+        background-color: darken($santa-cruz-blue, 20%);
+
+        h2::before {
+            background-color: $santa-cruz-blue;
+        }
+    }
+
+
+
 
     @media screen and (max-width: 1366px) {
         grid-template-columns: repeat(2, 1fr);
