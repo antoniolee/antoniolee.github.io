@@ -1,7 +1,7 @@
 ---
+title: Work
+permalink: "/work/"
 layout: default
-title: "Work"
-permalink: /work/
 namespace: work
 ---
 
