@@ -1,22 +1,21 @@
 ---
 title: md-test
 permalink: "/md-test/"
-layout: default
 namespace: mdtest
+layout: default
 ---
 
-Heading
-=======
+# Heading
 
 ## Sub-heading
 
 Paragraphs are separated
 by a blank line.
 
-Two spaces at the end of a line  
+Two spaces at the end of a line\
 produces a line break.
 
-Text attributes _italic_, 
+Text attributes *italic*,
 **bold**, `monospace`.
 
 Horizontal rule:
@@ -25,21 +24,23 @@ Horizontal rule:
 
 Bullet list:
 
-  * apples
-  * oranges
-  * pears
+* apples
+
+* oranges
+
+* pears
 
 Numbered list:
 
-  1. wash
-  2. rinse
-  3. repeat
+1. wash
 
-A [link][example].
+2. rinse
 
-  [example]: http://example.com
+3. repeat
 
-![Image](Image_icon.png "icon")
+A [link](http://example.com).
+
+![image-test.png](/uploads/image-test.png)
 
 > Markdown uses email-style > characters for blockquoting.
 
