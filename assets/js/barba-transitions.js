@@ -107,12 +107,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         function closeNav() {
             $('.overlay').width("0%");
         }
-    
         
         $('.btn-open').click(openNav);
         $('.btn-close').click(closeNav);
         $('.overlay > div.overlay-content > a').click(closeNav);            
-        
      });
 
     Barba.Prefetch.init();

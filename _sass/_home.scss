@@ -9,12 +9,16 @@
 	font-size: 16px;
 }
 
-
 section.homepage {
 	// display: flex;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(1, 1fr);
+	color: white;
+
+	#nav ul li a {
+		color: white;
+	}
 
 	div.tile-definition {
 		background: linear-gradient(180deg, rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url(imgs/bg-portrait-antonio.jpg);

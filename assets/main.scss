@@ -22,7 +22,7 @@ $santa-cruz-blue: #153A8A;
 body {
 	margin: 0;
 	background-color: #FCFCFC;
-	color: white;
+	color: #262626;
 	font-family: var(--font);
 	-webkit-font-smoothing: antialiased;
 }
@@ -39,7 +39,7 @@ body {
 // Pages
 @import "home";
 @import "work";
-
+@import "_md-test";
 
 
 

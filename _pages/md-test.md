@@ -1,9 +1,12 @@
 ---
 title: md-test
 permalink: "/md-test/"
-namespace: mdtest
-layout: default
+namespace: md-test
+layout: markdown
 ---
+
+{% include nav.html %}
+<br/>
 
 # Heading
 
