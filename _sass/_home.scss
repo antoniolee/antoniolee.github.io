@@ -21,6 +21,7 @@ section.homepage {
 	}
 
 	div.tile-definition {
+		transition: .33s ease all;
 		background: linear-gradient(180deg, rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url(imgs/bg-portrait-antonio.jpg);
 		background-size: cover;
 		background-position: top;
