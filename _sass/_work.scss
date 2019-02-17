@@ -28,15 +28,6 @@ section.work {
                 border-color: #262626;
             }
         }
-
-        .under-construction {
-            font-weight: normal;
-            font-style: italic;
-            margin-top: 30px;
-            background-color: rgba(0,0,0,.25);
-            display: inline-block;
-            padding: 15px;
-        }
     }
 
     div.tile-work {
@@ -79,7 +70,9 @@ section.work {
             margin: 0;
             opacity: 0;
             transition: .33s ease all;
-            font-style: italic;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
         }
     }
 
@@ -97,7 +90,7 @@ section.work {
         }
 
         p {
-            opacity: 1;
+            opacity: .75;
             transition: .33s ease all;
         }
     }
@@ -177,7 +170,7 @@ section.work {
 
     @media screen and (max-width: 900px) {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(7, 1fr);
+        grid-template-rows: repeat(7, minmax(200px, 1fr));
 
         div.santa-cruz {
             grid-area: span 1 / span 1;

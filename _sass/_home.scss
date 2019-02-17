@@ -24,7 +24,7 @@ section.homepage {
 		transition: .33s ease all;
 		background: linear-gradient(180deg, rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url(imgs/bg-portrait-antonio.jpg);
 		background-size: cover;
-		background-position: top;
+		background-position: center;
 		box-sizing: border-box;
 	}
 
@@ -165,6 +165,7 @@ section.homepage {
 		grid-template-rows: repeat(2, 1fr);
 
 		div.container-right {
+			max-height: 700px;
 			grid-column-start: 1;
 			grid-column-end: 1;
 		}
