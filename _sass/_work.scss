@@ -9,7 +9,7 @@ section.work {
     color: #262626;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 
     #nav ul li a {
         color: #262626;
@@ -97,10 +97,13 @@ section.work {
 
     div.slalom {
         background-color: $slalom-blue;
+        grid-area: span 1 / span 2;
     }
 
     div.xilinx {
         background-color: $xilinx-red;
+        grid-column: 3 / 4;
+        grid-row: 2 / 4;
     }
 
     div.galileo {
@@ -110,10 +113,13 @@ section.work {
 
     div.uegroup {
         background-color: $uegroup-orange;
+        grid-area: span 2 / span 1;
     }
 
     div.santa-cruz {
         background-color: $santa-cruz-blue;
+        // grid-column: 1 / 1;
+        // grid-row: 3 / 3;
         grid-area: span 1 / span 2;
     }
 
@@ -163,8 +169,24 @@ section.work {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
 
+        div.slalom {
+            grid-area: span 1 / span 1;
+        }
+
+        div.xilinx {
+            grid-area: span 1 / span 1;
+        }
+
         div.galileo {
             grid-area: span 1 / span 1;
+        }
+
+        div.uegroup {
+            grid-area: span 1 / span 1;
+        }
+
+        div.santa-cruz {
+            grid-area: span 1 / span 2;
         }
     }
 
