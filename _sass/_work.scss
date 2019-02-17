@@ -125,6 +125,7 @@ section.work {
 
     div.slalom:hover {
         background-color: darken($slalom-blue, 15%);
+        
         h2::before {
             background-color: $slalom-blue;
         }

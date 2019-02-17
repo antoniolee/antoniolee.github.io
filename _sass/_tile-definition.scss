@@ -24,7 +24,7 @@ div.tile-definition {
             padding: 6px 12px 5px;
             font-weight: bold;
             font-size: 1rem;
-            margin-bottom: 60px;
+            margin-bottom: 45px;
         }
         h1 {
             font-size: 3rem;
@@ -72,6 +72,12 @@ div.tile-definition:before {
     div.tile-definition {
         max-height: 768px;
         min-height: 560px;
+
+        div.definition {
+            span {
+                margin-bottom: 30px;
+            }
+        }
     }
 
     div.tile-definition:before {
