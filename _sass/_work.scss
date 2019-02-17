@@ -131,7 +131,7 @@ section.work {
     }
 
     div.xilinx:hover {
-        background-color: darken($xilinx-red, 20%);
+        background-color: darken($xilinx-red, 15%);
 
         h2::before {
             background-color: $xilinx-red;
@@ -139,7 +139,7 @@ section.work {
     }
 
     div.galileo:hover {
-        background-color: darken($galileo-blue, 20%);
+        background-color: darken($galileo-blue, 15%);
 
         h2::before {
             background-color: $galileo-blue;
@@ -147,7 +147,7 @@ section.work {
     }
 
     div.uegroup:hover {
-        background-color: darken($uegroup-orange, 20%);
+        background-color: darken($uegroup-orange, 15%);
 
         h2::before {
             background-color: $uegroup-orange;
@@ -155,7 +155,7 @@ section.work {
     }
 
     div.santa-cruz:hover {
-        background-color: darken($santa-cruz-blue, 20%);
+        background-color: darken($santa-cruz-blue, 15%);
 
         h2::before {
             background-color: $santa-cruz-blue;
