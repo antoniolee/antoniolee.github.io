@@ -9,174 +9,183 @@
 	font-size: 16px;
 }
 
+// Homepage
 section.homepage {
-	// display: flex;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(1, 1fr);
-	color: white;
+	padding: 0 30px;
+	max-width: 1440px;
+	margin: 0 auto;
 
-	#nav ul li a {
-		color: white;
-	}
-
-	div.tile-definition {
+	* {
 		transition: .33s ease all;
-		background: linear-gradient(180deg, rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url(imgs/bg-portrait-antonio.jpg);
-		background-size: cover;
-		background-position: center;
-		box-sizing: border-box;
 	}
 
-	div.container-right {
-		grid-column-start: 2;
-		grid-column-end: 4;
+	a {
 		position: relative;
-		box-sizing: border-box;
-		padding: var(--grid-padding);
-		height: 100vh;
-		min-height: 600px;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		// display: flex;
+		transition: .33s ease all;
+		font-weight: 600;
+		text-decoration: none;
+		padding: 0 2px 5px;
 
-		div.big-nav {
-			display: flex;
-			flex-direction: column;
-			margin-right: 60px;
+		// Have to set max-width for underline to work in a parent container with width set to 100%; 
+		max-width: 125px;
+	}
 
-			a {
-				transition: .33s ease all;
-				display: inline-block;
-				position: relative;
-				font-size: 3rem;
-				font-weight: bold;
-				text-decoration: none;
-				color: #262626;
-				opacity: .7;
-				margin-bottom: 30px;
-				padding: 0 .25em;
-			}
+	// Underline effect
+	.underline {
+		background-repeat: no-repeat;
+		background-size: 105% 15%;
+		background-position: 0 105%;
+		transition: background-size 0.25s ease-in;
 
-			a:hover {
-				opacity: 1;
-			}
-
-			a::before {
-				content: '';
-				z-index: -1;
-				position: absolute;
-				top: calc(50%);
-				left: 0;
-				width: 100%;
-				height: 40%;
-				pointer-events: none;
-				transform: scale3d(0, 1, 1);
-				transform-origin: 0% 50%;
-				transition: transform 0.33s;
-			}
-
-			a:hover::before {
-				transform: scale3d(1, 1, 1);
-				transform-origin: 0% 50%;
-			}
-
-			a:last-child {
-				margin: 0;
-			}
-
-			a.work::before {
-				background-color: var(--light-orange);
-			}
-
-			a.work:hover {
-				color: var(--dark-orange);
-			}
-
-			a.resume::before {
-				background-color: var(--light-blue);
-			}
-
-			a.resume:hover {
-				color: var(--dark-blue);
-			}
-
-			a.contact::before {
-				background-color: var(--light-gray);
-			}
-
-			a.contact:hover {
-				color: var(--dark-gray);
-			}
+		&:hover {
+			background-size: 100% 40%;
 		}
 	}
 
-	div.container-right:before {
-		display: block;
-	    content: "";
-	    width: var(--accent-width);
-	    height: var(--accent-width);
-	    position: absolute;
-	    top: var(--grid-padding);
-	    right: var(--grid-padding);
-	    border-right: 1px solid var(--accent-color);
-	    opacity: .25;
+	.orange {
+		background-image: linear-gradient(120deg, #FFDEA8 0%, #FFDEA8 100%);
 	}
 
-	div.container-right:after {
-		display: block;
-	    content: "";
-	    width: var(--accent-width);
-	    height: var(--accent-width);
-	    position: absolute;
-	    bottom: var(--grid-padding);
-	    right: var(--grid-padding);
-	    border-bottom: 1px solid var(--accent-color);
-	    opacity: .25;
+	.blue {
+		background-image: linear-gradient(120deg, #CFE5FF 0%, #CFE5FF 100%);
 	}
+
+	// Intro Section
+	div.intro {
+		margin: 120px 0 120px;
+
+		div.blurb {
+			font-size: 24px;
+			margin-bottom: 60px;
+			max-width: 540px;
+			margin: 0 auto;
+		}
+	}
+
+	div.work {
+		margin-bottom: 90px;
+
+		div.work-slab {
+			margin-bottom: 30px;
+		}
+
+		div.work-title {
+		text-align: center;
+		padding: 30px 0;
+
+			h1 {
+				font-size: 20px;
+				margin: 0 0 15px 0;
+				font-weight: 500;
+			}
+
+			a {
+				// text-transform: uppercase;
+				font-weight: 500;
+				color: #2F7DEF;
+				text-decoration: none;
+				font-size: 16px;
+			}
+
+			p {
+				margin: 0;
+			}
+
+			a:hover {
+
+			}
+
+			a.coming-soon {
+				cursor: not-allowed;
+			}
+		}
+
+		div.work-img {
+			background-color: #f2f2f2;
+		}
+
+		div.work-img:hover {
+			background-color: darken(#f2f2f2, 10%);
+		}
+
+		img {
+			width: 100%;
+			margin: 0 auto;
+			padding: 10%;
+		}
+
+		img:hover {
+			transform: scale(1.05);
+		}
+	}
+
 }
 
-@media screen and (min-width: 1921px) {
-    :root {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 1366px) {
+@media screen and (min-width: 768px) {
 	section.homepage {
-		grid-template-columns: repeat(2, 1fr);
-		
-		div.container-right {
-			div.big-nav {
-				margin-right: 0;
+		padding: 0 45px;
+
+		div.intro {
+			margin: 240px 0 180px;
+		}
+
+		div.work {
+			div.work-title {
+				h1 {
+					font-size: 24px;
+					margin-bottom: 15px;
+				}
 
 				a {
-					font-size: 3rem;
+					font-size: 16px;
 				}
 			}
 		}
 	}
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 1024px) {
 	section.homepage {
-		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(2, 1fr);
+		div.work {
+			div.work-slab {
+				display: flex;
+			}
 
-		div.container-right {
-			max-height: 700px;
-			grid-column-start: 1;
-			grid-column-end: 1;
+			div.work-title {
+				text-align: left;
+				width: 100%;
+				max-width: 400px;
+				padding: 0 30px 0 90px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	section.homepage {
+		div.intro {
+			div.blurb {
+				font-size: 32px;
+				max-width: 620px;
+			}
 		}
 
-		div.container-right:before {
-			border-top: 1px solid var(--accent-color);
-		}
-		div.container-right:after {
-			left: var(--grid-padding);
-			border-bottom: 1px solid var(--accent-color);
-			border-left: 1px solid var(--accent-color);
+		div.work {
+			div.work-title {
+				max-width: 550px;
+
+				// h1 {
+				// 	font-size: 28px;
+				// }
+
+				// a {
+				// 	font-size: 20px;
+				// }
+			}
 		}
 	}
 }

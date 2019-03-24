@@ -1,0 +1,79 @@
+// Footer
+
+// This is a partial.
+// It lies in <source>/_sass, just waiting to be imported.
+// It does not contain the YAML front matter and has no corresponding output file in the built site.
+// The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file.
+
+footer {
+    background-color: #202020;
+    color: #fafafa;
+
+    div.footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding: 60px 30px;
+        text-align: center;
+
+        div.blurb {
+            margin-bottom: 45px;
+
+            h2 {
+                margin: 0;
+            }
+
+            p {
+                margin: 15px 0 30px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #3983EF;
+            }
+        }
+
+        div.icons {
+            width: 100%;
+            max-width: 280px;
+            display: flex;
+            justify-content: space-between;
+            // margin: 0 auto;
+
+            img {
+                width: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        div.footer-container {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 90px 60px;
+            max-width: 1440px;
+            text-align: left;
+
+            div.blurb {
+                margin: 0;
+            }
+
+            div.icons {
+                img {
+                    //  width: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    footer {
+        div.footer-container {
+            padding: 90px;
+        }
+    }
+}

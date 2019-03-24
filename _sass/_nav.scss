@@ -6,44 +6,94 @@
 // The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file.
 
 #nav {
+
+    * {
+        transition: .33s ease all;
+    }
+
+    transition: .33s ease all;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    padding: 30px;
+    width: 100%;
+    background-color: rgba(white, .95);
+    // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+
+    // Container to set max-width to content
+    div.container {
+        width: 100%;
+        max-width: 1350px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    img {
+        max-width: 30px;
+    }
+
+    a {
+        position: relative;
+        // display: flex;
+        transition: .33s ease all;
+        font-weight: 600;
+        color: #262626;
+        text-decoration: none;
+        padding: 0 5px 5px;
+    }
+
+    a.nav-title {
+        font-size: 20px;
+    }
+
+    a:hover {
+
+    }
+
     ul {
         display: flex;
         list-style-type: none;
         padding: 0;
         margin: 0;
 
-        li {
-            margin-right: 30px;
-
-            a {
-                transition: .33s ease all;
-                opacity: .6;
-                font-weight: bold;
-                color: #262626;
-                text-decoration: none;
-            }
-
-            a:hover {
-                opacity: 1;
-            }
-        }
-
-        li:last-child {
+        li:not(:last-child) {
             display: none;
-            margin-right: 0;
         }
     }
-}
 
-@media screen and (max-width: 900px) {
-    #nav {
+    @media screen and (min-width: 768px) {
+        // margin-top: 60px;
+        padding: 45px;
+
         ul {
             li {
+                margin-left: 30px;
+            }
+
+            li:not(:last-child){
+                display: block;
+            }
+
+            li:last-child {
                 display: none;
             }
-            li:last-child {
-                display: inline;
-            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        a {
+            // font-size: 20px;
+        }
+
+        a.nav-title {
+            font-size: 24px;
         }
     }
 }

@@ -1,9 +1,119 @@
-// _about.scss
+// About
 
 // This is a partial.
 // It lies in <source>/_sass, just waiting to be imported.
 // It does not contain the YAML front matter and has no corresponding output file in the built site.
+// The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file.
 
-.about {
-	background-color: rgba(255,0,0,.1);
+:root {
+	font-size: 16px;
+}
+
+// About
+section.about {
+	padding: 0 30px;
+	max-width: 1440px;
+	margin: 120px auto 0;
+
+	* {
+		transition: .33s ease all;
+	}
+
+	a {
+		position: relative;
+		// display: flex;
+		transition: .33s ease all;
+		text-decoration: none;
+		padding: 0 2px 5px;
+	}
+
+	// Intro Section
+	div.intro {
+		margin: 120px 0 90px;
+
+		div.blurb {
+			font-size: 24px;
+			margin-bottom: 60px;
+			max-width: 540px;
+			margin: 0 auto;
+		}
+	}
+
+	// Photo Grid
+	div.photo-grid {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(12, 1fr);
+		margin-bottom: 60px;
+
+		img {
+			width: 100%;
+			max-width: 470px;
+			margin: 0 auto;
+			grid-area: span 1 / span 1;
+		}
+	}
+
+}
+
+@media screen and (min-width: 600px){
+	section.about {
+		// Photo Grid
+		div.photo-grid {
+			grid-gap: 5px 10px;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(4, 1fr);
+
+			img {
+				width: 100%;
+				max-width: 470px;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	section.about {
+		padding: 0 45px;
+
+		div.intro {
+			margin: 180px 0 180px;
+		}
+
+		div.work {
+			div.work-title {
+				h1 {
+					font-size: 24px;
+					margin-bottom: 15px;
+				}
+
+				a {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	section.about {
+		div.work {
+			div.work-slab {
+				display: flex;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	section.about {
+		div.intro {
+			div.blurb {
+				font-size: 24px;
+				max-width: 660px;
+			}
+		}
+	}
 }

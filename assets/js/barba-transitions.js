@@ -110,7 +110,30 @@ document.addEventListener("DOMContentLoaded", function(event) {
         
         $('.btn-open').click(openNav);
         $('.btn-close').click(closeNav);
-        $('.overlay > div.overlay-content > a').click(closeNav);            
+        $('.overlay > div.overlay-content > a').click(closeNav);           
+        
+        
+        // Add smooth scrolling to back-to-top link
+        $(".btn-to-top, .btn-scroll-down, .smooth-scroll").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 633, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
      });
 
     Barba.Prefetch.init();

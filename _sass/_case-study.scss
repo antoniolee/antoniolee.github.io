@@ -1,0 +1,429 @@
+// tile-definition
+
+// This is a partial.
+// It lies in <source>/_sass, just waiting to be imported.
+// It does not contain the YAML front matter and has no corresponding output file in the built site.
+// The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file.
+
+
+section.case-study {
+    
+    margin-top: 90px;
+
+    // Default tag overrides
+    h1, h2, h3, h4, h5 {
+        font-weight: 600;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h5 {
+        text-transform: uppercase;
+        margin: 30px 0;
+    }
+
+    h5.title-problem {
+        color: rgba(red,.8);
+    }
+
+    h5.title-solution {
+        color: rgba(green, .8);
+    }
+
+    ul {
+        margin-top: 30px;
+
+        li {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+    }
+
+    hr {
+        margin: 30px 0;
+        border-top-style: none;
+        border-left-style: none;
+        border-right-style: none;
+        border-bottom-style: solid;
+        border-color: $gray;
+    }
+
+    .padding-30 {
+        padding: 0 30px;
+    }
+
+    // Two Column grid
+    div.grid {
+        display: grid;
+        max-width: 900px;
+        padding: 0 30px;
+
+        div {
+            p:first-child {
+                font-weight: 600;
+            }
+        }
+    }
+
+    // Container with padding
+    div.container {
+        padding: 30px;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    // Title with number
+    div.section-title {
+        display: flex;
+        // justify-content: space-between;
+        max-width: 700px;
+        margin: 0 auto;
+
+        span {
+            margin: 3px 20px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 30px;
+            max-width: 30px;
+            background-color: $gray;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        span.invisible {
+            visibility: hidden;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+    }
+
+    // Device image
+    div.project-img {
+
+        div.background-gray {
+            background-color: $gray;
+            
+            img {
+                padding: 5%;
+            }
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 1200px;
+            margin: 30px auto 15px;
+        }
+
+        // Project overview image
+        img.project-overview-img {
+            margin-bottom: 60px;
+        }
+
+        // Establish alignment
+        h5, p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h5 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-weight: 500;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        p.img-title {
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        // Text container
+        div.img-description {
+            margin: 30px 0 60px;
+        }
+    }
+
+    // Tablet grid
+    div.tablet-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 60px 0 30px;
+
+        img {
+            width: 100%;
+            padding: 10%;
+            max-width: 420px;
+        }
+    }
+    
+    // Intro
+    div.intro {
+        display: flex; 
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        div.intro-blurb {
+            max-width: 768px;
+            margin: 0 auto 60px;
+
+            h1  {
+                margin-bottom: 15px;
+            }
+            
+            h4 {
+                margin: 0 0 30px 0;
+            }
+            
+            p {
+
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            max-width: 768px;
+            margin: 0 auto;
+        }
+    }
+
+    // 1. Project overview
+    div.project-overview {
+    
+    }
+
+    // Project overview details container
+    div.project-overview-details {
+        max-width: 900px;
+        margin: 0 auto;
+
+        h2 {
+            padding: 0 30px;
+        }
+
+        div.roles-and-responsibilities {
+            h2 {
+                padding: 0;
+            }
+
+            div.blurb {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 30px;
+                max-width: 800px;
+                margin: 0 auto 30px;
+            }
+
+            div.stats {
+                padding: 0 30px;
+            }
+
+            div.stat {
+                margin-bottom: 30px;
+            }
+
+            div.stat:last-child {
+                margin: 0;
+            }
+
+            p.title {
+                font-weight: 600;
+            }
+        }
+    }
+
+    // 2. Research
+    div.research {
+        background-color: $light-gray;
+
+        div.scoping-the-project {
+            margin: 60px auto 30px;
+            max-width: 600px;
+        }
+    }
+
+    // 3. Design Process
+    div.design-process {
+        text-align: left;
+
+        div.container {
+            padding-bottom: 0;
+        }
+    }
+
+    // 4. Solutions 
+    div.solutions {
+        background-color: $light-gray;
+        
+        div.container {
+            padding-bottom: 10px;
+        }
+    }
+
+    // 5. Conclusion
+    div.conclusion {
+        // margin: 30px 0;
+    }
+
+
+
+
+
+
+
+    // Media Queries
+    // XS
+    @media screen and (min-width: 550px) {
+        hr {
+            margin: 60px 0;
+        }
+    }
+
+    // SM
+    // "If [device width] is greater than or equal to 768px, then do {...}"
+    @media screen and (min-width: 768px) {
+        hr {
+            margin: 60px 0;
+        }
+
+        // Grid
+        div.two-by-one {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 20px 60px;
+        }
+
+        div.two-by-two {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px 60px;
+        }
+
+        div.container {
+            padding: 60px 45px;
+        }
+
+        div.intro {
+            margin-bottom: 30px;
+        }
+
+        div.project-overview-details {
+            div.roles-and-responsibilities {
+                display: grid;
+                grid-template-columns: 4fr 1fr 2fr;
+                grid-template-rows: 1fr;
+            }
+        }
+
+        div.project-img {
+            img {
+                margin: 60px auto 30px;
+            }
+
+            p.img-title {
+                font-size: 20px;
+            }
+
+            // Text container
+            div.img-description {
+                margin: 45px 0 90px;
+            }
+        }
+
+        div.research {
+            div.scoping-the-project {
+                margin: 90px auto 60px;
+            }
+        }
+    }
+
+    // MD
+    @media screen and (min-width: 1024px) {
+
+        div.container {
+            padding: 90px 60px;
+        }
+
+        div.intro {
+            flex-direction: row;
+
+            div.intro-blurb {
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
+                justify-content: center;
+                max-width: 600px;
+                margin-right: 60px;
+            }
+
+            img {
+                margin-left: 60px;
+                width: 45%;
+            }
+        }
+    }
+
+    // LG
+    @media screen and (min-width: 1200px) {
+        hr {
+            margin: 90px 0;
+        }
+
+        // Fonts
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h4, p {
+            font-size: 16px;
+        }
+
+        // Title with number
+        div.section-title {
+
+            span {
+                margin: 5px 30px 0 0;
+                height: 40px;
+                max-width: 40px;
+                border-radius: 20px;
+                font-size: 18px;
+            }
+
+            h1 {}
+        }
+
+
+        // Project overview
+        div.project-overview {
+            div.project-overview-details {
+                h1 {
+                    font-size: 32px;
+                }
+            }
+        }
+
+        // 2. Research
+        div.research {
+            div.container {
+                padding-bottom: 60px;
+            }
+        }
+    }
+}

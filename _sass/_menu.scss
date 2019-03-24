@@ -16,8 +16,8 @@
     height: 100%;
     width: 0;
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
+    z-index: 1000; /* Sit on top */
+    right: 0;
     top: 0;
     background-color: rgb(255, 255, 255); /* Black fallback color */
     background-color: rgba(255, 255, 255, 0.95); /* Black w/opacity */
@@ -78,27 +78,27 @@ a:hover::before {
     transform-origin: 0% 50%;
 }
 
-a.work::before {
+a.underline-orange::before {
     background-color: var(--light-orange);
 }
 
-a.work:hover {
+a.underline-orange:hover {
     color: var(--dark-orange);
 }
 
-a.resume::before {
+a.underline-blue::before {
     background-color: var(--light-blue);
 }
 
-a.resume:hover {
+a.underline-blue:hover {
     color: var(--dark-blue);
 }
 
-a.contact::before {
+a.underline-gray::before {
     background-color: var(--light-gray);
 }
 
-a.contact:hover {
+a.underline-gray:hover {
     color: var(--dark-gray);
 }
 

@@ -8,6 +8,13 @@ $uegroup-orange: #FE5000;
 $santa-cruz-blue: #153A8A;
 $slalom-blue: #0070cd;
 
+$light-gray: #F9F9F9;
+$gray: #D8D8D8;
+$dark-gray: #4A4A4A;
+
+$menu-gray-dark: #262626;
+$menu-gray-light: #D0D0D0;
+
 // Main SCSS
 // CSS Variables
 :root {
@@ -20,26 +27,125 @@ $slalom-blue: #0070cd;
 	--light-gray: #D0D0D0;
 }
 
+// Defaults
 body {
+	transition: .33s ease all;
 	margin: 0;
 	background-color: #FCFCFC;
+	background-color: white;
 	color: #262626;
 	font-family: var(--font);
 	-webkit-font-smoothing: antialiased;
 }
 
+* {
+	box-sizing: border-box;
+}
+
+a {
+	// text-transform: uppercase;
+	font-weight: 500;
+	color: #2F7DEF;
+	text-decoration: none;
+}
+
+section.case-study,
+section.homepage,
+section.about {
+	* {
+		transition: .33s ease all;
+	}
+}
+
+
+// Randoms
+// should replace these later
+.text-align-center {
+	position: relative;
+	text-align: center !important;
+	font-weight: 600 !important;
+}
+
+.semi-bold {
+	font-weight: 600;
+}
+
+
+
+// Animations
+// Animation for scroll down
+@keyframes scrollDown {
+	from {
+		top: -50px;
+	}
+
+	to {
+		top: -60px;
+	}
+}
+
+// Arrow for Scroll Down
+div.scroll-down {
+	display: none;
+	height: 0;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	// top: -50px;
+	animation-name: scrollDown;
+	animation-duration: .6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+
+	a {
+		color: $dark-gray;
+	}
+}
+
+
+// Media Queries
+// XS
+@media screen and (min-width: 425px) {}
+
+// SM
+// "If [device width] is greater than or equal to 768px, then do {...}"
+@media screen and (min-width: 768px) {
+
+	// Change display type from none to visible
+	div.scroll-down {
+		display: block;
+	}
+}
+
+// MD
+@media screen and (min-width: 992px) {}
+
+// LG
+@media screen and (min-width: 1200px) {
+	span.tag {
+		padding: 7px 14px;
+		margin: 0 7px 14px 0;
+		font-size: 14px;
+	}
+}
+
+
 // Imports
 // Navs
 @import "nav";
 @import "menu";
+@import "footer";
 
 // Grid & Tiles
 @import "grid";
 @import "tile-definition";
 
-// Pages
+// Pages 
 @import "home";
+@import "about";
 @import "work";
+@import "case-study";
+
 
 
 
