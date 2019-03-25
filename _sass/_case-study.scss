@@ -84,8 +84,7 @@ section.case-study {
         span {
             position: relative;
             top: 11px;
-            left: -10px;
-            margin-right: 5px;
+            margin: 0 15px 0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -204,12 +203,16 @@ section.case-study {
 
     // 1. Project overview
     div.project-overview {
-    
+        padding: 0 0 60px 0;
+        
+        div.project-img {
+            padding: 0 30px;
+        }
     }
 
     // Project overview details container
     div.project-overview-details {
-        max-width: 900px;
+        max-width: 600px;
         margin: 0 auto;
 
         h2 {
@@ -339,7 +342,13 @@ section.case-study {
             h1 {}
         }
 
+        // 1. Project overview
+        div.project-overview {
+        }
+
         div.project-overview-details {
+            max-width: 900px;
+
             div.roles-and-responsibilities {
                 display: grid;
                 grid-template-columns: 4fr 1fr 2fr;
