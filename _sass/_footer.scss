@@ -55,9 +55,18 @@ footer {
             display: flex;
             justify-content: space-between;
             // margin: 0 auto;
+            
+            a {
+                transition: .33s ease;
+            }
 
             img {
+                transition: .33s ease all;
                 width: 30px;
+            }
+
+            img:hover {
+                transform: scale(1.1);
             }
         }
     }
