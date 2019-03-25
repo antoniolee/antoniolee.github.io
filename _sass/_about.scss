@@ -21,10 +21,9 @@ section.about {
 
 	a {
 		position: relative;
-		// display: flex;
 		transition: .33s ease all;
 		text-decoration: none;
-		padding: 0 2px 5px;
+		padding: 0 0 5px;
 	}
 
 	// Intro Section
@@ -49,25 +48,59 @@ section.about {
 
 		img {
 			width: 100%;
-			max-width: 470px;
+			// max-width: 470px;
 			margin: 0 auto;
 			grid-area: span 1 / span 1;
+		}
+
+		div.about-img {
+			position: relative;
+
+			div.overlay {
+				// Hide overlay
+				opacity: 0;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 98.8%;
+				width: 100%;
+				transition: .33s ease;
+				background-color: rgba(#008CBA, .8);
+
+				div.about-caption {
+					color: white;
+					font-size: 20px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					-webkit-transform: translate(-50%, -50%);
+					-ms-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+					text-align: center;
+				}
+			}
+
+			div.overlay:hover {
+				// Show overlay
+				opacity: 1;
+			}
 		}
 	}
 
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 500px){
 	section.about {
 		// Photo Grid
 		div.photo-grid {
-			grid-gap: 5px 10px;
+			grid-gap: 5px;
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: repeat(4, 1fr);
 
 			img {
 				width: 100%;
-				max-width: 470px;
 				margin: 0 auto;
 			}
 		}
@@ -81,28 +114,13 @@ section.about {
 		div.intro {
 			margin: 180px 0 180px;
 		}
-
-		div.work {
-			div.work-title {
-				h1 {
-					font-size: 24px;
-					margin-bottom: 15px;
-				}
-
-				a {
-					font-size: 16px;
-				}
-			}
-		}
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	section.about {
-		div.work {
-			div.work-slab {
-				display: flex;
-			}
+		div.photo-grid {
+			grid-gap: 10px;
 		}
 	}
 }

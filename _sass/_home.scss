@@ -31,26 +31,6 @@ section.homepage {
 		max-width: 125px;
 	}
 
-	// Underline effect
-	.underline {
-		background-repeat: no-repeat;
-		background-size: 105% 15%;
-		background-position: 0 105%;
-		transition: background-size 0.25s ease-in;
-
-		&:hover {
-			background-size: 100% 40%;
-		}
-	}
-
-	.orange {
-		background-image: linear-gradient(120deg, #FFDEA8 0%, #FFDEA8 100%);
-	}
-
-	.blue {
-		background-image: linear-gradient(120deg, #CFE5FF 0%, #CFE5FF 100%);
-	}
-
 	// Intro Section
 	div.intro {
 		margin: 120px 0 120px;
@@ -68,6 +48,11 @@ section.homepage {
 
 		div.work-slab {
 			margin-bottom: 30px;
+		}
+
+		// Disable for projects not live
+		.coming-soon {
+			cursor: not-allowed;
 		}
 
 		div.work-title {
@@ -94,10 +79,6 @@ section.homepage {
 
 			a:hover {
 
-			}
-
-			a.coming-soon {
-				cursor: not-allowed;
 			}
 		}
 
