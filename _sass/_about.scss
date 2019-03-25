@@ -53,6 +53,13 @@ section.about {
 			// max-width: 470px;
 			margin: 0 auto;
 			grid-area: span 1 / span 1;
+			opacity: .8;
+		}
+
+		img:hover {
+			transform: scale(1.025);
+			// box-shadow: 0 4px 8px rgba(0,0,0,.25);
+			opacity: 1;
 		}
 
 		div.about-img {
