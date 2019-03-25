@@ -69,7 +69,7 @@ section.case-study {
 
     // Container with padding
     div.container {
-        padding: 30px;
+        padding: 30px 0;
         max-width: 1440px;
         margin: 0 auto;
     }
@@ -175,6 +175,7 @@ section.case-study {
         display: flex; 
         flex-direction: column;
         margin-bottom: 30px;
+        padding: 0 30px;
 
         div.intro-blurb {
             max-width: 768px;
@@ -281,7 +282,9 @@ section.case-study {
 
     // 5. Conclusion
     div.conclusion {
-        // margin: 30px 0;
+        div.container {
+            padding-bottom: 90px;
+        }
     }
 
 
