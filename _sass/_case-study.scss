@@ -10,6 +10,11 @@ section.case-study {
     
     margin-top: 90px;
 
+    p {
+        font-size: 16px;
+        // line-height: 24px;
+    }
+
     // Default tag overrides
     h1, h2, h3, h4, h5 {
         font-weight: 600;
@@ -37,7 +42,7 @@ section.case-study {
 
         li {
             margin-bottom: 10px;
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 
@@ -191,12 +196,12 @@ section.case-study {
             }
             
             h4 {
-                color: rgba(black,.7);
+                color: rgba(black,.6);
                 margin: 0 0 30px 0;
             }
             
             p {
-
+                margin: 0;
             }
         }
 
