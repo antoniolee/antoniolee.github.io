@@ -25,12 +25,27 @@ footer {
             }
 
             p {
-                margin: 15px 0 30px;
+                margin: 15px 0;
+            }
+
+            p.copyright {
+                font-size: 14px;
             }
 
             a {
+                display: block;
+                position: relative;
                 text-decoration: none;
-                color: #3983EF;
+                font-weight: bold;
+                margin-bottom: 30px;
+                color: #fafafa;
+                transition: .33s ease;
+                opacity: .8;
+            }
+
+            a:hover {
+                transition: .33s ease;
+                opacity: 1;
             }
         }
 
