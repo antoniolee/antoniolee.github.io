@@ -15,22 +15,6 @@ section.homepage {
 	max-width: 1440px;
 	margin: 0 auto;
 
-	* {
-		transition: .33s ease all;
-	}
-
-	a {
-		position: relative;
-		// display: flex;
-		transition: .33s ease all;
-		font-weight: 600;
-		text-decoration: none;
-		padding: 0 2px 5px;
-
-		// Have to set max-width for underline to work in a parent container with width set to 100%; 
-		max-width: 125px;
-	}
-
 	// Intro Section
 	div.intro {
 		margin: 120px 0 120px;
@@ -45,6 +29,16 @@ section.homepage {
 
 	div.work {
 		margin-bottom: 90px;
+
+		a {
+			position: relative;
+			font-weight: 600;
+			text-decoration: none;
+			padding: 0 2px 5px;
+
+			// Have to set max-width for underline to work in a parent container with width set to 100%; 
+			max-width: 125px;
+		}
 
 		div.work-slab {
 			margin-bottom: 30px;
