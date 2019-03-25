@@ -11,15 +11,13 @@ footer {
 
     div.footer-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         margin: 0 auto;
         padding: 60px 30px;
         text-align: center;
 
         div.blurb {
-            margin-bottom: 45px;
-
             h2 {
                 margin: 0;
             }
@@ -29,7 +27,7 @@ footer {
             }
 
             p.copyright {
-                font-size: 14px;
+                font-size: 12px;
             }
 
             a {
@@ -50,6 +48,7 @@ footer {
         }
 
         div.icons {
+            margin-bottom: 45px;
             width: 100%;
             max-width: 280px;
             display: flex;
@@ -98,6 +97,12 @@ footer {
     footer {
         div.footer-container {
             padding: 90px;
+
+            div.blurb {
+                p.copyright {
+                    // font-size: 14px;
+                }
+            }
         }
     }
 }
