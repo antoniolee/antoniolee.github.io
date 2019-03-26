@@ -12,7 +12,7 @@ section.case-study {
 
     p {
         font-size: 16px;
-        // line-height: 24px;
+        line-height: 22px;
     }
 
     // Default tag overrides
@@ -24,16 +24,22 @@ section.case-study {
         font-size: 32px;
     }
 
+    h4 {
+        margin-bottom: 15px;
+    }
+
     h5 {
         text-transform: uppercase;
         margin: 20px 0;
     }
 
     h5.title-problem {
+        font-weight: bold;
         color: rgba(black,.6);
     }
 
     h5.title-solution {
+        font-weight: bold;
         color: rgba(green, .8);
     }
 
@@ -66,9 +72,9 @@ section.case-study {
         padding: 0 30px;
 
         div {
-            p:first-child {
-                font-weight: 600;
-            }
+            // p:first-child {
+            //     font-weight: 600;
+            // }
         }
     }
 
@@ -252,6 +258,10 @@ section.case-study {
                 padding: 0 30px;
                 max-width: 800px;
                 margin: 0 auto 30px;
+
+                p {
+                    margin: 0;
+                }
             }
 
             div.stats {
