@@ -132,7 +132,6 @@ div.scroll-down {
 	width: 100%;
 	text-align: center;
 	position: relative;
-	top: -50px;
 	animation-name: scrollDown;
 	animation-duration: .6s;
 	animation-iteration-count: infinite;
@@ -140,6 +139,12 @@ div.scroll-down {
 
 	a {
 		color: $dark-gray;
+	}
+
+	i.fa-chevron-down {
+		padding: 20px;
+		position: relative;
+		bottom: 40px;
 	}
 }
 
