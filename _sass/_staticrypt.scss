@@ -38,6 +38,8 @@
 }
 
 .staticrypt-form .staticrypt-decrypt-button {
+    -webkit-border-radius:0;
+    border-radius:0;
     text-transform: uppercase;
     outline: 0;
     background: #2A8CFF;
