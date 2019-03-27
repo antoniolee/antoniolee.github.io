@@ -12,7 +12,7 @@ section.case-study {
 
     p {
         font-size: 16px;
-        line-height: 22px;
+        // line-height: 22px;
     }
 
     // Default tag overrides
@@ -30,26 +30,17 @@ section.case-study {
 
     h5 {
         text-transform: uppercase;
-        margin: 20px 0;
+        margin-top: 0;
     }
 
     h5.title-problem {
-        font-weight: bold;
+        // font-weight: bold;
         color: rgba(black,.6);
     }
 
     h5.title-solution {
-        font-weight: bold;
+        // font-weight: bold;
         color: rgba(green, .8);
-    }
-
-    ul {
-        margin-top: 30px;
-
-        li {
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
     }
 
     hr {
@@ -114,7 +105,7 @@ section.case-study {
         }
 
         h1 {
-            margin-top: 0;
+            margin: 0 0 15px 0;
         }
         
         h4 {
@@ -246,6 +237,24 @@ section.case-study {
             padding: 0 30px;
         }
 
+        // Goals and Problems
+        div.two-by-two {
+            div {
+                margin-bottom: 15px;
+            }
+
+            div:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        // Success metrics and Target users grid
+        div.two-by-one {
+            div:first-child {
+                margin-bottom: 15px;
+            }
+        }
+
         div.roles-and-responsibilities {
             h2 {
                 padding: 0;
@@ -257,7 +266,11 @@ section.case-study {
                 justify-content: center;
                 padding: 0 30px;
                 max-width: 800px;
-                margin: 0 auto 30px;
+                margin: 0 auto 45px;
+
+                h2 {
+                    margin-top: 0;
+                }
 
                 p {
                     margin: 0;
@@ -278,6 +291,23 @@ section.case-study {
 
             p.title {
                 font-weight: 600;
+            }
+        }
+
+        div.target-users {
+            ul {
+                list-style-type: disc;
+                margin: 30px 0;
+
+                li {
+                    line-height: 1.3;
+                    margin: 0 20px 15px;
+                    font-size: 16px;
+                }
+
+                li:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -338,19 +368,6 @@ section.case-study {
             margin: 60px 0;
         }
 
-        // Grid
-        div.two-by-one {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
-            gap: 20px 60px;
-        }
-
-        div.two-by-two {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            gap: 20px 60px;
-        }
-
         div.container {
             padding: 60px 45px;
         }
@@ -372,7 +389,9 @@ section.case-study {
                 font-size: 18px;
             }
 
-            h1 {}
+            h1 {
+                margin: 0 0 30px 0;
+            }
         }
 
         // 1. Project overview
@@ -382,10 +401,55 @@ section.case-study {
         div.project-overview-details {
             max-width: 900px;
 
+            h2 {
+                margin-bottom: 15px;
+            }
+
+            // Grid
+            div.two-by-one {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                gap: 30px 60px;
+
+                div:first-child {
+                    margin: 0;
+                }
+            }
+
+            div.two-by-two {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 30px 60px;
+            }
+
+            div.goals, div.success-metrics, div.problems, div.target-users {
+                h2 {
+                    margin-bottom: 45px;
+                }
+
+                ul {
+                    margin-bottom: 0;
+                }
+            }
+
+            div.goals, div.problems {
+                div {
+                    margin: 0;
+
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
             div.roles-and-responsibilities {
                 display: grid;
                 grid-template-columns: 4fr 1fr 2fr;
                 grid-template-rows: 1fr;
+
+                div.blurb {
+                    // margin: 0 auto;
+                }
             }
         }
 
