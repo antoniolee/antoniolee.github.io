@@ -1,6 +1,9 @@
 ---
 title: antoniolee.me
 timezone: UTC
+defaults:
+  - values:
+      root: ..
 collections:
   posts:
     title: Posts
