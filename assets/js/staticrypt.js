@@ -11,7 +11,7 @@ $(document).ready(function () {
                 .toString();
 
         if (decryptedHMAC !== encryptedHMAC) {
-            alert("Incorrect password. Don't try and access without permission.");
+            alert("Incorrect password. ❌");
             return;
         }
 
