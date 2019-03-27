@@ -52,6 +52,10 @@ section.case-study {
         border-color: $gray;
     }
 
+    img.device:hover {
+        transform: scale(1.025)
+    }
+
     .padding-30 {
         padding: 0 30px;
     }
@@ -83,7 +87,7 @@ section.case-study {
         max-width: 700px;
         margin: 0 auto;
 
-        span {
+        span.bullet {
             position: relative;
             top: 9px;
             margin: 0 15px 0;
@@ -179,34 +183,37 @@ section.case-study {
     
     // 0. Intro
     div.intro {
-        display: flex; 
-        flex-direction: column;
-        margin-bottom: 60px;
-        padding: 0 30px;
+        div.container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 60px;
+            padding: 0 30px;
 
-        div.intro-blurb {
-            max-width: 768px;
-            margin: 0 auto 60px;
+            div.intro-blurb {
+                max-width: 768px;
+                margin: 0 auto 30px;
 
-            h1  {
-                margin-bottom: 15px;
-            }
-            
-            h4 {
-                color: rgba(black,.6);
-                margin: 0 0 30px 0;
-            }
-            
-            p {
-                margin: 0;
-            }
-        }
+                h1 {
+                    margin-bottom: 15px;
+                }
 
-        img {
-            width: 100%;
-            height: 100%;
-            max-width: 768px;
-            margin: 0 auto;
+                h4 {
+                    color: rgba(black, .6);
+                    margin: 0 0 30px 0;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            img {
+                padding: 5% 5% 1.5%;
+                max-width: 668px;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+            }
         }
     }
 
@@ -220,7 +227,9 @@ section.case-study {
         }
 
         h5 {
-            color: rgba(black,.6);
+            // // color: rgba(233,100,0,.85);
+            color: rgba(0,0,0, .6)
+ 
         }
 
         div.project-img {
@@ -373,12 +382,15 @@ section.case-study {
         }
 
         div.intro {
-            margin-bottom: 30px;
+            div.container {
+                padding: 60px 45px;
+            }
+            margin-bottom: 0;
         }
 
         // Title with number
         div.section-title {
-            span {
+            span.bullet {
                 top: 2px;
                 left: -30px;
                 margin-right: 0;
@@ -497,23 +509,36 @@ section.case-study {
         }
 
         div.intro {
-            flex-direction: row;
+            display: flex;
+            height: 100vh;
+            min-height: 678px;
+            max-height: 1080px;
+            justify-content: center;
 
-            div.intro-blurb {
+            div.container {
+                align-self: center;
+                padding: 0 60px;
                 margin: 0;
-                display: flex;
-                flex-direction: column;
-                // align-items: center;
-                justify-content: center;
-                max-width: 600px;
-                margin-right: 60px;
-            }
+                flex-direction: row;
 
-            img {
-                margin-left: 60px;
-                width: 45%;
+                div.intro-blurb {
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    // align-items: center;
+                    justify-content: center;
+                    max-width: 600px;
+                    margin-right: 60px;
+                }
+
+                img {
+                    padding: 0;
+                    margin-left: 60px;
+                    width: 45%;
+                }
             }
         }
+
     }
 
     // LG
@@ -565,5 +590,13 @@ section.case-study {
                 padding-bottom: 60px;
             }
         }
+    }
+}
+
+
+// MD
+@media screen and (min-width: 1024px) {
+    section.case-study {
+        margin-top: 0;
     }
 }
