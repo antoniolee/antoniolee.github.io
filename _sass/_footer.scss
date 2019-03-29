@@ -63,9 +63,12 @@ footer {
             img {
                 transition: .33s ease all;
                 width: 30px;
+                height: 30px;
+                opacity: .8;
             }
 
             img:hover {
+                opacity: 1;
                 transform: scale(1.1);
             }
         }

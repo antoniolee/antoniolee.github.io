@@ -8,7 +8,6 @@
 }
 
 .staticrypt-page {
-    
     height: 100vh;
     display: flex;
     align-items: center;
@@ -21,10 +20,10 @@
     position: relative;
     z-index: 1;
     background: #FFFFFF;
-    max-width: 320px;
+    // max-width: 320px;
     padding: 45px;
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .staticrypt-form input {
@@ -51,6 +50,7 @@
     padding: 15px;
     color: #FFFFFF;
     font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -60,35 +60,10 @@
     background: #0077D6;
 }
 
-.staticrypt-html {
-    height: 100%;
-}
-
-.staticrypt-instructions {
-    margin-top: -1em;
-    margin-bottom: 1em;
-}
-
 .staticrypt-title {
-    font-size: 1.5em;
+    font-size: 3em;
     opacity: .8;
-}
-
-.staticrypt-footer {
-    position: fixed;
-    height: 20px;
-    font-size: 16px;
-    padding: 2px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-bottom: 0;
-}
-
-.staticrypt-footer p {
-    margin: 2px;
-    text-align: center;
-    float: right;
+    margin: 30px;
 }
 
 .staticrypt-footer a {
