@@ -28,8 +28,6 @@ section.homepage {
 	}
 
 	div.work {
-		margin-bottom: 90px;
-
 		a {
 			position: relative;
 			font-weight: 600;
@@ -123,6 +121,8 @@ section.homepage {
 @media screen and (min-width: 1024px) {
 	section.homepage {
 		div.work {
+			margin-bottom: 90px;
+
 			div.work-slab {
 				display: flex;
 			}
