@@ -11,12 +11,12 @@
 	<link rel="stylesheet" href="{{ page.root }}/assets/main.css">
 	<script src="{{ page.root }}/assets/js/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<script>
+		$(document).ready(function () {
+			// Animate loader off screen
+			// console.log("before fade out");
+			$(".icon-loader").fadeOut(833);
+			// console.log("after fade out");
+		});
+	</script>
 </head>
-<script>
-	$(document).ready(function () {
-		// Animate loader off screen
-		// console.log("before fade out");
-		$(".icon-loader").fadeOut(833);
-		// console.log("after fade out");
-	});
-</script>
