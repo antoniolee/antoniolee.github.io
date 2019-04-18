@@ -33,9 +33,11 @@ section.homepage {
 			font-weight: 600;
 			text-decoration: none;
 			padding: 0 2px 5px;
+		}
 
+		a.underline-blue {
 			// Have to set max-width for underline to work in a parent container with width set to 100%; 
-			max-width: 125px;
+			max-width: 140px;
 		}
 
 		div.work-slab {
@@ -45,6 +47,7 @@ section.homepage {
 		// Disable for projects not live
 		.coming-soon {
 			cursor: not-allowed;
+			color: $dark-gray;
 		}
 
 		div.work-title {
@@ -53,8 +56,16 @@ section.homepage {
 
 			h1 {
 				font-size: 20px;
-				margin: 0 0 15px 0;
+				margin: 0 0 7.5px 0;
 				font-weight: 500;
+			}
+
+			p {
+				font-weight: 600;
+				color: $dark-gray;
+				margin: 0 0 15px 0;
+				font-size: 12px;
+				text-transform: uppercase;
 			}
 
 			a {
@@ -63,10 +74,6 @@ section.homepage {
 				color: #2F7DEF;
 				text-decoration: none;
 				font-size: 16px;
-			}
-
-			p {
-				margin: 0;
 			}
 
 			a:hover {
@@ -111,7 +118,11 @@ section.homepage {
 				}
 
 				a {
-					font-size: 16px;
+					font-size: 18px;
+				}
+
+				p {
+					font-size: 14px;
 				}
 			}
 		}
