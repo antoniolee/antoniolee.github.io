@@ -73,23 +73,23 @@ section.about {
 		}
 	}
 
-	img.about-photo:nth-child(12),
-	img.about-photo:nth-child(11),
-	img.about-photo:nth-child(10),
-	img.about-photo:nth-child(9) {
-		-ms-grid-column: 3;
-	}
-	img.about-photo:nth-child(8),
+	img.about-photo:nth-child(1),
+	img.about-photo:nth-child(4),
 	img.about-photo:nth-child(7),
-	img.about-photo:nth-child(6),
-	img.about-photo:nth-child(5) {
+	img.about-photo:nth-child(10) {
+		-ms-grid-column: 1;
+	}
+	img.about-photo:nth-child(2),
+	img.about-photo:nth-child(5),
+	img.about-photo:nth-child(8),
+	img.about-photo:nth-child(11) {
 		-ms-grid-column: 2;
 	}
-	img.about-photo:nth-child(4),
 	img.about-photo:nth-child(3),
-	img.about-photo:nth-child(2),
-	img.about-photo:nth-child(1) {
-		-ms-grid-colum: 1;
+	img.about-photo:nth-child(6),
+	img.about-photo:nth-child(9),
+	img.about-photo:nth-child(12) {
+		-ms-grid-colum: 3;
 	}
 
 	img.about-photo:nth-child(12),
@@ -114,6 +114,15 @@ section.about {
 	img.about-photo:nth-child(2),
 	img.about-photo:nth-child(1) {
 		-ms-grid-row: 1;
+	}
+}
+
+@media all and (-ms-high-contrast: none),(-ms-high-contrast: active) {
+	// Grid fixes for IE goes here...
+	section.about {
+		div.photo-grid {
+
+		}
 	}
 }
 
