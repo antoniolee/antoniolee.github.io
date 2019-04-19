@@ -100,11 +100,15 @@ section.case-study {
     div.project-img {
 
         div.background-gray {
-            background-color: $gray;
+            background-color: #dfdfdf;
             
             img {
                 padding: 5%;
             }
+        }
+
+        div.background-gray:hover {
+            background-color: darken(#dfdfdf, 5%);
         }
 
         img {
@@ -173,12 +177,14 @@ section.case-study {
                 margin: 0 auto 30px;
 
                 h1 {
-                    margin-bottom: 15px;
+                    margin: 0 0 15px;
                 }
 
                 h4 {
-                    color: rgba(black, .6);
-                    margin: 0 0 30px 0;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    color: rgba(#262626, .66);
+                    margin: 0 0 15px 0;
                 }
 
                 p {

@@ -62,7 +62,7 @@ section.homepage {
 
 			p {
 				font-weight: 600;
-				color: rgba(#262626, .75);
+				color: rgba(#262626, .66);
 				margin: 0 0 10px 0;
 				font-size: 12px;
 				text-transform: uppercase;
@@ -71,7 +71,7 @@ section.homepage {
 			a {
 				// text-transform: uppercase;
 				font-weight: 500;
-				color: #2F7DEF;
+				color: $link-blue;
 				text-decoration: none;
 				font-size: 16px;
 			}
@@ -108,23 +108,9 @@ section.homepage {
 
 		div.intro {
 			margin: 240px 0 180px;
-		}
 
-		div.work {
-			div.work-title {
-				h1 {
-					font-size: 24px;
-					margin: 0 0 15px 0;
-				}
-
-				a {
-					font-size: 18px;
-				}
-
-				p {
-					font-size: 14px;
-					margin: 0 0 15px 0;
-				}
+			div.blurb {
+				font-size: 28px;
 			}
 		}
 	}
@@ -165,13 +151,19 @@ section.homepage {
 			div.work-title {
 				max-width: 550px;
 
-				// h1 {
-				// 	font-size: 28px;
-				// }
+				h1 {
+					font-size: 24px;
+					margin: 0 0 15px 0;
+				}
 
-				// a {
-				// 	font-size: 20px;
-				// }
+				p {
+					font-size: 14px;
+					margin: 0 0 15px 0;
+				}
+
+				a {
+					font-size: 18px;
+				}
 			}
 		}
 	}
