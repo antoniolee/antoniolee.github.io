@@ -52,68 +52,67 @@ section.about {
 		display: -ms-grid;
 		display: grid;
 		grid-gap: 10px;
-		-ms-grid-columns: 1fr;
-		-ms-grid-rows: (1fr)[12];
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(12, 1fr);
 		margin-bottom: 60px;
 
-		img {
+		.about-photo-container {
 			width: 100%;
-			// max-width: 470px;
+			height: 360px;
 			margin: 0 auto;
-			opacity: .85;
+			overflow: hidden;
+			position: relative;
 		}
 
-		img:hover {
-			-webkit-transform: scale(1.02);
-			        transform: scale(1.02);
+		.about-photo-container:hover .about-photo {
+			-webkit-transform: scale(1.125);
+			        transform: scale(1.125);
 			// box-shadow: 0 4px 8px rgba(0,0,0,.25);
-			opacity: 1;
 		}
-	}
 
-	img.about-photo:nth-child(1),
-	img.about-photo:nth-child(4),
-	img.about-photo:nth-child(7),
-	img.about-photo:nth-child(10) {
-		-ms-grid-column: 1;
-	}
-	img.about-photo:nth-child(2),
-	img.about-photo:nth-child(5),
-	img.about-photo:nth-child(8),
-	img.about-photo:nth-child(11) {
-		-ms-grid-column: 2;
-	}
-	img.about-photo:nth-child(3),
-	img.about-photo:nth-child(6),
-	img.about-photo:nth-child(9),
-	img.about-photo:nth-child(12) {
-		-ms-grid-column: 3;
-	}
+		.about-photo {
+			width: 100%;
+			height: 100%;
+			background-position: center;
+			background-size: cover;
+		}
 
-	img.about-photo:nth-child(12),
-	img.about-photo:nth-child(11),
-	img.about-photo:nth-child(10) {
-		-ms-grid-row: 4;
-	}
-
-	img.about-photo:nth-child(9),
-	img.about-photo:nth-child(8),
-	img.about-photo:nth-child(7) {
-		-ms-grid-row: 3;
-	}
-
-	img.about-photo:nth-child(6),
-	img.about-photo:nth-child(5),
-	img.about-photo:nth-child(4) {
-		-ms-grid-row: 2;
-	}
-
-	img.about-photo:nth-child(3),
-	img.about-photo:nth-child(2),
-	img.about-photo:nth-child(1) {
-		-ms-grid-row: 1;
+		.ap-1 {
+			background-image: url("/assets/imgs/about/tampalais.jpg");
+		}
+		.ap-2 {
+			background-image: url("/assets/imgs/about/rock-climbing.jpg");
+		}
+		.ap-3 {
+			background-image: url("/assets/imgs/about/portrait.jpg");
+		}
+		.ap-4 {
+			background-image: url("/assets/imgs/about/futur.jpg");
+		}
+		.ap-5 {
+			background-image: url("/assets/imgs/about/portrait-animation.gif");
+		}
+		.ap-6 {
+			background-image: url("/assets/imgs/about/djing.jpg");
+		}
+		.ap-7 {
+			background-image: url("/assets/imgs/about/galileo.jpg");
+		}
+		.ap-8 {
+			background-image: url("/assets/imgs/about/sammy-awards.jpg");
+		}
+		.ap-9 {
+			background-image: url("/assets/imgs/about/maui.jpg");
+		}
+		.ap-10 {
+			background-image: url("/assets/imgs/about/fs-bigspin.gif");
+		}
+		.ap-11 {
+			background-image: url("/assets/imgs/about/double-exposure.jpg");
+		}
+		.ap-12 {
+			background-image: url("/assets/imgs/about/baby-programmer.jpg");
+		}
 	}
 }
 
@@ -121,7 +120,8 @@ section.about {
 	// Grid fixes for IE goes here...
 	section.about {
 		div.photo-grid {
-
+			content: "No CSS Grid support in IE 11 :( Try another browser.";
+			display:none;
 		}
 	}
 }
@@ -131,14 +131,11 @@ section.about {
 		// Photo Grid
 		div.photo-grid {
 			grid-gap: 5px;
-			-ms-grid-columns: (1fr)[3];
-			-ms-grid-rows: (1fr)[4];
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: repeat(4, 1fr);
 
-			img {
-				width: 100%;
-				margin: 0 auto;
+			.about-photo-container {
+				height: 150px;
 			}
 		}
 	}
@@ -154,6 +151,10 @@ section.about {
 
 		div.photo-grid {
 			padding: 0;
+
+			.about-photo-container {
+				height: 250px;
+			}
 		}
 	}
 }
@@ -162,7 +163,11 @@ section.about {
 	section.about {
 		div.photo-grid {
 			margin-bottom: 90px;
-			grid-gap: 10px;
+			grid-gap: 5px;
+
+			.about-photo-container {
+				height: 350px;
+			}
 		}
 	}
 }
@@ -173,6 +178,12 @@ section.about {
 			div.blurb {
 				font-size: 24px;
 				max-width: 660px;
+			}
+		}
+
+		div.photo-grid {
+			.about-photo-container {
+				height: 450px;
 			}
 		}
 	}
