@@ -138,19 +138,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         // Presentation mode for About Me
         // Change opacity of images to .05;
-        // $(document).keypress(function (e) {
-        //     // 1 is pressed
-        //     if (e.which == 49) {
-        //         $('.about-photo').css("opacity", "0.05");
-        //         $('.about-photo').hover(function(){
-        //             $(this).css("opacity", "1");
-        //         });
-        //     }
-        //     // 2 is pressed
-        //     if (e.which == 50) {
-        //         $('.about-photo').css("opacity", "0.85");
-        //     }
-        // });
+        $(document).keypress(function (e) {
+            // 1 is pressed
+            if (e.which == 49) {
+                $('.about-photo').css("opacity", "0.15");
+                $('.about-photo').hover(function(){
+                    $(this).css("opacity", "1");
+                });
+            }
+            // 2 is pressed
+            if (e.which == 50) {
+                $('.about-photo').css("opacity", "1");
+            }
+        });
 
      });
 
