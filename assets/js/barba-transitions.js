@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     console.log("DOM fully loaded and parsed");
-
     // Barba.js Views
     // http://barbajs.org/views.html
     // Handle Javascript states/events on different pages with pushState navigation
@@ -19,6 +18,159 @@ document.addEventListener("DOMContentLoaded", function(event) {
         },
         onLeaveCompleted: function() {
             // The Container has just been removed from the DOM.
+        }
+    });
+
+    var onAboutPage = false;
+
+    var About = Barba.BaseView.extend({
+        namespace: 'about',
+        onEnter: function () {
+            // The new Container is ready and attached to the DOM.
+            // console.log("entered about");            
+        },
+
+        onEnterCompleted: function () {
+            onAboutPage = true;
+
+            // The transition has just finished.
+            // Anime.js
+            // Animations currently in order from first to last
+            // Move intro section
+            let moveIntro = anime({
+                targets: 'section.about div.intro',
+                translateY: {
+                    value: -1000,
+                    duration: 800,
+                },
+                easing: 'easeInOutQuad',
+                autoplay: false
+            });
+
+            // Scale down and move section.about
+            let scaleDown = anime({
+                targets: 'section.about',
+                scale: {
+                    value: .75,
+                    duration: 800,
+                },
+                translateY: {
+                    value: -1150,
+                    duration: 800,
+                },
+                // delay: 200,
+                easing: 'easeInOutQuad',
+                autoplay: false
+            });
+
+            // Rotate photos
+            let rotatePhotos = anime({
+                targets: '.about-photo-container',
+                rotate: 90,
+                // opacity: .1,
+                duration: 500,
+                delay: anime.stagger(50), // increase delay by 100ms for each elements.
+                easing: 'easeInOutQuad',
+                autoplay: false
+            });
+
+            let opacityPhotos = anime({
+                targets: '.about-photo-container',
+                duration: 666,
+                opacity: .15,
+                delay: anime.stagger(66), // increase delay by 100ms for each elements.
+                easing: 'easeInOutQuad',
+                autoplay: false
+            });
+
+            var presentationMode = 1;
+            var locked = false;
+
+            // Presentation mode for About Me
+            // Change opacity of images to .05;
+            $(document).keypress(function (e) {
+
+                // If keyboard is locked, exit keypress handler
+                if (locked) {
+                    return;
+                }
+
+                locked = true;
+
+                // 1 is pressed
+                // Toggle presentation mode
+                if (e.which == 49 && onAboutPage == true) {
+                    if (presentationMode == 1) {
+                        // console.log("presentationMode = "+presentationMode);
+                        opacityPhotos.play();
+                        $("#nav").css("top", "-140px");
+
+                        setTimeout(function () {
+                            presentationMode = 2;
+                            // $('.photo-grid').css("grid-gap", "1px");
+                            $('.about-photo-container').hover(function () {
+                                $(this).css("opacity", "1");
+                            });
+                        }, 800);
+                    } else {
+                        // console.log("presentationMode = "+presentationMode);
+
+                        setTimeout(function () {
+                            presentationMode = 1;
+                            $("#nav").css("top", "0px");
+                            // $('.photo-grid').css("grid-gap", "10px");
+                            $('.about-photo-container').css("opacity", "1");
+                        }, 500);
+                    }
+
+                    moveIntro.play();
+                    scaleDown.play();
+
+                    setTimeout(function () {
+                        scaleDown.reverse();
+                        moveIntro.reverse();
+                    }, 1900);
+                }
+                // 7 is pressed
+                // Show navbar
+                if (e.which == 55) {
+                    $("#nav").css("top", "0px");
+                }
+
+                // 8 is pressed
+                // Hide navbar
+                if (e.which == 56) {
+                    $("#nav").css("top", "-140px");
+                }
+
+                // 9 is pressed
+                // Reduce opacity
+                if (e.which == 57) {
+                    $('.about-photo-container').css("opacity", "0.15");
+                    $('.about-photo-container').hover(function () {
+                        $(this).css("opacity", "1");
+                    });
+                }
+
+                // 0 is pressed
+                // Set opacity = 1
+                if (e.which == 48) {
+                    $('.about-photo-container').css("opacity", "1");
+                }
+
+                // unlock keyboard input after 2 seconds
+                setTimeout(function () {
+                    locked = false;
+                    console.log("locked = " + locked);
+                }, 2000);
+            });
+        },
+        onLeave: function () {
+            // A new Transition toward a new page has just started.
+        },
+        onLeaveCompleted: function () {
+            // The Container has just been removed from the DOM.
+            onAboutPage = false;
         }
     });
 
@@ -135,164 +287,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
             } // End if
         });
 
-        // Anime.js
-        // Scale Down Homepage
-
-
-        // Animations currently in order from first to last
-        // Move intro section
-        let moveIntro = anime({
-            targets: 'section.about div.intro',
-            translateY: {
-                value: -1000,
-                duration: 800,
-            },
-            easing: 'easeInOutQuad',
-            autoplay: false
-        });
-
-        // Scale down and move section.about
-        let scaleDown = anime({
-            targets: 'section.about',
-            scale: {
-                value: .85,
-                duration: 800,
-            },
-            translateY: {
-                value: -1100,
-                duration: 800,
-            },
-            // delay: 200,
-            easing: 'easeInOutQuad',
-            autoplay: false
-        });
-
-        // Expand photos
-        let expandGrid = anime({
-            targets: '.photo-grid',
-            // scale: {
-            //     value: .9,
-            // },
-            // rotate: {
-            //     value: -90,
-            //     duration: 100,
-            // },
-            // delay: 250,
-            easing: 'easeInOutQuad',
-            autoplay: false
-        });
-
-        // Rotate photos
-        let rotatePhotos = anime({
-            targets: '.about-photo-container',
-            rotate: 90,
-            // opacity: .1,
-            duration: 500,
-            delay: anime.stagger(50), // increase delay by 100ms for each elements.
-            easing: 'easeInOutQuad',
-            autoplay: false
-        });
-
-        let opacityPhotos = anime({
-            targets: '.about-photo-container',
-            duration: 666,
-            opacity: .15,
-            delay: anime.stagger(66), // increase delay by 100ms for each elements.
-            easing: 'easeInOutQuad',
-            autoplay: false
-        });
-
-
-        var presentationMode = 1;
-        var locked = false;
-
-        // Presentation mode for About Me
-        // Change opacity of images to .05;
-        $(document).keypress(function (e) {
-
-            // If keyboard is locked, exit keypress handler
-            if(locked){
-                return;
-            }
-
-            locked = true;
-
-            // 1 is pressed
-            // Enter presentation mode
-            if (e.which == 49) {
-                if (presentationMode == 1) {
-                    // console.log("presentationMode = 1")
-                    opacityPhotos.play();
-                    $("#nav").css("top", "-140px");
-
-                    setTimeout(function () {
-                        presentationMode = 2;
-                        // $('.photo-grid').css("grid-gap", "1px");
-                        $('.about-photo-container').hover(function () {
-                            $(this).css("opacity", "1");
-                        });
-                    }, 800);
-                } else {
-                    // console.log("presentationMode = 2")
-
-                    setTimeout(function () {
-                        presentationMode = 1;
-                        $("#nav").css("top", "0px");
-                        // $('.photo-grid').css("grid-gap", "10px");
-                        $('.about-photo-container').css("opacity", "1");
-                    }, 500);
-                }
-
-                moveIntro.play();
-                scaleDown.play();
-                // expandGrid.play();
-                // rotatePhotos.play();
-
-
-                setTimeout(function () { 
-                    scaleDown.reverse();
-                    moveIntro.reverse();
-                    // expandGrid.reverse();
-                    // rotatePhotos.reverse();
-                }, 2000);
-            }
-            // 2 is pressed
-            // Show navbar
-            if (e.which == 50) {
-                $("#nav").css("top", "0px");
-            }
-
-            // 3 is pressed
-            // Hide navbar
-            if (e.which == 51) {
-                $("#nav").css("top", "-140px");
-            }
-
-            // 4 is pressed
-            // Reduce opacity
-            if (e.which == 52) {
-                $('.about-photo-container').css("opacity", "0.15");
-                $('.about-photo-container').hover(function () {
-                    $(this).css("opacity", "1");
-                });
-            }
-
-            // 5 is pressed
-            // Set opacity = 1
-            if (e.which == 53) {
-                $('.about-photo-container').css("opacity", "1");
-            }
-
-            // unlock keyboard input after 3 seconds
-            setTimeout(function () { locked = false; }, 2000); 
-        });
-
      });
 
     Barba.Prefetch.init();
 
     // Don't forget to init the view!
     Homepage.init();
+    About.init();
 
     // Start Barba.js 
     Barba.Pjax.start();
