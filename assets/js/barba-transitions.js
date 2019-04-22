@@ -223,11 +223,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 if (presentationMode == 1) {
                     // console.log("presentationMode = 1")
                     opacityPhotos.play();
-
-                    setTimeout(function () {
-                        $("#nav").css("top", "-140px");
-                    }, 50);
-
+                    $("#nav").css("top", "-140px");
+                    
                     setTimeout(function () {
                         presentationMode = 2;
                         // $('.photo-grid').css("grid-gap", "1px");
