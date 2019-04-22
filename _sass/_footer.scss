@@ -7,7 +7,7 @@
 
 footer {
     background-color: #202020;
-    color: #fafafa;
+    color: white;
 
     div.footer-container {
         display: flex;
@@ -20,8 +20,17 @@ footer {
         div.blurb {
             margin-bottom: 45px;
 
+            h1 {
+                margin: 0 0 20px;
+            }
+
+            h2, p, a {
+                opacity: .8;
+            }
+
             h2 {
-                margin: 0;
+                font-weight: 600;
+                margin: 0 0 15px 0;
             }
 
             p {
@@ -29,22 +38,22 @@ footer {
             }
 
             p.copyright {
-                font-size: 12px;
+                font-size: 14px;
+                // margin: 0;
             }
 
             a {
+                transition: .33s ease all;
                 display: block;
                 position: relative;
                 text-decoration: none;
-                font-weight: bold;
+                font-weight: 500;
                 margin-bottom: 30px;
                 color: #fafafa;
-                transition: .33s ease;
-                opacity: .8;
             }
 
             a:hover {
-                transition: .33s ease;
+                transition: .33s ease all;
                 opacity: 1;
             }
         }
@@ -103,8 +112,17 @@ footer {
             padding: 90px;
 
             div.blurb {
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                a {
+                    font-size: 16px;
+                }
+
                 p.copyright {
-                    font-size: 12px;
+                    font-size: 14px;
                 }
             }
         }

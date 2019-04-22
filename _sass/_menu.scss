@@ -79,27 +79,23 @@ a:hover::before {
 }
 
 a.underline-orange::before {
-    background-color: var(--light-orange);
+    background-color: $light-orange;
 }
 
-// a.underline-orange:hover {
-//     color: var(--dark-orange);
-// }
+a.underline-dark-blue::before {
+    background-color: $menu-blue-dark;
+}
 
 a.underline-blue::before {
-    background-color: var(--light-blue);
+    background-color: $light-blue;
 }
 
-// a.underline-blue:hover {
-//     color: var(--dark-blue);
-// }
+a.underline-light-gray::before {
+    background-color: $menu-gray-light;
+}
 
 a.underline-gray::before {
-    background-color: var(--light-gray);
-}
-
-a.underline-gray:hover {
-    color: var(--dark-gray);
+    background-color: $menu-gray;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */

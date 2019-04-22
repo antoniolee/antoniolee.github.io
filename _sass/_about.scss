@@ -121,7 +121,7 @@ section.about {
 	section.about {
 		div.photo-grid {
 			content: "No CSS Grid support in IE 11 :( Try another browser.";
-			display:none;
+			display: none;
 		}
 	}
 }
@@ -177,7 +177,7 @@ section.about {
 		div.intro {
 			div.blurb {
 				font-size: 24px;
-				max-width: 660px;
+				max-width: 600px;
 			}
 		}
 
