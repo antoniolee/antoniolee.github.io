@@ -33,6 +33,7 @@ $menu-gray-light: #E9E9E9;
 
 // Main SCSS
 // CSS Variables
+// Note: Using SASS variables for colors because of SASS functions...
 :root {
 	--font:'Open Sans', 'Helvetica', 'Arial', sans-serif;
 	--dark-orange: #FF8B37;
@@ -115,7 +116,7 @@ section.about {
 }
 
 .green {
-	background-image: linear-gradient(120deg, #BFFFBF, #BFFFBF 100%);
+	background-image: linear-gradient(120deg, #B0F5A2, #B0F5A2 100%);
 }
 
 .purple {
@@ -131,11 +132,11 @@ section.about {
 }
 
 .teal {
-	background-image: linear-gradient(120deg, #ACFFED, #ACFFED 100%);
+	background-image: linear-gradient(120deg, #AFFFED, #AFFFED 100%);
 }
 
 .yellow {
-	background-image: linear-gradient(120deg, #FFF6C5, #FFF6C5 100%);
+	background-image: linear-gradient(120deg, #FFEC84, #FFEC84 100%);
 }
 
 

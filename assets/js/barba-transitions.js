@@ -135,21 +135,159 @@ document.addEventListener("DOMContentLoaded", function(event) {
             } // End if
         });
 
+        // Anime.js
+        // Scale Down Homepage
+
+
+        // Animations currently in order from first to last
+        // Move intro section
+        let moveIntro = anime({
+            targets: 'section.about div.intro',
+            translateY: {
+                value: -1000,
+                duration: 800,
+            },
+            easing: 'easeInOutQuad',
+            autoplay: false
+        });
+
+        // Scale down and move section.about
+        let scaleDown = anime({
+            targets: 'section.about',
+            scale: {
+                value: .9,
+                duration: 800,
+            },
+            translateY: {
+                value: -1000,
+                duration: 800,
+            },
+            // delay: 200,
+            easing: 'easeInOutQuad',
+            autoplay: false
+        });
+
+        // Expand photos
+        let expandGrid = anime({
+            targets: '.photo-grid',
+            // scale: {
+            //     value: .9,
+            // },
+            // rotate: {
+            //     value: -90,
+            //     duration: 100,
+            // },
+            // delay: 250,
+            easing: 'easeInOutQuad',
+            autoplay: false
+        });
+
+        // Rotate photos
+        let rotatePhotos = anime({
+            targets: '.about-photo-container',
+            rotate: 90,
+            // opacity: .1,
+            duration: 500,
+            delay: anime.stagger(50), // increase delay by 100ms for each elements.
+            easing: 'easeInOutQuad',
+            autoplay: false
+        });
+
+        let opacityPhotos = anime({
+            targets: '.about-photo-container',
+            duration: 600,
+            opacity: .1,
+            delay: anime.stagger(50), // increase delay by 100ms for each elements.
+            easing: 'easeInOutQuad',
+            autoplay: false
+        });
+
+
+        var presentationMode = 1;
+        var locked = false;
 
         // Presentation mode for About Me
         // Change opacity of images to .05;
         $(document).keypress(function (e) {
+
+            // If keyboard is locked, exit keypress handler
+            if(locked){
+                return;
+            }
+
+            locked = true;
+
             // 1 is pressed
+            // Enter presentation mode
             if (e.which == 49) {
-                $('.about-photo').css("opacity", "0.15");
-                $('.about-photo').hover(function(){
+                if (presentationMode == 1) {
+                    // console.log("presentationMode = 1")
+                    opacityPhotos.play();
+
+                    setTimeout(function () {
+                        $("#nav").css("top", "-140px");
+                    }, 50);
+
+                    setTimeout(function () {
+                        presentationMode = 2;
+                        // $('.photo-grid').css("grid-gap", "1px");
+                        $('.about-photo-container').hover(function () {
+                            $(this).css("opacity", "1");
+                        });
+                    }, 800);
+                } else {
+                    // console.log("presentationMode = 2")
+
+                    setTimeout(function () {
+                        presentationMode = 1;
+                        $("#nav").css("top", "0px");
+                        // $('.photo-grid').css("grid-gap", "10px");
+                        $('.about-photo-container').css("opacity", "1");
+                    }, 500);
+                }
+
+                moveIntro.play();
+                scaleDown.play();
+                // expandGrid.play();
+                // rotatePhotos.play();
+
+
+                setTimeout(function () { 
+                    scaleDown.reverse();
+                    moveIntro.reverse();
+                    // expandGrid.reverse();
+                    // rotatePhotos.reverse();
+                }, 2000);
+            }
+            // 2 is pressed
+            // Show navbar
+            if (e.which == 50) {
+                $("#nav").css("top", "0px");
+            }
+
+            // 3 is pressed
+            // Reduce opacity
+            if (e.which == 51) {
+                $('.about-photo-container').css("opacity", "0.15");
+                $('.about-photo-container').hover(function () {
                     $(this).css("opacity", "1");
                 });
             }
-            // 2 is pressed
-            if (e.which == 50) {
-                $('.about-photo').css("opacity", "1");
+
+            // 4 is pressed
+            // Set opacity = 1
+            if (e.which == 52) {
+                $('.about-photo-container').css("opacity", "1");
             }
+
+            // 5 is pressed
+            // 
+            if (e.which == 53) {
+
+            }
+
+            // unlock keyboard input after 3 seconds
+            setTimeout(function () { locked = false; }, 2010); 
         });
 
      });
