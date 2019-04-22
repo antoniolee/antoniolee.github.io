@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         let opacityPhotos = anime({
             targets: '.about-photo-container',
             duration: 666,
-            opacity: .1,
+            opacity: .15,
             delay: anime.stagger(66), // increase delay by 100ms for each elements.
             easing: 'easeInOutQuad',
             autoplay: false
