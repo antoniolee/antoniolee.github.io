@@ -263,24 +263,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }
 
             // 3 is pressed
+            // Hide navbar
+            if (e.which == 50) {
+                $("#nav").css("top", "-140px");
+            }
+
+            // 4 is pressed
             // Reduce opacity
-            if (e.which == 51) {
+            if (e.which == 52) {
                 $('.about-photo-container').css("opacity", "0.15");
                 $('.about-photo-container').hover(function () {
                     $(this).css("opacity", "1");
                 });
             }
 
-            // 4 is pressed
-            // Set opacity = 1
-            if (e.which == 52) {
-                $('.about-photo-container').css("opacity", "1");
-            }
-
             // 5 is pressed
-            // 
+            // Set opacity = 1
             if (e.which == 53) {
-
+                $('.about-photo-container').css("opacity", "1");
             }
 
             // unlock keyboard input after 3 seconds
