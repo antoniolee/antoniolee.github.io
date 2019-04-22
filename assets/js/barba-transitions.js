@@ -284,7 +284,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }
 
             // unlock keyboard input after 3 seconds
-            setTimeout(function () { locked = false; }, 2010); 
+            setTimeout(function () { locked = false; }, 2000); 
         });
 
      });
