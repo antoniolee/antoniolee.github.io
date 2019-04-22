@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         namespace: 'homepage',
         onEnter: function() {
             // The new Container is ready and attached to the DOM.
-            console.log("entered homepage");
+            // console.log("entered homepage");
         },
         onEnterCompleted: function() {
             // The Transition has just finished.
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
          * For example you can use different Transition based on the current page or link...
          */
 
-        console.log("inside Barba.Pjax.getTransition")
+        // console.log("inside Barba.Pjax.getTransition")
 
         return FadeTransition;
 
