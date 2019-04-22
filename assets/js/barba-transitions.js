@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
             // 3 is pressed
             // Hide navbar
-            if (e.which == 50) {
+            if (e.which == 51) {
                 $("#nav").css("top", "-140px");
             }
 
