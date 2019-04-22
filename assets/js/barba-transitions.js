@@ -155,11 +155,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         let scaleDown = anime({
             targets: 'section.about',
             scale: {
-                value: .9,
+                value: .85,
                 duration: 800,
             },
             translateY: {
-                value: -1000,
+                value: -1100,
                 duration: 800,
             },
             // delay: 200,
@@ -195,9 +195,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         let opacityPhotos = anime({
             targets: '.about-photo-container',
-            duration: 600,
+            duration: 666,
             opacity: .1,
-            delay: anime.stagger(50), // increase delay by 100ms for each elements.
+            delay: anime.stagger(66), // increase delay by 100ms for each elements.
             easing: 'easeInOutQuad',
             autoplay: false
         });
@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     // console.log("presentationMode = 1")
                     opacityPhotos.play();
                     $("#nav").css("top", "-140px");
-                    
+
                     setTimeout(function () {
                         presentationMode = 2;
                         // $('.photo-grid').css("grid-gap", "1px");
