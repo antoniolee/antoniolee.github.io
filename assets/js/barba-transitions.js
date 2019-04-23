@@ -51,11 +51,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
             let scaleDown = anime({
                 targets: 'section.about',
                 scale: {
-                    value: .75,
+                    value: .9,
                     duration: 800,
                 },
                 translateY: {
-                    value: -1150,
+                    value: -900,
                     duration: 800,
                 },
                 // delay: 200,
@@ -63,22 +63,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 autoplay: false
             });
 
-            // Rotate photos
-            let rotatePhotos = anime({
-                targets: '.about-photo-container',
-                rotate: 90,
-                // opacity: .1,
-                duration: 500,
-                delay: anime.stagger(50), // increase delay by 100ms for each elements.
-                easing: 'easeInOutQuad',
-                autoplay: false
-            });
-
+            // Opacity stagger effect
             let opacityPhotos = anime({
                 targets: '.about-photo-container',
-                duration: 666,
+                duration: 600,
                 opacity: .15,
-                delay: anime.stagger(66), // increase delay by 100ms for each elements.
+                delay: anime.stagger(50), // increase delay by 50ms for each elements.
                 easing: 'easeInOutQuad',
                 autoplay: false
             });
