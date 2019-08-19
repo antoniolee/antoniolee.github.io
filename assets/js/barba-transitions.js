@@ -32,128 +32,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         onEnterCompleted: function () {
             onAboutPage = true;
-
             // The transition has just finished.
-            // Anime.js
-            // Animations currently in order from first to last
-            // Move intro section
-            let moveIntro = anime({
-                targets: 'section.about div.intro',
-                translateY: {
-                    value: -1000,
-                    duration: 800,
-                },
-                easing: 'easeInOutQuad',
-                autoplay: false
-            });
 
-            // Scale down and move section.about
-            let scaleDown = anime({
-                targets: 'section.about',
-                scale: {
-                    value: .9,
-                    duration: 800,
-                },
-                translateY: {
-                    value: -900,
-                    duration: 800,
-                },
-                // delay: 200,
-                easing: 'easeInOutQuad',
-                autoplay: false
-            });
-
-            // Opacity stagger effect
-            let opacityPhotos = anime({
-                targets: '.about-photo-container',
-                duration: 600,
-                opacity: .15,
-                delay: anime.stagger(50), // increase delay by 50ms for each elements.
-                easing: 'easeInOutQuad',
-                autoplay: false
-            });
-
-            var presentationMode = 1;
-            var locked = false;
-
-            // Presentation mode for About Me
-            // Change opacity of images to .05;
-            $(document).keypress(function (e) {
-
-                // If keyboard is locked, exit keypress handler
-                if (locked) {
-                    return;
-                }
-
-                locked = true;
-
-                // 1 is pressed
-                // Toggle presentation mode
-                if (e.which == 49 && onAboutPage == true) {
-                    if (presentationMode == 1) {
-                        // console.log("presentationMode = "+presentationMode);
-                        opacityPhotos.play();
-                        $("#nav").css("top", "-140px");
-
-                        setTimeout(function () {
-                            presentationMode = 2;
-                            // $('.photo-grid').css("grid-gap", "1px");
-                            $('.about-photo-container').hover(function () {
-                                $(this).css("opacity", "1");
-                            });
-                        }, 800);
-                    } else {
-                        // console.log("presentationMode = "+presentationMode);
-
-                        setTimeout(function () {
-                            presentationMode = 1;
-                            $("#nav").css("top", "0px");
-                            // $('.photo-grid').css("grid-gap", "10px");
-                            $('.about-photo-container').css("opacity", "1");
-                        }, 500);
-                    }
-
-                    moveIntro.play();
-                    scaleDown.play();
-
-                    setTimeout(function () {
-                        scaleDown.reverse();
-                        moveIntro.reverse();
-                    }, 1900);
-                }
-                // 7 is pressed
-                // Show navbar
-                if (e.which == 55) {
-                    $("#nav").css("top", "0px");
-                }
-
-                // 8 is pressed
-                // Hide navbar
-                if (e.which == 56) {
-                    $("#nav").css("top", "-140px");
-                }
-
-                // 9 is pressed
-                // Reduce opacity
-                if (e.which == 57) {
-                    $('.about-photo-container').css("opacity", "0.15");
-                    $('.about-photo-container').hover(function () {
-                        $(this).css("opacity", "1");
-                    });
-                }
-
-                // 0 is pressed
-                // Set opacity = 1
-                if (e.which == 48) {
-                    $('.about-photo-container').css("opacity", "1");
-                }
-
-                // unlock keyboard input after 2 seconds
-                setTimeout(function () {
-                    locked = false;
-                    console.log("locked = " + locked);
-                }, 2000);
-            });
         },
         onLeave: function () {
             // A new Transition toward a new page has just started.
@@ -253,7 +133,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         $('.btn-open').click(openNav);
         $('.btn-close').click(closeNav);
         $('.overlay > div.overlay-content > a').click(closeNav);           
-        
         
         // Add smooth scrolling to back-to-top link
         $(".btn-to-top, .btn-scroll-down, .smooth-scroll").on('click', function (event) {
