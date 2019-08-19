@@ -6,7 +6,7 @@
 // The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file.
 
 footer {
-    background-color: black;
+    background-color: #202020;
     color: white;
 
     div.footer-container {
@@ -25,7 +25,7 @@ footer {
             }
 
             h2, p, a {
-                opacity: .75;
+                opacity: .85;
             }
 
             h2 {
@@ -43,7 +43,6 @@ footer {
             }
 
             a {
-                opacity: .75;
                 transition: .33s ease all;
                 display: block;
                 position: relative;
@@ -110,6 +109,8 @@ footer {
 @media screen and (min-width: 1024px) {
     footer {
         div.footer-container {
+            padding: 90px;
+
             div.blurb {
 
                 h2 {

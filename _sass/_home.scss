@@ -11,11 +11,11 @@
 
 // Homepage
 section.homepage {
-	background-color: black;
-	padding: 30px;
+	padding: 0 30px;
 	max-width: 1440px;
-	margin: 60px auto 0;
+	margin: 0 auto;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	section.intro {
 		width: 100%;
@@ -27,88 +27,157 @@ section.homepage {
 	div.intro {
 		margin: 150px 0 90px;
 >>>>>>> parent of 5afadfe... Polish
+=======
+	// Intro Section
+	div.intro {
+		margin: 120px 0 90px;
+>>>>>>> parent of 4574e8d... First commit
 
-		div.text {
-			margin: 0 0 30px 0;
+		div.blurb {
+			font-size: 24px;
+			margin-bottom: 60px;
+			max-width: 540px;
+			margin: 0 auto;
+		}
+	}
+
+	div.work {
+		a {
+			position: relative;
+			font-weight: 600;
+			text-decoration: none;
+			padding: 0 2px 5px;
+		}
+
+		a.underline-blue {
+			// Have to set max-width for underline to work in a parent container with width set to 100%; 
+			max-width: 140px;
+		}
+
+		div.work-slab {
+			margin-bottom: 30px;
+		}
+
+		// Disable for projects not live
+		.coming-soon {
+			cursor: not-allowed;
+			color: $dark-gray;
+		}
+
+		div.work-title {
+		text-align: center;
+		padding: 30px 0;
 
 			h1 {
+				font-size: 20px;
 				margin: 0 0 10px 0;
+				font-weight: 500;
 			}
 
 			p {
-				margin: 0;
+				font-weight: 500;
+				color: rgba(#262626, .66);
+				margin: 0 0 10px 0;
+				font-size: 12px;
+				text-transform: uppercase;
+			}
+
+			a {
+				// text-transform: uppercase;
+				font-weight: 500;
+				color: $link-blue;
+				text-decoration: none;
+				font-size: 16px;
+			}
+
+			a:hover {
+
 			}
 		}
 
-		div.gif {
-			img {
-				display: block;
-				width: 100%;
-				max-width: 768px;
-				margin: 0 auto;
-			}
+		div.work-img {
+			background-color: #f2f2f2;
+		}
+
+		div.work-img:hover {
+			background-color: darken(#f2f2f2, 10%);
+		}
+
+		img {
+			width: 100%;
+			margin: 0 auto;
+			padding: 10%;
+		}
+
+		img:hover {
+			transform: scale(1.05);
 		}
 	}
 
-	section.companies {
-		div.text {
+}
 
-		}
+@media screen and (min-width: 768px) {
+	section.homepage {
+		padding: 0 45px;
 
-		div.logos {
-			display: flex;
-			// flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			overflow-x: scroll;
+		div.intro {
+			margin: 240px 0 180px;
 
-			img {
-				width: 100%;
-				max-width: 120px;
-				margin: 20px;
+			div.blurb {
+				font-size: 28px;
 			}
 		}
 	}
+}
 
-	@media screen and (min-width: 768px) {
-		padding: 45px;
+@media screen and (min-width: 1024px) {
+	section.homepage {
+		div.work {
+			margin-bottom: 90px;
 
-		section.intro {
-			flex-direction: row;
-			justify-content: space-between;
+			div.work-slab {
+				display: flex;
+			}
 
-			div.text {
+			div.work-title {
+				text-align: left;
+				width: 100%;
+				max-width: 400px;
+				padding: 0 30px 0 90px;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
-				margin-right: 30px;
 			}
-
-			div.gif {
-				margin-left: 30px;
-			}
-
 		}
 	}
+}
 
-	@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1200px) {
+	section.homepage {
+		div.intro {
+			div.blurb {
+				font-size: 32px;
+				max-width: 620px;
+			}
+		}
 
-	@media screen and (min-width: 1200px) {
-		section.intro {
-			div.text {
-				max-width: 500px;
+		div.work {
+			div.work-title {
+				max-width: 550px;
 
 				h1 {
-					font-size: 40px;
+					font-size: 24px;
+					margin: 0 0 15px 0;
 				}
 
 				p {
-					font-size: 20px;
+					font-size: 14px;
+					margin: 0 0 15px 0;
 				}
-			}
 
-			div.gif {
-				max-width: 600px;
+				a {
+					font-size: 18px;
+				}
 			}
 		}
 	}

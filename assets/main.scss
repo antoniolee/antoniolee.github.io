@@ -3,14 +3,39 @@
 
 // CSS reset
 @import "reset";
+@import "loader";
 @import "text";
+@import "staticrypt";
 
+// SASS Variables
+$black: #262626;
+$link-blue: rgb(51, 122, 203);
+
+$xilinx-red: #D2001A;
+$galileo-blue: #42B9EE;
+$uegroup-orange: #FE5000;
+$santa-cruz-blue: #153A8A;
+$slalom-blue: #0070cd;
+
+$light-gray: #F9F9F9;
+$gray: #D8D8D8;
+$dark-gray: #4A4A4A;
+
+$dark-blue: #2A8CFF;
+$menu-blue-dark: #7CB8FF;
+$light-blue: #CFE5FF;
+$dark-orange: #FF8B37;
+$light-orange: #FCDFAF;
+$light-pink: #FFD7F4;
+
+$menu-gray: #BFBFBF;
+$menu-gray-light: #E9E9E9;
 
 // Main SCSS
 // CSS Variables
 // Note: Using SASS variables for colors because of SASS functions...
 :root {
-	--font: 'Mark OT', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+	--font:'Open Sans', 'Helvetica', 'Arial', sans-serif;
 	--dark-orange: #FF8B37;
 	--light-orange: #FCDFAF;
 	--dark-blue: #2A8CFF;
@@ -23,9 +48,10 @@
 body {
 	transition: .33s ease all;
 	margin: 0;
-	background-color: black;
-	color: white;
-	font-family: var(--font);
+	background-color: #FCFCFC;
+	background-color: white;
+	color: #262626;
+	font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -34,12 +60,120 @@ body {
 	box-sizing: border-box;
 }
 
-// Sticky footer
-div.barba-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	min-height: 100vh;
+a {
+	// text-transform: uppercase;
+	font-weight: 500;
+	color: $link-blue;
+	text-decoration: none;
+}
+
+section.case-study,
+section.homepage,
+section.about {
+	* {
+		transition: .33s ease all;
+	}
+}
+
+
+// Randoms
+// should replace these later
+.text-align-center {
+	position: relative;
+	text-align: center !important;
+	font-weight: 600 !important;
+}
+
+.semi-bold {
+	font-weight: 600;
+}
+
+
+
+// Underline effect on homepage
+// Underline effect
+.underline {
+	background-repeat: no-repeat;
+	background-size: 100% 15%;
+	background-position: 0 105%;
+	transition: background-size 0.25s ease-in all;
+
+	&:hover {
+		background-size: 100% 40%;
+	}
+}
+
+.hidden {
+	background-size: 100% 0%;
+}
+
+.orange {
+	background-image: linear-gradient(120deg, #FFDEA8 0%, #FFDEA8 100%);
+}
+
+.blue {
+	background-image: linear-gradient(120deg, #CFE5FF 0%, #CFE5FF 100%);
+}
+
+.green {
+	background-image: linear-gradient(120deg, #B0F5A2, #B0F5A2 100%);
+}
+
+.purple {
+	background-image: linear-gradient(120deg, #D9CCFD, #D9CCFD 100%);
+}
+
+.pink {
+	background-image: linear-gradient(120deg, #FFD7F4, #FFD7F4 100%);
+}
+
+.red {
+	background-image: linear-gradient(120deg, #FFBEBE, #FFBEBE 100%);
+}
+
+.teal {
+	background-image: linear-gradient(120deg, #AFFFED, #AFFFED 100%);
+}
+
+.yellow {
+	background-image: linear-gradient(120deg, #FFEC84, #FFEC84 100%);
+}
+
+
+
+// Animations
+// Animation for scroll down
+@keyframes scrollDown {
+	from {
+		top: -50px;
+	}
+
+	to {
+		top: -60px;
+	}
+}
+
+// Arrow for Scroll Down
+div.scroll-down {
+	display: none;
+	height: 0;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	animation-name: scrollDown;
+	animation-duration: .6s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+
+	a {
+		color: $dark-gray;
+	}
+
+	i.fa-chevron-down {
+		padding: 20px;
+		position: relative;
+		bottom: 40px;
+	}
 }
 
 
@@ -51,6 +185,10 @@ div.barba-container {
 // "If [device width] is greater than or equal to 768px, then do {...}"
 @media screen and (min-width: 768px) {
 
+	// Change display type from none to visible
+	div.scroll-down {
+		display: block;
+	}
 }
 
 // MD
@@ -58,8 +196,13 @@ div.barba-container {
 
 // LG
 @media screen and (min-width: 1200px) {
-
+	span.tag {
+		padding: 7px 14px;
+		margin: 0 7px 14px 0;
+		font-size: 14px;
+	}
 }
+
 
 // Imports
 // Navs
@@ -70,6 +213,7 @@ div.barba-container {
 // Pages 
 @import "home";
 @import "about";
+@import "case-study";
 
 
 
