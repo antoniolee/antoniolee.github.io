@@ -36,12 +36,10 @@
 
     a {
         position: relative;
-        // display: flex;
         transition: .33s ease all;
-        font-weight: 600;
+        font-weight: 700;
         color: #262626;
         text-decoration: none;
-        padding: 0 5px 5px;
     }
 
     a.nav-title {
@@ -49,7 +47,7 @@
     }
 
     a:hover {
-        // color: black;
+        color: $link-blue;
     }
 
     ul {

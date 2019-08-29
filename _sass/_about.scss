@@ -20,13 +20,17 @@ section.about {
 	}
 
 	a {
-		// font-weight: 600;
-		// color: $black;
+		font-weight: 600;
+		color: $black;
 		position: relative;
 		-webkit-transition: .33s ease all;
 		transition: .33s ease all;
 		text-decoration: none;
 		padding: 0 0 5px;
+	}
+
+	a:hover {
+		color: $link-blue;
 	}
 
 	// Intro Section
@@ -65,8 +69,7 @@ section.about {
 		}
 
 		.about-photo-container:hover .about-photo {
-			-webkit-transform: scale(1.075);
-			transform: scale(1.075);
+			opacity: 1;
 		}
 
 		.about-photo {
@@ -75,6 +78,7 @@ section.about {
 			background-position: center;
 			background-size: cover;
 			background-repeat: none;
+			opacity: .5;
 		}
 
 		.ap-1 {
@@ -197,6 +201,10 @@ section.about {
 		div.intro {
 			div.blurb {
 				max-width: 600px;
+
+				p {
+					font-size: 24px;
+				}
 			}
 		}
 
