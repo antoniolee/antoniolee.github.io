@@ -69,6 +69,7 @@ section.about {
 		}
 
 		.about-photo-container:hover .about-photo {
+			filter: grayscale(0);
 			opacity: 1;
 		}
 
@@ -78,6 +79,7 @@ section.about {
 			background-position: center;
 			background-size: cover;
 			background-repeat: none;
+			filter: grayscale(1);
 			opacity: .66;
 		}
 
@@ -179,7 +181,7 @@ section.about {
 		div.intro {
 			div.blurb {
 				p {
-					font-size: 20px;
+					// font-size: 20px;
 					margin: 20px 0;
 				}
 			}
@@ -204,7 +206,7 @@ section.about {
 				max-width: 600px;
 
 				p {
-					// font-size: 24px;
+					font-size: 18px;
 				}
 			}
 		}
