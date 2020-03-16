@@ -115,6 +115,14 @@ section.homepage {
 			padding: 10%;
 		}
 
+		img.no-padding {
+			padding: 0;
+
+			&:hover {
+				transform: scale(1);
+			}
+		}
+
 		img:hover {
 			transform: scale(1.05);
 		}

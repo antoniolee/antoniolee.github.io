@@ -21,16 +21,15 @@ footer {
             margin-bottom: 45px;
 
             h1 {
-                margin: 0 0 20px;
+                margin: 10px 0 15px;
             }
 
-            h2, p, a {
-                opacity: .85;
-            }
-
-            h2 {
-                font-weight: 600;
-                margin: 0 0 15px 0;
+            h4 {
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin: 0;
+                color: #FF8FB8;
             }
 
             p {
@@ -38,8 +37,8 @@ footer {
             }
 
             p.copyright {
-                font-size: 14px;
-                // margin: 0;
+                font-size: 12px;
+                opacity: .6;
             }
 
             a {
@@ -48,13 +47,12 @@ footer {
                 position: relative;
                 text-decoration: none;
                 font-weight: 500;
-                margin-bottom: 30px;
                 color: white;
             }
 
             a:hover {
                 transition: .33s ease all;
-                opacity: 1;
+                color: $link-blue;
             }
         }
 
