@@ -26,12 +26,18 @@ footer {
             }
 
             h4 {
+                display: inline-block;
                 font-weight: bold;
                 font-size: 12px;
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 margin: 0;
                 color: #FF8FB8;
+            }
+
+            h4:hover {
+                cursor: help;
+                animation: random-color .5s infinite;
             }
 
             p {

@@ -78,6 +78,23 @@ section.about {
 	font-weight: 600;
 }
 
+@keyframes random-bg {
+	// 15% { background-color: rgba(red,.15); } 
+	30% { background-color: rgba(red,.3); } 
+	// 45% { background-color: rgba(red,.45); } 
+	60% { background-color: rgba(red,.60); }
+	// 75% { background-color: rgba(red,.75);}  
+	90% { background-color: rgba(red,.90); }  
+}
+
+@keyframes random-color {
+	15% { color: orange; } 
+	30% { color: blue; } 
+	45% { color: pink; } 
+	60% { color: white; }
+	75% { color: gray; }  
+	90% { color: black;}
+}
 
 
 // Underline effect on homepage
@@ -197,7 +214,7 @@ div.scroll-down {
 // Imports
 // Navs
 @import "nav";
-@import "menu";
+@import "fullscreen-menu";
 @import "footer";
 
 // Pages 

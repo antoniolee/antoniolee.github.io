@@ -35,21 +35,24 @@
     }
 
     a {
-        font-size: 16px;
+        font-size: 12px;
         position: relative;
         transition: .33s ease all;
-        font-weight: 600;
+        font-weight: 700;
         color: #262626;
         text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1;
     }
 
     a.nav-title {
-        font-size: 12px;
+        transition: .33s ease all;
+        // font-size: 14px;
         text-transform: uppercase;
         letter-spacing: 1;
-        font-weight: bold;
-        border: 2px solid #262626;
-        padding: 12px;
+        font-weight: 700;
+        // border: 2px solid #262626;
+        // padding: 12px;
     }
 
     a:hover {
@@ -57,8 +60,8 @@
     }
 
     a.nav-title:hover {
-        color: white;
-        background-color: #262626;
+        // color: white;
+        // animation: random-color .5s infinite;
     }
 
     ul {
