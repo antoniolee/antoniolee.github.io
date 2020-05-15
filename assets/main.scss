@@ -11,39 +11,24 @@
 $black: #262626;
 $link-blue: rgb(51, 122, 203);
 $link-hover: #3B81FF;
-
 $xilinx-red: #D2001A;
 $galileo-blue: #42B9EE;
 $uegroup-orange: #FE5000;
 $santa-cruz-blue: #153A8A;
 $slalom-blue: #0070cd;
-
 $light-gray: #F9F9F9;
 $gray: #D8D8D8;
 $dark-gray: #4A4A4A;
-
 $dark-blue: #2A8CFF;
 $menu-blue-dark: #7CB8FF;
 $light-blue: #CFE5FF;
 $dark-orange: #FF8B37;
 $light-orange: #FCDFAF;
 $light-pink: #FFD7F4;
-
+$pink: #FF8FB8;
 $menu-gray: #BFBFBF;
 $menu-gray-light: #E9E9E9;
 
-// Main SCSS
-// CSS Variables
-// Note: Using SASS variables for colors because of SASS functions...
-:root {
-	--font:'Open Sans', 'Helvetica', 'Arial', sans-serif;
-	--dark-orange: #FF8B37;
-	--light-orange: #FCDFAF;
-	--dark-blue: #2A8CFF;
-	--light-blue: #CFE5FF;
-	--dark-gray: #262626;
-	--light-gray: #D0D0D0;
-}
 
 // Defaults
 body {
@@ -68,11 +53,15 @@ a {
 	text-decoration: none;
 }
 
+i {
+	font-style: italic;
+}
+
 section.case-study,
 section.homepage,
 section.about {
 	* {
-		transition: .33s ease all;
+		// transition: .33s ease all;
 	}
 }
 
@@ -97,7 +86,7 @@ section.about {
 	background-repeat: no-repeat;
 	background-size: 100% 15%;
 	background-position: 0 105%;
-	transition: background-size 0.25s ease-in all;
+	transition: 0.25s ease-in all;
 
 	&:hover {
 		background-size: 100% 40%;

@@ -17,13 +17,14 @@ section.homepage {
 
 	// Intro Section
 	div.intro {
-		margin: 120px 0 90px;
+		margin: 150px 0 90px;
 
 		div.blurb {
+			transition: none;
 			font-size: 16px;
 			margin-bottom: 60px;
-			max-width: 400px;
 			margin: 0 auto;
+			max-width: 560px;
 
 			h1 {
 				font-size: 24px;
@@ -32,11 +33,9 @@ section.homepage {
 	}
 
 	div.work {
-		a {
-			// position: relative;
-			// font-weight: 600;
-			// text-decoration: none;
-			// padding: 0 2px 5px;
+
+		* {
+			transition: .33s ease all;
 		}
 
 		a.underline-blue {
@@ -46,93 +45,76 @@ section.homepage {
 
 		div.work-slab {
 			margin-bottom: 30px;
-		}
 
-		// Disable for projects not live
-		.coming-soon {
-			cursor: not-allowed;
-			color: $dark-gray;
-		}
-
-		div.work-title {
-		text-align: center;
-		padding: 30px 0;
-
-			h1 {
-				font-size: 16px;
-				margin: 0 0 10px 0;
-				font-weight: 600;
+			img {
+				width: 100%;
+				margin: 0 auto;
+				padding: 10%;
+			}
+	
+			img:hover {
+				transform: scale(1.05);
 			}
 
-			h4 {
-				font-weight: 600;
-				color: rgba(#262626, .5);
-				margin: 0 0 10px 0;
-				font-size: 12px;
-				text-transform: uppercase;
+			div.work-img {
+				background-color: #f2f2f2;
+			}
+	
+			div.work-img:hover {
+				background-color: darken(#f2f2f2, 10%);
 			}
 
-			p {
-				margin: 0 0 30px 0;
-				font-size: 12px;
-			}
-
-			a {
-				text-transform: uppercase;
-				font-weight: 700;
-				// color: $link-blue;
-				// text-decoration: none;
-				// font-size: 16px;
-				color: $link-blue;
-				border: 2px solid rgba($link-blue, .75);
-				padding: 10px 15px;
-				font-size: 12px;
-			}
-
-			a:hover {
-				color: white;
-				background-color: $link-blue;
-			}
-
-			a.coming-soon {
-				border-color: rgba(#262626, .25);
-				color: rgba(#262626, .5);
-			}
-
-			a.coming-soon:hover {
-				background-color:rgba(#262626, .75);
-				border-color: rgba(#262626, 0);
-				color: white;
-			}
-		}
-
-		div.work-img {
-			background-color: #f2f2f2;
-		}
-
-		div.work-img:hover {
-			background-color: darken(#f2f2f2, 10%);
-		}
-
-		img {
-			width: 100%;
-			margin: 0 auto;
-			padding: 10%;
-		}
-
-		img.no-padding {
-			padding: 0;
-
-			&:hover {
-				transform: scale(1);
-			}
-		}
-
-		img:hover {
-			transform: scale(1.05);
+			div.work-title {
+				text-align: center;
+				padding: 30px 0;
+		
+					h1 {
+						font-size: 16px;
+						margin: 0 0 10px 0;
+						font-weight: 600;
+					}
+		
+					h4 {
+						font-weight: 600;
+						color: rgba(#262626, .5);
+						margin: 0 0 10px 0;
+						font-size: 12px;
+						text-transform: uppercase;
+						letter-spacing: 1;
+					}
+		
+					p {
+						margin: 0 0 15px 0;
+						font-size: 14px;
+					}
+		
+					a {
+						text-transform: uppercase;
+						font-weight: 700;
+						color: rgba($link-blue, .75);
+						font-size: 12px;
+					}
+		
+					a:hover {
+						color: $link-blue;
+					}
+		
+					// Disable for projects not live
+					.coming-soon {
+						cursor: not-allowed;
+						color: $dark-gray;
+					}
+		
+					a.coming-soon {
+						color: rgba(#262626, .25);
+					}
+		
+					a.coming-soon:hover {
+						color: rgba(#262626, .10);
+					}
+				}
 		}
 	}
-
 }
 
 @media screen and (min-width: 768px) {
@@ -155,7 +137,7 @@ section.homepage {
 	section.homepage {
 		div.intro {
 			div.blurb {
-				max-width: 520px;
+				// max-width: 520px;
 			}
 		}
 
@@ -164,16 +146,16 @@ section.homepage {
 
 			div.work-slab {
 				display: flex;
-			}
 
-			div.work-title {
-				text-align: left;
-				width: 100%;
-				max-width: 400px;
-				padding: 0 30px 0 90px;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
+				div.work-title {
+					text-align: left;
+					width: 100%;
+					max-width: 400px;
+					padding: 0 30px 0 90px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
 			}
 		}
 	}
@@ -193,21 +175,23 @@ section.homepage {
 		}
 
 		div.work {
-			div.work-title {
-				max-width: 500px;
-
-				h1 {
-					font-size: 24px;
-					margin: 0 0 15px 0;
-				}
-
-				p {
-					font-size: 16px;
-					margin: 0 0 30px;
-				}
-
-				a {
-					font-size: 12px;
+			div.work-slab {
+				div.work-title {
+					max-width: 500px;
+	
+					h1 {
+						font-size: 24px;
+						margin: 0 0 15px 0;
+					}
+	
+					p {
+						font-size: 16px;
+						// margin: 0 0 30px;
+					}
+	
+					a {
+						font-size: 14px;
+					}
 				}
 			}
 		}

@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 targets: '.about-photo-container',
                 duration: 600,
                 opacity: .15,
-                delay: anime.stagger(50), // increase delay by 50ms for each elements.
+                delay: anime.stagger(150), // increase delay by 50ms for each elements.
                 easing: 'easeInOutQuad',
                 autoplay: false
             });
