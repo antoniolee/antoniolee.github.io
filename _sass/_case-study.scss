@@ -7,6 +7,10 @@
 
 
 section.case-study {
+
+    * {
+        transition: .33s ease all;
+    }
     
     margin-top: 90px;
 
